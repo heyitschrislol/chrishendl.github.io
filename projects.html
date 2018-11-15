@@ -6,6 +6,8 @@
    <title>Personal Projects - Chris Hendl</title>
    <link href="css/styles.css" rel="stylesheet" />
    <link href="css/fontfaces.css" rel="stylesheet" />
+   <link href="css/buttons.css" rel="stylesheet" />
+   <script src="ch_courses.js"></script>
    
 </head>
 <body>
@@ -34,26 +36,36 @@
 	<!-- The flexible grid (content) -->
 	<div class="row">
 		<div class="side">
-			<h2>About Me</h2>
-			<h5>Photo of me:</h5>
-			<div class="fakeimg" style="height:200px;">Image</div>
-			<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-			<h3>More Text</h3>
-			<p>Lorem ipsum dolor sit ame.</p>
-			<div class="fakeimg" style="height:60px;">Image</div><br>
-			<div class="fakeimg" style="height:60px;">Image</div><br>
-			<div class="fakeimg" style="height:60px;">Image</div>
+			<h2>Courses</h2>			
+			<ul class="side-ul">
+				<li><input type="button" class="projbutton" id="depr" value="Depreciation Calculator" onclick="courseA()"></li>
+				<li><input type="button" class="projbutton" id="scrtez" value="ScriptEase" onclick="courseB()"></li>
+				<li><input type="button" class="projbutton" id="rsetool" value="Trace RSE Tool" onclick="courseC()"></li>
+				
+			</ul>
 		</div>
 		<div class="main">
-			<h1>TITLE HEADING</h1>			
-			<div class="fakeimg" style="height:200px;">Image</div>
-			<p>Some text..</p>
-			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<br>
-			<h2>TITLE HEADING</h2>			
-			<div class="fakeimg" style="height:200px;">Image</div>
-			<p>Some text..</p>
-			<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+			<div id="dCalc">
+				<h2>Depreciation Calculator</h2>
+				<h3>Analysis and Design of Management Information Systems</h3>			
+				<div><strong>Course Description:</strong></div>
+				<div>Design philosophies and techniques for the creation of information systems for management decision-making; conceptual design of actual information systems.</div>
+				<br>
+			</div>
+			<div id="sEase">
+				<h2>ScriptEase</h2>
+				<h3>Database Processing for Management</h3>				
+				<div><strong>Course Description:</strong></div>
+				<div>Structure and function of managerial databases; design options and implementation of database management systems in the firm; laboratory practice includes use of a particular soft-ware system.</div>
+				<br>
+			</div>
+			<div id="rTool">
+				<h2>Trace RSE Tool</h2>
+				<h3>Database Processing for Management</h3>				
+				<div><strong>Course Description:</strong></div>
+				<div>Structure and function of managerial databases; design options and implementation of database management systems in the firm; laboratory practice includes use of a particular soft-ware system.</div>
+				<br>
+			</div>			
 		</div>
 	</div>
 

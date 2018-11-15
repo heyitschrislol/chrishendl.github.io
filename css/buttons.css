@@ -10,7 +10,8 @@
 	list-style: none;
 	
 }
-.coursebutton {
+
+.coursebutton, .projbutton {
 	font-family: "Dejavu Sans Mono", sans-serif;
 	background-color: #fff;
     border: 2px solid black;
@@ -29,6 +30,6 @@
 
 
 /* DISPLAYS CONTENT THAT WAS CLICKED */
-#isds4125, #isds3110, #isds3200, #isds3105 {
+#isds4125, #isds3110, #isds3200, #isds3105, #dCalc, #sEase, #rTool {
 	display: none;
 }
