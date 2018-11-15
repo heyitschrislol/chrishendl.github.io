@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+* {
+	font-family: 'Aaargh', 'Nobile';
+	box-sizing: border-box;
+}
+html {
+	
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	font-family: 'Aaargh', 'Nobile';
+	font-size: 14px;	 
+	margin: 0;
+}
+a {
+	background: transparent;
+	color: #dddddd;
+	text-shadow: 1px 1px black;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+/* BANNER */
+.bannertop {
+	box-sizing: border-box;
+	display: flex;	
+	flex-flow: column nowrap;
+	width: 100%;	
+}
+.bannerlogo {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 10%;
+}
+.logoimg {
+	float: left;
+	margin-right: 20px;
+}
+.logoimg img {		
+    padding: 0px;
+    width: 100px;
+}
+.logotext {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+	vertical-align: bottom;
+	line-height: 0;		
+	padding: 0px;
+}
+.logotext p {
+	font-family: Nobile, sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+#myContact {
+	font-weight: bold;
+	font-size: 1em;	
+	padding: 0px;
+}
+.bannerlinks {	
+	width: 100%;
+	background-color: black;	
+	line-height: 1em;
+}
+.banner-ul {
+	margin-left: 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+}
+.banner-ul li {
+	margin: 0px 10px;
+	text-align: center;	
+}
+
+.navlinks {
+	font-size: 12px;
+	padding: 15px 15px;
+	color: #8e8d8e;
+	-webkit-transition: font-size 1s, font-weight 1s, color 1s;
+	transition: font-size 1s, font-weight 1s, color 1s;
+}
+.navlinks:hover {
+	text-decoration: none;	
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff3aa;
+	
+}
+
+
+
+/* MAIN CONTENT */
+/* Column container */
+.row {	
+	column-count: 2;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 10%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {	
+    flex: 90%;
+    background-color: white;
+    padding: 20px;
+}
+#isds4125, #isds3110, #isds3200, #isds3105 {
+	font-family: Nobile, sans-serif;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row, .navbar {   
+        flex-direction: column;
+    }
+}
