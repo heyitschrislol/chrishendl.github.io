@@ -24,13 +24,22 @@ function courseD() {
 	document.getElementById("isds3105").style.display = "block";
 }
 
-function startUp() {
-  document.getElementById("4125").onclick = function() {courseA()};
-  document.getElementById("3110").onclick = function() {courseB()};
-  document.getElementById("3200").onclick = function() {courseC()};
-  document.getElementById("3105").onclick = function() {courseD()};
-  
+function projA() {
+	document.getElementById("dCalc").style.display = "block";
+	document.getElementById("sEase").style.display = "none";
+	document.getElementById("rTool").style.display = "none";
 }
+function projB() {
+	document.getElementById("dCalc").style.display = "none";
+	document.getElementById("sEase").style.display = "block";
+	document.getElementById("rTool").style.display = "none";
+}
+function projC() {
+	document.getElementById("dCalc").style.display = "none";
+	document.getElementById("sEase").style.display = "none";
+	document.getElementById("rTool").style.display = "block";
+}
+
 
 
 
