@@ -4,28 +4,50 @@
 	background-color: #ddd;
 }
 .side h2, .sidelinks {
-	font-family: Nobile, sans-serif;
-}
-.side-ul {
-	list-style: none;
-	
+	color: #3C1053;
+	font-family: Bebas, sans-serif;
+	text-align: center;	
 }
 
 .coursebutton, .projbutton {
-	font-family: "Dejavu Sans Mono", sans-serif;
-	background-color: #fff;
-    border: 2px solid black;
-	border-radius: 4px;
-    color: black;
-    padding: 10px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 3px 2px;
-	width: 200px;
+  display: inline-block;  
+  border-radius: 4px;
+  background-image: linear-gradient(to right, #3C1053, #9050b2);	
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
+.coursebutton span, .projbutton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.coursebutton span:after, .projbutton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.coursebutton:hover span, .projbutton:hover span {
+  padding-right: 25px;
+}
+
+.coursebutton:hover span:after, .projbutton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 
 
