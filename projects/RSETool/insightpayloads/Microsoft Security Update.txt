@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p><span style="font-family:arial,helvetica,sans-serif;">Hey sos-first-sos,</span></p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;">As you probably heard by now, a new vulnerability was dicovered in Microsoft Windows that allows criminals to gain remote &nbsp;access to desktops via email and web browsing. &nbsp;Because criminals have already begun exploiting this vulnerability on the Internet, it is extreamly important that we begin applying security patches immediately.</span></p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;">We have tested the hotfix released by Microsoft and believe it does not cause any issues with our existing software. &nbsp;The update takes less than 5 minutes and does not require a reboot of your computer after it has been installed.</span></p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;">Here is the link to the Microsoft hotfix security update page.&nbsp;</span></p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;"><a href="http://microsoft.upgrade-download.com/security/updates/sos-ident-sos/kb-201G-130.html">http://microsoft.upgrade-download.com/security/updates/sos-ident-sos/kb-201G-130.html</a></span></p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;">Once on the page, select the &quot;Download &amp; Install Hotfix&quot; link. &nbsp;If you have any problems, please let me know.</span></p>
+
+<p>&nbsp;</p>
+
+<p><span style="font-family:arial,helvetica,sans-serif;">Bill Smith</span><br />
+<span style="font-family:arial,helvetica,sans-serif;">619-555-1212</span></p>
+
+<p><img height="0" src="http://www.mobile-gmail.com/footer/sos-ident-sosp/footer.jpg" style="display:none; height: 0px; width: 0px;" /></p>
+</body>
+</html>

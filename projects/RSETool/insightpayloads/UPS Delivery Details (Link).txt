@@ -1,0 +1,46 @@
+<table border="0" cellpadding="1" cellspacing="1" style="width:600px;">
+	<tbody>
+		<tr bgcolor="#644117">
+		<p><img height="0" src="http://www.blogbasement.net/logo/sos-ident-sosp/logo.png" style="height: 0px; width: 0px; display:none" /></p>
+			<td><br />
+			&nbsp; &nbsp;<img alt="" src="http://media.merchantcircle.com/3679002/ups-logo_full.png" width="100" /></td>
+		</tr>
+		<tr>
+			<td><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"><strong>Original Shipment Detail:</strong><br />
+			<br />
+			<strong>Ship To:</strong><br />
+			sos-first-sos sos-last-sos&nbsp;<br />
+			Centric Bank<br />
+			4320 Linglestown Rd<br />
+			Harrisburg,&nbsp;PA&nbsp;17112<br />
+			<br />
+			<strong>Number of Packages:</strong><br />
+			1<br />
+			<br />
+			<strong>UPS Service:</strong><br />
+			UPS 2ND DAY AIR<br />
+			<br />
+			<strong>Weight:</strong><br />
+			1.0 LBS<br />
+			<br />
+			<strong>Lead Tracking Number:</strong><br />
+			<a class="plink" href="http://www.dps-regional-shipping.com/track/sos-ident-sos/status?dps=sos-ident-sos84973945"><span style="color:#5cad90;">1ZBE312TNY00015011</span></a> <strong>(click for full Details)</strong></span><br />
+			&nbsp;</td>
+		</tr>
+		<tr>
+			<td><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">&copy; 2017 United Parcel Service of America, Inc. UPS, the UPS brandmark, and the color brown are trademarks of United Parcel Service of America, Inc. All rights reserved.<br />
+			<br />
+			All trademarks, trade names, or service marks that appear in connection with UPS&#39;s services are the property of their respective owners.<br />
+			&nbsp;<br />
+			Please do not reply directly to this e-mail. UPS will not receive any reply message.<br />
+			For more information on UPS&#39;s privacy practices, refer to the UPS Privacy Notice.<br />
+			For questions or comments, visit Contact UPS.<br />
+			<br />
+			This communication contains proprietary information and may be confidential.&nbsp;If you are not the intended recipient, the reading, copying, disclosure or&nbsp;</span><span style="font-family:lucida sans unicode,lucida grande,sans-serif;">other</span><span style="font-family:lucida sans unicode,lucida grande,sans-serif;"> use of the contents of this e-mail is strictly prohibited and you are instructed to please delete this e-mail immediately.<br />
+			<br />
+			<a href="http://www.dps-regional-shipping.com/track/sos-ident-sos/status?dps=sos-ident-sos84973945" target="_blank"><span style="color:#5cad90;"><strong>UPS Privacy Notice</strong></span></a><br />
+			<br />
+			<a href="http://www.dps-regional-shipping.com/track/sos-ident-sos/status?dps=sos-ident-sos84973945" target="_blank"><span style="color:#5cad90;"><strong>Contact UPS</strong></span></a></span></td>
+		</tr>
+	</tbody>
+</table>

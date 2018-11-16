@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<title></title>
+</head>
+<body style="background-color: #c0eaf9">
+<div align="center" style="width: 100%" width="100%">
+<table width="600">
+	<tbody>
+		<tr>
+			<td align="center" style="background-color: #FFFFFF; color: #000000">
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td style="padding-left: 15px" valign="top" width="400">
+						<p><br />
+						<span style="color:#808080;"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">Hi sos-first-sos,</span></span></span><br />
+						<br />
+						<strong><span style="color:#ff6633;"><span style="font-size:20px;"><span style="font-family:arial,helvetica,sans-serif;">Guess what?</span></span></span></strong><br />
+						<br />
+						<span style="color:#808080;"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">You have a </span></span></span><span style="color:#FF8C00;"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><em><strong>FunnyCardz</strong></em>&nbsp;</span></span></span><span style="color:#808080;"><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;">e-card waiting for you!</span></span></span></p>
+
+						<p><span style="font-size:14px;"><font face="arial, helvetica, sans-serif"><em><strong><span style="color:#0000CD;"><a href="http://www.funnycardz.com/sos-ident-sos/show_card.asp?card-id=Hhjdsu21ii9">Click Here</a></span></strong></em><span style="color:#808080;"> to watch&nbsp;your card and find out who it&#39;s from!</span></font></span></p>
+
+						<p>&nbsp;</p>
+						</td>
+						<td valign="top"><br />
+						<img src="http://www.funnycardz.com/images/bird-heart.png" /></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table width="100%">
+				<tbody>
+					<tr>
+						<td align="center">
+						<p><br />
+						<br />
+						<br />
+						<span style="font-size:11px;"><span style="color:#A9A9A9;">This FunnyCardz e-card was sent based on a friend request.<br />
+						To <a href="http://www.funnycardz.com/sos-ident-sos/abuse.asp?card-id=Hhjdsu21ii9">report abuse</a>, please contact our customer services department by clicking <a href="http://www.funnycardz.com/sos-ident-sos/abuse.asp?card-id=Hhjdsu21ii9">here</a>.</span></span></p>
+
+						<p><span style="color:#808080;"><span style="font-size:9px;"><span style="font-family:arial,helvetica,sans-serif;">FunnyCardz Copyright&nbsp;2016</span></span></span></p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+</div>
+
+<p><img height="0" src="http://www.funnycardz.com/footer/sos-ident-sosp/footer" style="height: 0px; width: 0px; display:none" /></p>
+</body>
+</html>

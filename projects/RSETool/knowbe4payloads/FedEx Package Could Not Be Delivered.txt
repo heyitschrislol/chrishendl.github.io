@@ -1,0 +1,223 @@
+<table cellpadding="1" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<tbody>
+		<tr>		
+			<td width="453">________________________________________________________________________________</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="1" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<tbody>
+		<tr>
+			<td width="453">This tracking update has been requested by:</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="1" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td width="226.5">Company Name:</td>
+			<td width="226.5">FedEx</td>
+		</tr>
+		<tr>
+			<td width="226.5">Dept:</td>
+			<td width="226.5">Delivery Notifications</td>
+		</tr>
+		<tr>
+			<td width="226.5">E-mail:</td>
+			<td width="226.5">trackingupdates@fedex.com</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="1" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<tbody>
+		<tr>
+			<td width="453">________________________________________________________________________________</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;</p>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">A shipment delivery attempt by FedEx Ground was attempted today.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">Reference information includes:</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td width="226.5">Reference:</td>
+			<td width="226.5">Online Order ID 1337</td>
+		</tr>
+		<tr>
+			<td width="226.5">Estimated delivery:</td>
+			<td width="226.5">Today</td>
+		</tr>
+		<tr>
+			<td width="226.5">Service type:</td>
+			<td width="226.5">FedEx Office Delivery</td>
+		</tr>
+		<tr>
+			<td width="226.5">Packaging type:</td>
+			<td width="226.5">Package</td>
+		</tr>
+		<tr>
+			<td width="226.5">Number of pieces:</td>
+			<td width="226.5">3</td>
+		</tr>
+		<tr>
+			<td width="226.5">Weight:</td>
+			<td width="226.5">17.30 lb.</td>
+		</tr>
+		<tr>
+			<td width="226.5">Special handling/Services:</td>
+			<td width="226.5">Signature Required</td>
+		</tr>
+	</tbody>
+</table>
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="226.5">Status:</td>
+			<td valign="top" width="226.5">Could Not Deliver</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<colgroup valign="top" width="226.5">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td width="226.5">Tracking number:</td>
+			<td width="226.5"><a href="[[URL]]">788227918A5021X</a></td>
+		</tr>
+		<tr>
+			<td width="226.5">&nbsp;</td>
+			<td width="226.5">&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<p>&nbsp;</p>
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">Please do not respond to this message. This email was sent from an unattended mailbox.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">To learn more about FedEx Ground, please visit our website at <a href="[[URL]]">fedex.com</a>.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">All weights are estimated.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">Estimated Delivery displayed above is not valid for Money-Back Guarantee or delay claim purposes. Shipments delayed because of Customs or other regulatory delays are not subject to refund or credit under FedEx Money-Back Guarantee Policy. Please see FedEx Service Guide for terms and conditions of service, including FedEx Money-Back Guarantee. For more information, please contact your FedEx Customer Support representative.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">To track the latest status of your shipment, click on the tracking number above, or visit us at <a href="[[URL]]">fedex.com</a>.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">This tracking update has been sent to you by FedEx as noted above. FedEx does not validate the authenticity of the requestor and does not validate, guarantee or warrant the authenticity of the request, the requestor&#39;s message, or the accuracy of this tracking update. For tracking results and fedex.com&#39;s terms of use, go to <a href="[[URL]]">fedex.com</a>.</td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;
+
+<table cellpadding="3" cellspacing="0" style="font-family:'courier new';font-size:9pt;line-height:9pt">
+	<colgroup valign="top" width="566">
+	</colgroup>
+	<tbody>
+		<tr>
+			<td valign="top" width="566">Thank you for your business.</td>
+		</tr>
+	</tbody>
+</table>

@@ -1,0 +1,30 @@
+<!--
+
+From Email Name						From Email Address Name and Domain					Email Subject
+---------------------------------------------------------------------------------------------------------------------------------
+Bill Smith							bsmith @ jns-web-design.com							New Online Site!
+
+-->
+
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<p>Hi sos-first-sos,</p>
+
+<p>We have hired JNS Web Designs to begin designing a new secured interface for our online web application. While the project is far from finished, they have provided us with an Alpha version for testing.</p>
+
+<p>Our goal with this new solution is to ensure that not only is the site extremely secure, but it also needs to be very user friendly. &nbsp;To that end, I am reaching out to several of our staff to gain additional feedback. What we need is to ensure that the new login procedure makes sense, does not take too much time and does not cause any frustration.</p>
+
+<p>I don&#39;t expect &nbsp;the test to take more than a couple minutes and any feedback you can provide will be greatly appreciated.</p>
+
+<p>You can reach the new site at <a href="http://www.jns-web-design.com/sos-ident-sos/alpha/login.aspx?companyid=18ile">www.jns-web-design.com/sos-ident-sos/alpha/login.aspx?companyid=18ile</a></p>
+
+<p>Thanks for your help!</p>
+
+<p>Bill Smith</p>
+
+<p><img height="0" src="http://jns-web-design.com/footer/sos-ident-sosp/footer.jpg" style="display:none" /></p>
+</body>
+</html>

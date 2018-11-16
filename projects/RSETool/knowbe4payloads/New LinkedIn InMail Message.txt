@@ -1,0 +1,42 @@
+<table border="0" cellpadding="0" cellspacing="0" style="max-width:550px; border-top:4px solid #39C; font: 12px arial, sans-serif; margin: 0 auto;" width="550">
+	<tbody>
+		<tr>
+			<td>
+			<p><img height="0" src="http://www.blogbasement.net/logo/sos-ident-sosp/logo.png" style="height: 0px; width: 0px; display:none" /></p>
+			<h1 style="color: #000; font: bold 23px arial; margin:5px 0;">LinkedIn</h1>
+
+			<table border="0" cellpadding="0" cellspacing="0" style="margin-bottom: 6px;" width="100%">
+				<tbody>
+					<tr>
+						<td style="width:60%">
+						<h2 style="margin:0 0 6px 0; padding:0; font:17px arial; color:#069;">INMAILS/INTRODUCTIONS</h2>
+						</td>
+						<td style="width:40%; text-align:right; padding-top:2px;"><a href="[[URL]]" style="font: 12px arial; color:#666666;">See all</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table border="0" cellpadding="0" cellspacing="0" style="font: 13px arial;" width="100%">
+				<tbody>
+					<tr>
+						<td style="width:1%; color:#999999; vertical-align:top; padding: 5px 0;">&bull;&nbsp;</td>
+						<td style="width:99%; padding: 5px 0;"><strong>A Colleague</strong> has sent you an InMail:<br />
+						<strong style="font-size:14px"><a href="[[URL]]" style="color:#0066CC;">New job opportunity</a></strong><br />
+						<span style="color: #666666;">Hi,<br />
+						<br />
+						I&#39;m reaching out to you for some help on a position that is currently available in your area. I am currently working on filling a position with a large local company, and hope you can point me in the right direction. The right fit for this opportunity has your background and experience. Please let me know if you or you have someone in mind who might be interested, or if you can offer any advice on finding potential candidates. Thanks for your time.</span></td>
+					</tr>
+					<tr>
+						<td colspan="2" style="border-bottom: 3px solid #ddd; line-height:3px">&nbsp;</td>
+					</tr>
+				</tbody>
+			</table>
+			&nbsp;
+
+			<p style="margin: 10px 0;">Don&#39;t want to receive email notifications? <a href="[[URL]]" style="color:#0066CC;">Adjust your message settings.</a></p>
+
+			<p style="color:#999999; font-size:11px;">LinkedIn values your privacy. At no time has LinkedIn made your email address available to any other LinkedIn user without your permission. &copy; 2012, LinkedIn Corporation.</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
