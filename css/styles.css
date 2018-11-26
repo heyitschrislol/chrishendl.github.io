@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 * {
-	font-family: 'Bebas', 'Nobile';
+	font-family: Bebas, Nobile, sans-serif;
 	box-sizing: border-box;
 }
 html {
@@ -10,12 +10,12 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 body {
-	font-family: Bebas, Nobile, sans-serif;
+	font-family: Roboto, Nobile, sans-serif;
 	font-size: 14px;	 
 	margin: 0;
 }
 p {
-	font-family: Nobile, sans-serif;
+	font-family: Roboto, Nobile, sans-serif;
 	font-size: 14px;
 }
 h1 {
@@ -36,13 +36,13 @@ a {
 	box-sizing: border-box;
 	-webkit-display: flex;
 	display: flex;	
-	flex-flow: column nowrap;
+	flex-flow: column wrap;
 	max-width: 100%;	
 }
 .bannerlogo {
 	-webkit-display: flex;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	align-items: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -59,7 +59,7 @@ a {
 .logotext {
 	-webkit-display: flex;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-flow: column wrap;
 	align-items: center;
 	vertical-align: bottom;
 	line-height: 0;		
@@ -74,12 +74,12 @@ a {
 	text-shadow: 2px 2px #ddd;
 }
 .logotext p > a {
-	font-family: Aaargh, Bebas, sans-serif;
+	font-family: RobotoLight, sans-serif;
 	color: black;
 	letter-spacing: 1px;
 }
 #myContact {
-	font-family: Aaargh, Bebas, sans-serif;
+	font-family: RobotoLight, sans-serif;
 	font-weight: bold;
 	font-size: 1em;	
 	padding: 0px;
@@ -94,7 +94,7 @@ a {
 	margin-left: 10%;
 	-webkit-display: flex;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	list-style: none;
 }
 .banner-ul li {	
@@ -152,6 +152,24 @@ a {
 .main h2 {
 	text-shadow: none;
 }
+.main a {
+	font-family: Nobile, sans-serif;
+	background: transparent;
+	color: #3C1053;	
+	text-decoration: none;
+	font-weight: bold;
+}
+.main a:visited {
+	color: #999999;
+}
+.main a:hover {
+	color: #D29F13;
+}
+.main p {
+	text-indent: 40px;
+	margin-right: 15%;
+}
+
 #isds4125 a, #isds3110 a, #isds3200 a, #isds3105 a, #dCalc a, #sEase a, #rTool a {
 	color: fff3aa;
 	text-shadow:
