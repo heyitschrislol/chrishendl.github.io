@@ -192,7 +192,14 @@ a {
     .row, .banner-ul, .navbar {   
         flex-direction: column;
     }
-	.bannerlinks {
-		
+	.banner-ul {
+		margin: auto;
+	}
+	.banner-ul li {	
+		margin: auto;
+		text-align: center;	
+}
+	.main p {
+		margin: auto;
 	}
 }
