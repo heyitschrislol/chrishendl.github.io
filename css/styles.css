@@ -197,13 +197,14 @@ a {
 		align-content: center;
 	}
 	.banner-ul li {	
-		margin: auto;
+		margin: 0px 0px;
 		text-align: center;	
 }
 	.main p {
 		margin: auto;
 	}
-	.navlinks {
-		padding: auto;
+	.navlinks, .navlinks:hover, .navlinks:active {
+		padding: 5px 10px;
+		font-size: 20px;
 	}
 }
