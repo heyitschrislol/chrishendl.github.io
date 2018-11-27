@@ -19,9 +19,13 @@
   float: left;
   width: 25%;
 }
+.dc-img, .se-img, .rt-img {
+	width: 200px;
+	height: 133.33px;
+}
 
 /* The Modal (background) */
-.modal {
+.modalproj1, .modalproj2, .modalproj3 {
   display: none;
   position: fixed;
   z-index: 1;
@@ -61,13 +65,11 @@
   cursor: pointer;
 }
 
-.mySlides {
+.slides {
   display: none;
+  margin: auto;
 }
 
-.cursor {
-  cursor: pointer;
-}
 
 /* Next & previous buttons */
 .prev,

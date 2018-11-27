@@ -44,82 +44,251 @@
 			<button class="projbutton" id="rsetool" onclick="projC()"><span>RSE Tool</span></button>
 		</div>
 		<div class="main">
-			<div id="dCalc">
+			<div id="dCalc" class="main-tiles">
 				<h2>Depreciation Calculator</h2>
-				<p><a href="projects/DepreciationCalc/Depreciation Calculator.zip">Download .zip</a>
+				<p><a href="projects/DepreciationCalc/Depreciation Calculator.zip">Download (github)</a>
 				<div><strong>Program Description:</strong></div>
 				<p>Calculates depreciation using both the straight-line and double-declining methods</p>
 				<br>
-				<div><b>HOW: </b>This program was created using C# and Visual Studio</div>
-				<div><b>WHY: </b>The original intention behind writing this program was to help my girlfriend with her accounting homework. 
+				<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
+				<div><b>WHY: </b><span>The original intention behind writing this program was to help my girlfriend with her accounting homework. 
 				I thought I could use what I was learning in class to make something that would alleviate some of the repetitiveness of her accounting homework calculations. 
 				Truth be told, a large part of my motivation came from excitement at what I was learning in class, and I was rather anxious
-				to see what my newfound "knowledge" could do.</div>
+				to see what my newfound "knowledge" could do.</span></div>
 				<br />
 				<div class="main-thumbs">
 					<div class="main-gallery">
 						<div class="gallery">						
-							<img src="media/dcalc1.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(1)">
+							<img src="media/dcalc1.jpg" class="dc-img" alt="Depreciation Calculator" onclick="checkItem(1);openModal();currentSlide(1)">
 						</div>
 					</div>				
 					<div class="main-gallery">
 						<div class="gallery">
-							<img src="media/dcalc2.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(2)">
+							<img src="media/dcalc2.jpg" class="dc-img" alt="Depreciation Calculator" onclick="checkItem(1);openModal();currentSlide(2)">
 						</div>
 					</div>
 					<div class="main-gallery">
 						<div class="gallery">
-							<img src="media/dcalc3.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(3)">						
+							<img src="media/dcalc3.jpg" class="dc-img" alt="Depreciation Calculator" onclick="checkItem(1);openModal();currentSlide(3)">						
 						</div>
 					</div>
 				</div>
 				
-				
-				<div id="myModal" class="modal">
-					<span class="close cursor" onclick="closeModal()">&times;</span>
+				<!-- Lightbox -->
+				<div id="modalproj1" class="modalproj1">
+					<span class="close cursor" onclick="checkItem(1);closeModal()">&times;</span>
 					<div class="modal-content">
-						<div class="mySlides">
+						<div class="slides">
 							<div class="numbertext">1 / 3</div>
 							<img src="media/dcalc1.jpg" style="width:100%">
 						</div>
-						<div class="mySlides">
+						<div class="slides">
 							<div class="numbertext">2 / 3</div>
 							<img src="media/dcalc2.jpg" style="width:100%">
 						</div>
-						<div class="mySlides">
+						<div class="slides">
 							<div class="numbertext">3 / 3</div>
 							<img src="media/dcalc3.jpg" style="width:100%">
 						</div>
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="checkItem(1);plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="checkItem(1);plusSlides(1)">&#10095;</a>
+						
+						<!-- Caption text -->
 						<div class="caption-container">
-							<p id="caption"></p>
+							<p id="caption1"></p>
 						</div>
-						<div class="column">
-							<img class="demo cursor" src="media/dcalc1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Depreciation Calculator">
+						
+						<!-- Thumbnail image controls -->
+						<div class="gallery">
+							<img class="demo" src="media/dcalc1.jpg" style="width:50%" onclick="checkItem(1);currentSlide(1)" alt="Depreciation Calculator">
 						</div>
-						<div class="column">
-							<img class="demo cursor" src="media/dcalc2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Depreciation Calculator">
+						<div class="gallery">
+							<img class="demo" src="media/dcalc2.jpg" style="width:50%" onclick="checkItem(1);currentSlide(2)" alt="Depreciation Calculator">
 						</div>
-						<div class="column">
-							<img class="demo cursor" src="media/dcalc3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Depreciation Calculator">
+						<div class="gallery">
+							<img class="demo" src="media/dcalc3.jpg" style="width:50%" onclick="checkItem(1);currentSlide(3)" alt="Depreciation Calculator">
 						</div>    
 					</div>
 				</div>
 			</div>
-			<div id="sEase">
+			<div id="sEase" class="main-tiles">
 				<h2>ScriptEase</h2>	
-				<p><a href="projects/ScriptEase/ScriptEase.zip">Download .zip</a>
+				<p><a href="projects/ScriptEase/ScriptEase.zip">Download (github)</a>
 				<div><strong>Program Description:</strong></div>
 				<p>A tool to streamline and organize the many functions and procedures required for LEEP Help Desk employees.</p>
 				<br>
+				<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
+				<div><b>WHY: </b><span>The original intention behind writing this program was to help my girlfriend with her accounting homework. 
+				I thought I could use what I was learning in class to make something that would alleviate some of the repetitiveness of her accounting homework calculations. 
+				Truth be told, a large part of my motivation came from excitement at what I was learning in class, and I was rather anxious
+				to see what my newfound "knowledge" could do.</span></div>
+				<br />
+				<div class="main-thumbs">
+					<div class="main-gallery">
+						<div class="gallery">						
+							<img src="media/scriptease1.jpg" class="se-img" alt="ScriptEase" onclick="checkItem(2);openModal();currentSlide(1)">
+						</div>
+					</div>				
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/scriptease2.jpg" class="se-img" alt="ScriptEase" onclick="checkItem(2);openModal();currentSlide(2)">
+						</div>
+					</div>
+					<!-- <div class="main-gallery"> -->
+						<!-- <div class="gallery"> -->
+							<!-- <img src="media/scriptease3.jpg" class="se-img" alt="ScriptEase" onclick="checkItem(2);openModal();currentSlide(3)">						 -->
+						<!-- </div> -->
+					<!-- </div> -->
+				</div>
+				
+				<!-- Lightbox -->
+				<div id="modalproj2" class="modalproj2">
+					<span class="close cursor" onclick="checkItem(2);closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="slides">
+							<div class="numbertext">1 / 2</div>
+							<img src="media/scriptease1.jpg" style="width:100%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">2 / 2</div>
+							<img src="media/scriptease2.jpg" style="width:100%">
+						</div>
+						<!-- <div class="slides"> -->
+							<!-- <div class="numbertext">3 / 3</div> -->
+							<!-- <img src="media/scriptease3.jpg" style="width:100%"> -->
+						<!-- </div> -->
+						
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="checkItem(2);plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="checkItem(2);plusSlides(1)">&#10095;</a>
+						
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption2"></p>
+						</div>
+						
+						<!-- Thumbnail image controls -->
+						<div class="gallery">
+							<img class="demo" src="media/scriptease1.jpg" style="width:50%" onclick="checkItem(2);currentSlide(1)" alt="ScriptEase">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/scriptease2.jpg" style="width:50%" onclick="checkItem(2);currentSlide(2)" alt="ScriptEase">
+						</div>
+						<!-- <div class="gallery"> -->
+							<!-- <img class="demo" src="media/scriptease3.jpg" style="width:50%" onclick="checkItem(2);currentSlide(3)" alt="ScriptEase"> -->
+						<!-- </div>     -->
+					</div>
+				</div>
 			</div>
-			<div id="rTool">
+			<div id="rTool" class="main-tiles">
 				<h2>Trace RSE Tool</h2>
-				<p><a href="projects/RSETool/RSETool.zip">Download .zip</a>
+				<p><a href="projects/RSETool/RSETool.zip">Download (github)</a>
 				<div><strong>Program Description:</strong></div>
-				<p>A tool to streamline some of the work involved in running, recording, and reporting remote social engineering projects</p>
+				<p>A tool to manage and organize some of the work involved in running, recording, and reporting remote social engineering projects</p>
 				<br>
+				<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
+				<div><b>WHY: </b><span>The goal of the RSE Tool was to help TraceSecurity employees manage remote social engineering campaigns
+				more easily. This tool can extract project scoping data from documents (such as client employee names, phone numbers, and email addresses)
+				and reorganize/reformat/relabel the information so that it is readable and usable by other programs. This feature is particularly useful 
+				for projects where the scoping information received from the client is poorly organized and/or labeled, and would otherwise force the analyst
+				to copy/paste items line-by-line.</span></div>
+				<div style="text-indent: 30px;"><p>Another useful feature of this program is that it allows the user to quickly locate the desired email template and
+				copy its HTML code to the computer clipboard. It is also capable of adding new templates (locally) to its list for use in the future.</p></div>
+				<br />
+				<div class="main-thumbs">
+					<div class="main-gallery">
+						<div class="gallery">						
+							<img src="media/rsetool1.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(1)">
+						</div>
+					</div>				
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/rsetool2.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(2)">
+						</div>
+					</div>
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/rsetool3.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(3)">						
+						</div>
+					</div>
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/rsetool4.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(4)">						
+						</div>
+					</div>
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/rsetool5.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(5)">						
+						</div>
+					</div>
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/rsetool6.jpg" class="rt-img" alt="RSE Tool" onclick="checkItem(3);openModal();currentSlide(6)">						
+						</div>
+					</div>
+				</div>
+				
+				<!-- Lightbox -->
+				<div id="modalproj3" class="modalproj3">
+					<span class="close cursor" onclick="checkItem(3);closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="slides">
+							<div class="numbertext">1 / 6</div>
+							<img src="media/rsetool1.jpg" style="width:60%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">2 / 6</div>
+							<img src="media/rsetool2.jpg" style="width:60%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">3 / 6</div>
+							<img src="media/rsetool3.jpg" style="width:60%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">4 / 6</div>
+							<img src="media/rsetool4.jpg" style="width:60%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">5 / 6</div>
+							<img src="media/rsetool5.jpg" style="width:60%">
+						</div>
+						<div class="slides">
+							<div class="numbertext">6 / 6</div>
+							<img src="media/rsetool6.jpg" style="width:60%">
+						</div>
+						
+						<!-- Next/previous controls -->
+						<a class="prev" onclick="checkItem(3);plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="checkItem(3);plusSlides(1)">&#10095;</a>
+						
+						<!-- Caption text -->
+						<div class="caption-container">
+							<p id="caption3"></p>
+						</div>
+						
+						<!-- Thumbnail image controls -->
+						<div class="gallery">
+							<img class="demo" src="media/rsetool1.jpg" style="width:50%" onclick="checkItem(3);currentSlide(1)" alt="RSE Tool">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/rsetool2.jpg" style="width:50%" onclick="checkItem(3);currentSlide(2)" alt="RSE Tool">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/rsetool3.jpg" style="width:50%" onclick="checkItem(3);currentSlide(3)" alt="RSE Tool">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/rsetool4.jpg" style="width:50%" onclick="checkItem(3);currentSlide(4)" alt="RSE Tool">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/rsetool5.jpg" style="width:50%" onclick="checkItem(3);currentSlide(5)" alt="RSE Tool">
+						</div>
+						<div class="gallery">
+							<img class="demo" src="media/rsetool6.jpg" style="width:50%" onclick="checkItem(3);currentSlide(6)" alt="RSE Tool">
+						</div>
+					</div>
+				</div>
 			</div>			
 		</div>
 	</div>

@@ -155,3 +155,25 @@
 	font-weight: normal;
     font-style: italic;
 }
+
+/*****************/
+/* ROBOTO MEDIUM */
+/*****************/
+@font-face {
+	font-family: 'RobotoMedium';
+	src: url('../fonts/Roboto/Roboto-Medium.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Roboto/Roboto-Medium.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Roboto/Roboto-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Roboto/Roboto-Medium.svg#robotoitalic') format('svg');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+	font-family: 'RobotoMedium';
+	src: url('../fonts/Roboto/Roboto-MediumItalic.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/Roboto/Roboto-MediumItalic.woff') format('woff'), /* Pretty Modern Browsers */
+		 url('../fonts/Roboto/Roboto-MediumItalic.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/Roboto/Roboto-MediumItalic.svg#robotoitalic') format('svg');
+	font-weight: normal;
+    font-style: italic;
+}

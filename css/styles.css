@@ -153,11 +153,12 @@ a {
 	text-shadow: none;
 }
 .main a {
-	font-family: Nobile, sans-serif;
+	font-family: RobotoLight, Nobile, sans-serif;
 	background: transparent;
 	color: #3C1053;	
 	text-decoration: none;
-	font-weight: bold;
+	padding: 4px;
+	border: 2px solid #3C1053;
 }
 .main a:visited {
 	color: #999999;
@@ -166,17 +167,19 @@ a {
 	color: #D29F13;
 }
 .main p {
+	font-family: RobotoLight, Roboto, sans-serif;
+	font-size: 14px;
 	text-indent: 40px;
 	margin-right: 15%;
 }
-
+.main-tiles span {
+	font-family: RobotoLight, Roboto, sans-serif;
+	font-size: 14px;
+	margin-left: 1%;
+}
 #isds4125 a, #isds3110 a, #isds3200 a, #isds3105 a, #dCalc a, #sEase a, #rTool a {
 	color: fff3aa;
-	text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
+	
 }
 
 
