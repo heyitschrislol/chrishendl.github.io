@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>Personal Projects - Chris Hendl</title>
+   <link href="css/styles.css" rel="stylesheet" />
+   <link href="css/fontfaces.css" rel="stylesheet" />
+   <link href="css/buttons.css" rel="stylesheet" />
+   <link href="css/images.css" rel="stylesheet" />
+   <script src="js/ch_courses.js"></script>
+   <script src="js/ch_images.js"></script>
+   
+</head>
+<body>
+	<div class="bannertop" role="navigation">
+		<div class="bannerlogo">
+			<div class="logoimg">
+				<img src="media\chrishendl_head.jpg">
+			</div>
+			<div class="logotext">
+				<p>Chris Hendl</p>
+				<p id="myContact"><a href="mailto:chendl4@lsu.edu">chendl4@lsu.edu</a> | (225) 571-6108</p>
+			</div>			
+		</div>
+		<div class="bannerlinks">
+			<ul class="banner-ul">
+				<li><a href="index.html" class="navlinks" title="Chris Hendl">About</a></li>
+				<li><a href="courses.html" class="navlinks" title="Coursework">Coursework</a></li>
+				<li><a href="projects.html" class="navlinks" title="Projects">Personal Projects</a></li>
+				<li><a href="resume.html" class="navlinks" title="Resume">Resume</a></li>				
+			</ul>			
+		</div>
+	</div>
+	
+	
+	<!-- MAIN CONTENT -->
+	<!-- The flexible grid (content) -->
+	<div class="row">
+		<div class="side">
+			<h2>Projects</h2>			
+			<button class="projbutton" id="depr" onclick="projA()"><span>Depreciation Calculator</span></button>
+			<button class="projbutton" id="scrtez" onclick="projB()"><span>ScriptEase</span></button>
+			<button class="projbutton" id="rsetool" onclick="projC()"><span>RSE Tool</span></button>
+		</div>
+		<div class="main">
+			<div id="dCalc">
+				<h2>Depreciation Calculator</h2>
+				<p><a href="projects/DepreciationCalc/Depreciation Calculator.zip">Download .zip</a>
+				<div><strong>Program Description:</strong></div>
+				<p>Calculates depreciation using both the straight-line and double-declining methods</p>
+				<br>
+				<div><b>HOW: </b>This program was created using C# and Visual Studio</div>
+				<div><b>WHY: </b>The original intention behind writing this program was to help my girlfriend with her accounting homework. 
+				I thought I could use what I was learning in class to make something that would alleviate some of the repetitiveness of her accounting homework calculations. 
+				Truth be told, a large part of my motivation came from excitement at what I was learning in class, and I was rather anxious
+				to see what my newfound "knowledge" could do.</div>
+				<br />
+				<div class="main-thumbs">
+					<div class="main-gallery">
+						<div class="gallery">						
+							<img src="media/dcalc1.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(1)">
+						</div>
+					</div>				
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/dcalc2.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(2)">
+						</div>
+					</div>
+					<div class="main-gallery">
+						<div class="gallery">
+							<img src="media/dcalc3.jpg" alt="Depreciation Calculator" width="200" height="133.33" onclick="openModal();currentSlide(3)">						
+						</div>
+					</div>
+				</div>
+				
+				
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src="media/dcalc1.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src="media/dcalc2.jpg" style="width:100%">
+						</div>
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src="media/dcalc3.jpg" style="width:100%">
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="media/dcalc1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Depreciation Calculator">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="media/dcalc2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Depreciation Calculator">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="media/dcalc3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Depreciation Calculator">
+						</div>    
+					</div>
+				</div>
+			</div>
+			<div id="sEase">
+				<h2>ScriptEase</h2>	
+				<p><a href="projects/ScriptEase/ScriptEase.zip">Download .zip</a>
+				<div><strong>Program Description:</strong></div>
+				<p>A tool to streamline and organize the many functions and procedures required for LEEP Help Desk employees.</p>
+				<br>
+			</div>
+			<div id="rTool">
+				<h2>Trace RSE Tool</h2>
+				<p><a href="projects/RSETool/RSETool.zip">Download .zip</a>
+				<div><strong>Program Description:</strong></div>
+				<p>A tool to streamline some of the work involved in running, recording, and reporting remote social engineering projects</p>
+				<br>
+			</div>			
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+		<h2></h2>
+	</div>
