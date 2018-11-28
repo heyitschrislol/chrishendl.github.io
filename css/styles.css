@@ -1,5 +1,19 @@
 @charset "utf-8";
 
+/*******************/
+/*TEXT STROKE CODE**/
+/*******************/
+/*
+
+text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	 
+*/
+
+
 * {
 	font-family: Bebas, Nobile, sans-serif;
 	box-sizing: border-box;
@@ -155,16 +169,21 @@ a {
 .main a {
 	font-family: RobotoLight, Nobile, sans-serif;
 	background: transparent;
-	color: #3C1053;	
+	color: #9050b2;	
 	text-decoration: none;
 	padding: 4px;
 	border: 2px solid #3C1053;
+	
 }
 .main a:visited {
-	color: #999999;
+	color: #6a5a72;
+	text-shadow: none;
 }
 .main a:hover {
 	color: #D29F13;
+}
+#about a {
+	border: none;
 }
 .main p {
 	font-family: RobotoLight, Roboto, sans-serif;
