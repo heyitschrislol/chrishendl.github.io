@@ -172,7 +172,7 @@ a {
 	color: #9050b2;	
 	text-decoration: none;
 	padding: 4px;
-	border: 2px solid #3C1053;
+	/* border: 2px solid #3C1053; */
 	
 }
 .main a:visited {
