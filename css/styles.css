@@ -217,6 +217,9 @@ a {
 
 }
 @media screen and (max-width: 768px) {
+	.bannerlinks {
+		display: none;
+	}
 	[class*="row"], [class*="banner"], [class*="bannerlinks"], [class*="main"] {
 		width: 100%;
 	}
