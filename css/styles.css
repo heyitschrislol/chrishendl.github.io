@@ -100,6 +100,7 @@ a {
 	letter-spacing: 1px;
 }
 .bannerlinks-m {
+	width: 100%;
 	display: flex;
 	flex-flow: column wrap;
 	background-image: linear-gradient(to bottom, #3C1053, #9050b2);	
@@ -158,7 +159,9 @@ a {
 	column-count: 2;
 	-webkit-display: flex;
     display: flex;
-    flex-flow: row nowrap;
+	flex-flow: row wrap;
+	align-items: stretch;
+	justify-content: center;
 }
 
 /* Create two unequal columns that sits next to each other */
