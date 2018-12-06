@@ -30,32 +30,24 @@
 				<li><a href="resume.html" class="navlinks" title="Resume">Resume</a></li>				
 			</ul>			
 		</div>
-
+		<!--BEGIN NAV FOR MOBILE-->	
 		<nav class="sidebar" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-			<a href="javascript:void(0)" onclick="xclose()" class="zbutton" style="width:100%;font-size:22px">Close Menu</a>
-			<div class="container">
-			  <h3 class="padding-64">
-			</div>
+			<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m" style="width:100%;font-size:22px">Close Menu</a>			
 			<div class="bannerlinks-m">
 				<a href="index.html" onclick="xclose()" class="navlinks navlinks-m" title="Chris Hendl">About</a></li>
 				<a href="courses.html" onclick="xclose()"class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
 				<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal Projects</a></li>
 				<a href="resume.html" onclick="xclose()" class="navlinks navlinks-m" title="Resume">Resume</a></li>
 			</div>
-		  </nav>
+		</nav>
 		  
-		  <!-- Top menu on small screens -->
-		  <header class="container">
-			<a href="javascript:void(0)" class="zbutton" onclick="xopen()">☰</a>
-			<span>Chris Hendl</span>
-		  </header>
+		<!-- Top menu on small screens -->
+		<header class="container">
+			<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>			
+		</header>
 		  
-		  <!-- Overlay effect when opening sidebar on small screens -->
-		  <div class="overlay hide-large" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-
-
-		
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div class="overlay" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>		
 	</div>
 	
 	

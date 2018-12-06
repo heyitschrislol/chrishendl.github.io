@@ -99,6 +99,13 @@ a {
 	padding: 0px;
 	letter-spacing: 1px;
 }
+.bannerlinks-m {
+	display: flex;
+	flex-flow: column wrap;
+	background-image: linear-gradient(to bottom, #3C1053, #9050b2);	
+	line-height: 1em;
+	align-content: left;
+}
 .bannerlinks {	
 	width: 100%;
 	background-image: linear-gradient(to right, #3C1053, #9050b2, white);	
@@ -136,6 +143,11 @@ a {
 	font-size: 14px;
 	font-weight: bold;
 	color: #fff3aa;
+}
+#openNav {
+	font-size: 40px;
+	font-weight: bold;
+	color: #9050b2;
 }
 
 
@@ -217,16 +229,16 @@ a {
 
 }
 @media screen and (max-width: 768px) {
-	.bannerlinks {
+	.bannerlinks, .sidebar {
 		display: none;
 	}
 	[class*="row"], [class*="banner"], [class*="bannerlinks"], [class*="main"] {
 		width: 100%;
 	}
 	
-	/* .row, .banner-ul, .navbar {   
+	.row, .banner-ul, .navbar {   
         flex-flow: column wrap;
-    } */
+    }
 	.banner-ul {
 		margin: auto;
 		align-content: center;
