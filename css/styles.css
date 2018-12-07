@@ -145,17 +145,14 @@ a {
 	font-weight: bold;
 	color: #fff3aa;
 }
-#openNav {
-	font-size: 40px;
-	font-weight: bold;
-	color: #9050b2;
-}
+
+
 
 
 
 /* MAIN CONTENT */
 /* Column container */
-.row {	
+.row {
 	column-count: 2;
 	-webkit-display: flex;
     display: flex;
@@ -219,6 +216,8 @@ a {
 
 /* Footer */
 .footer {
+	margin: auto;
+	max-width: 100%;
     padding: 20px;
     text-align: center;
     background: #ddd;
@@ -232,13 +231,38 @@ a {
 
 }
 @media screen and (max-width: 768px) {
-	.bannerlinks, .sidebar {
+	/*	MOBILE NAV	*/	
+	.sidebar {
 		display: none;
+		z-index: 3;
+		width: 70%;
+		font-weight: bold;		
 	}
-	[class*="row"], [class*="banner"], [class*="bannerlinks"], [class*="main"] {
+	.bannerlinks {
+		display: none;		
+	}
+	.navlinks-m {
+		width: 100%;
+		font-size: 22px;
+		transition: display 0.5s;
+	}
+	#openNav {
+		font-size: 40px;
+		font-weight: bold;
+		color: #9050b2;
+	}
+
+	/* TRANSITION */
+	#mySidebar, #myOverlay {
+		transition: display 0.5s;
+	}
+
+	.side {
+		flex: 100%, 0 100%;
+		margin: auto;
 		width: 100%;
 	}
-	
+
 	.row, .banner-ul, .navbar {   
         flex-flow: column wrap;
     }
@@ -257,4 +281,8 @@ a {
 		padding: 5px 10px;
 		font-size: 20px;
 	}
+
+	/* [class*="row"], [class*="banner"], [class*="bannerlinks"], [class*="main"]{
+		width: 100%;
+	} */
 }
