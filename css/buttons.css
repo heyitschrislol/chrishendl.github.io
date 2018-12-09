@@ -22,14 +22,17 @@
   flex-flow: column nowrap;  
 }
 .sidebutton {
-  display: inline-block;  
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
   border-radius: 4px;
   background-image: linear-gradient(to right, #3C1053, #9050b2);	
   border: none;
   color: #FFFFFF;
   text-align: center;
   font-size: 24px;
-  padding: 5px;
+  padding: 0px 5px 0px 5px;
   width: 200px;
   height: 2.5em;
   word-spacing: 4px;
@@ -38,30 +41,37 @@
   cursor: pointer;
   margin: 3px;
 }
-
-.sidebutton span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+.sidebutton span {    
+    margin: 0;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0;
+    transition: all 0.5s;
 }
-
-.sidebutton span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.sidebutton div, .sidebutton p {    
+    margin: 0;
+    line-height: 1em;
+    word-spacing: 1px;    
+    opacity: 0; 
+    position: relative;
+    font-size: 1px;
+    padding: 0;
+    transition: all 0.5s;
 }
-
+@media screen and (min-width: 768px) {
+.sidebutton:hover {
+  
+}
 .sidebutton:hover span {
-  padding-right: 25px;
+  padding-bottom: 5px;
 }
-
-.sidebutton:hover span:after {
-  opacity: 1;
-  right: 0;
+.sidebutton:hover div, .sidebutton:hover p {
+    display: inline-block;
+    font-size: 10px;
+    align-self: bottom;
+    opacity: 1;
+  }
 }
 
 /* DISPLAYS CONTENT THAT WAS CLICKED */
@@ -86,12 +96,35 @@
     justify-content: center;
     width: 100%;
   }
-  .sidebutton {
+  .sidebutton-m {
+    flex-flow: row nowrap;
     font-size: 16px;
-    height: 1.5em;
+    height: 2em;
     margin: 1px;
     padding: 0px;
     text-align: center;
     width: 95%;
+    transition: all 0.2s;
+  }
+  .sidebutton-m:hover {
+    background-image: linear-gradient(to right,#9050b2, #ffd314);
+  }
+  .sidebutton-m span {
+    display: block;
+    float: left;
+    opacity: 1;
+    transition: 0s;
+  }
+  .sidebutton-m p {
+    text-align: right;
+  }
+  .sidebutton div {
+    width: 60%;
+  }
+  .sidebutton-m div, .sidebutton-m p {
+    font-size: 11px;
+    margin: 3px;
+    transition: 0s;
+    opacity: 1;
   }
 }
