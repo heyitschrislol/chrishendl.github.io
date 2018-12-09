@@ -61,7 +61,7 @@
 }
 @media screen and (min-width: 768px) {
 .sidebutton:hover {
-  
+  border: 2px solid #ffd314;
 }
 .sidebutton:hover span {
   padding-bottom: 5px;
@@ -104,7 +104,7 @@
     padding: 0px;
     text-align: center;
     width: 95%;
-    transition: all 0.2s;
+    transition: background-image 0.5s;
   }
   .sidebutton-m:hover {
     background-image: linear-gradient(to right,#9050b2, #ffd314);
