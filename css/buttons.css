@@ -1,9 +1,12 @@
 @charset "utf-8";
 
 .side {
+  -webkit-flex: 10%;
   flex: 10%;
-  background-color: #f1f1f1;   
+  background-color: #f1f1f1;
+  -webkit-display: flex;   
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
 	background-color: #ddd;
 }
@@ -13,7 +16,9 @@
 	text-align: center;	
 }
 .sidebuttons {
+  -webkit-display: flex;
   display: flex;
+  -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;  
 }
 .sidebutton {
@@ -66,8 +71,9 @@
 
 @media screen and (max-width: 768px) {
   .side {
-    -ms-flex-flow: column nowrap;
+    -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
+    -webkit-flex: 100%, 0 100%;
     flex: 100%, 0 100%;
     justify-content: center;
     padding: 0;
@@ -75,6 +81,7 @@
 		width: 100%;
   }
   .sidebuttons {
+    -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: center;
     width: 100%;
