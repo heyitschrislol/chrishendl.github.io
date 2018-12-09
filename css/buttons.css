@@ -31,10 +31,10 @@
   border: none;
   color: #FFFFFF;
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   padding: 0px 5px 0px 5px;
   width: 200px;
-  height: 2.5em;
+  height: 2em;
   word-spacing: 4px;
   line-height: 1em;
   transition: all 0.5s;
@@ -62,15 +62,16 @@
 @media screen and (min-width: 768px) {
 .sidebutton:hover {
   border: 2px solid #ffd314;
+  padding-bottom: 2px;
 }
 .sidebutton:hover span {
-  padding-bottom: 5px;
+  padding-bottom: 1px;
 }
 .sidebutton:hover div, .sidebutton:hover p {
     display: inline-block;
-    font-size: 10px;
-    align-self: bottom;
+    font-size: 8px;
     opacity: 1;
+    
   }
 }
 
