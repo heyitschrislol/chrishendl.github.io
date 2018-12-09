@@ -156,17 +156,14 @@ a {
 	column-count: 2;
 	-webkit-display: flex;
     display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	align-items: stretch;
 	justify-content: center;
 }
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
-.side {
-    flex: 10%;
-    background-color: #f1f1f1;    
-}
+
 
 /* Main column */
 .main {	
@@ -257,11 +254,7 @@ a {
 		transition: display 0.5s;
 	}
 
-	.side {
-		flex: 100%, 0 100%;
-		margin: auto;
-		width: 100%;
-	}
+	
 
 	.row, .banner-ul, .navbar {   
         flex-flow: column wrap;
