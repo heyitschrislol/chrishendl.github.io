@@ -34,7 +34,7 @@
   font-size: 18px;
   padding: 0px 5px 0px 5px;
   width: 200px;
-  height: 2em;
+  height: 2.3em;
   word-spacing: 4px;
   line-height: 1em;
   transition: all 0.5s;
@@ -73,6 +73,7 @@
     opacity: 1;
     
   }
+  
 }
 
 /* DISPLAYS CONTENT THAT WAS CLICKED */
