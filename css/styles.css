@@ -157,6 +157,7 @@ a {
 
 
 
+
 /* MAIN CONTENT */
 /* Column container */
 .row {
@@ -168,6 +169,7 @@ a {
 	align-items: stretch;
 	justify-content: center;
 }
+
 
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
@@ -218,6 +220,7 @@ a {
 	font-size: 14px;
 	margin-left: 1%;
 }
+
 #isds4125 a, #isds3110 a, #isds3200 a, #isds3105 a, #dCalc a, #sEase a, #rTool a {
 	color: fff3aa;
 	

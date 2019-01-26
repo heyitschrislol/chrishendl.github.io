@@ -8,18 +8,49 @@
   display: flex;
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
-	background-color: #ddd;
+  background-color: #ddd;
+  
 }
 .side h2, .sidelinks {
 	color: #3C1053;
 	font-family: Bebas, sans-serif;
-	text-align: center;	
+  text-align: center;	
 }
+#special {
+  margin: auto;
+}
+#subtxt {
+  font-size: 10px;
+  font-family: RobotoMedium, Nobile, sans-serif;
+  font-style: italic;
+  text-align: center;
+  align-items: flex-start;
+  margin: auto;
+  -webkit-animation-name: construction;
+  -webkit-animation-duration: 2s;
+  animation-name: construction;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes construction {
+  0% {color: #353535;}
+  50% {color: rgb(172, 119, 4);}
+  100% {color: #353535;}
+}
+
+/* Standard syntax */
+@keyframes construction {
+  0% {color: #353535;}
+  50% {color: rgb(172, 119, 4);}
+  100% {color: #353535;}
+}
+
 .sidebuttons {
   -webkit-display: flex;
   display: flex;
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;  
+  margin-top: 10px;
 }
 .sidebutton {
   display: flex;
