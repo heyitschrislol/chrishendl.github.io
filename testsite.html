@@ -4,7 +4,7 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Home - Chris Hendl</title>
-   <link href="css/styles.css" rel="stylesheet" />
+   <link href="css/test.css" rel="stylesheet" />
    <link href="css/fontfaces.css" rel="stylesheet" />
    <link href="css/buttons.css" rel="stylesheet" />
    <script src="js/ch_sidebar.js"></script>
@@ -15,26 +15,24 @@
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** LOGO CONTENT ************************************************** -->
 	<!-- ********************************************************************************************************* -->
-	
 	<div class="bannertop" role="navigation">
 		<div class="logotext">
 			<p>Chris Hendl</p>
 			<p id="myContact"><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> | (225) 571-6108</p>
-		</div>		
-	</div>
-
+		</div>
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** SITE NAV ************************************************** -->
 	<!-- ********************************************************************************************************* -->
-	<div class="nav nav-s">
-		<ul class="nav-ul">
+
+	<div class="bannerlinks bannerlinks-s">
+		<ul class="banner-ul">
 			<li>
-				<div class="navitems" id="homelink">
+				<div class="nav" id="homelink">
 					<a href="index.html" class="navlinks" title="Chris Hendl">About</a>
 				</div>
 			</li>
 			<li>
-				<div class="navitems" id="courselink">
+				<div class="nav" id="courselink">
 					<a href="courses.html" class="navlinks" title="Coursework">Coursework Examples</a>
 					<div class="dropdown">
 						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="courseA()"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
@@ -45,7 +43,7 @@
 				</div>
 			</li>
 			<li>
-				<div class="navitems" id="projectlink">
+				<div class="nav" id="projectlink">
 					<a href="projects.html" class="navlinks" title="Projects">Personal Projects</a>
 					<div class="dropdown">
 						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="projA()"><span>Depreciation Calculator</span></button>
@@ -55,30 +53,32 @@
 				</div>
 			</li>
 			<li>
-				<div class="navitems" id="resumelink">
+				<div class="nav" id="resumelink">
 					<a href="resume.html" class="navlinks" title="Resume">Resume</a>
 				</div>
 			</li>				
 		</ul>			
 	</div>
-	<!--BEGIN NAV FOR MOBILE-->	
-	<nav class="sidebar" id="mySidebar" onclick="xclose()"><br>
-		<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m" >Close Menu</a>			
-		<div class="nav-m">
-			<a href="index.html" onclick="xclose()" class="navlinks navlinks-m" title="Chris Hendl">About</a></li>
-			<a href="courses.html" onclick="xclose()"class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
-			<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal Projects</a></li>
-			<a href="resume.html" onclick="xclose()" class="navlinks navlinks-m" title="Resume">Resume</a></li>
-		</div>
-	</nav>
-	  
-	<!-- Top menu on small screens -->
-	<header class="container">
-		<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>			
-	</header>
-	  
-	<!-- Overlay effect when opening sidebar on small screens -->
-	<div class="overlay" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+		<!--BEGIN NAV FOR MOBILE-->	
+		<nav class="sidebar" id="mySidebar" onclick="xclose()"><br>
+			<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m" >Close Menu</a>			
+			<div class="bannerlinks-m">
+				<a href="index.html" onclick="xclose()" class="navlinks navlinks-m" title="Chris Hendl">About</a></li>
+				<a href="courses.html" onclick="xclose()"class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
+				<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal Projects</a></li>
+				<a href="resume.html" onclick="xclose()" class="navlinks navlinks-m" title="Resume">Resume</a></li>
+			</div>
+		</nav>
+		  
+		<!-- Top menu on small screens -->
+		<header class="container">
+			<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>			
+		</header>
+		  
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div class="overlay" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>		
+	</div>
+	
 
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** MAIN CONTENT ************************************************** -->

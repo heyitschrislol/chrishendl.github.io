@@ -16,14 +16,17 @@
 	font-family: Bebas, sans-serif;
   text-align: center;	
 }
-#special {
+.contentheading {
   margin: auto;
+}
+.mobileheading {
+  display: none;
 }
 #subtxt {
   font-size: 10px;
   font-family: RobotoMedium, Nobile, sans-serif;
   font-style: italic;
-  text-align: center;
+  text-align: left;
   align-items: flex-start;
   margin: auto;
   -webkit-animation-name: construction;
@@ -45,13 +48,12 @@
   100% {color: #353535;}
 }
 
+
 .sidebuttons {
-  -webkit-display: flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;  
+  display: none;
   margin-top: 10px;
 }
+
 .sidebutton {
   display: flex;
   flex-flow: column nowrap;
@@ -112,7 +114,7 @@
 	display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .side {
     -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
@@ -123,7 +125,14 @@
 		margin: 0;
 		width: 100%;
   }
+  .mobileheading {
+    display: block;
+  }
+  .contentheading, #subtxt {
+    display: none;
+  }
   .sidebuttons {
+    display: flex;
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: center;

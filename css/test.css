@@ -1,47 +1,217 @@
 @charset "utf-8";
 
-.side {
-  -webkit-flex: 10%;
-  flex: 10%;
-  background-color: #f1f1f1;
-  -webkit-display: flex;   
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-	background-color: #ddd;
+/*******************/
+/*TEXT STROKE CODE**/
+/*******************/
+/*
+
+text-shadow:
+   -1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+	 
+*/
+
+
+* {
+	font-family: Bebas, Nobile, sans-serif;
+	box-sizing: border-box;
 }
-.side h2, .sidelinks {
-	color: #3C1053;
-	font-family: Bebas, sans-serif;
+html {
+	
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	font-family: Roboto, Nobile, sans-serif;
+	font-size: 14px;	 
+	margin: 0;
+}
+p {
+	font-family: Roboto, Nobile, sans-serif;
+	font-size: 14px;
+}
+h1 {
+	text-shadow: 2px 2px #ddd;
+}
+h2 {
+	text-shadow: 2px 2px #ddd;
+}
+a {
+	background: transparent;
+	color: #dddddd;	
+	text-decoration: none;
+	font-weight: bold;
+}
+
+/* BANNER */
+.bannertop {
+	box-sizing: border-box;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: column nowrap;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+	width: 100%;	
+}
+/* .bannerlogo {
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	align-items: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 10%;
+} */
+/* .logoimg {
+	float: left;
+	margin-right: 20px;
+}
+.logoimg img {		
+    padding: 0px;
+    width: 100px;
+} */
+.logotext {
+	display: block;
+	position: relative;
+	float: left;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-left: 14%;
+	line-height: 0;		
+	padding: 0px;
+}
+.logotext p {
+	text-align: center;
+	font-family: Bebas, Nobile, sans-serif;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size: 3.5em;
+	text-shadow: 2px 2px #ddd;
+}
+.logotext p > a {
+	font-family: RobotoLight, sans-serif;
+	color: black;
+	letter-spacing: 1px;
+}
+#myContact {
+	font-family: RobotoLight, sans-serif;
+	font-weight: bold;
+	font-size: 1em;	
+	padding: 0px;
+	letter-spacing: 1px;
+}
+.nav-m {
+	width: 100%;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: column wrap;
+	flex-flow: column wrap;
+	background-image: linear-gradient(to bottom, #3C1053, #9050b2);	
+	line-height: 1em;
+	align-content: left;
+}
+.nav {	
+	width: 100%;
+	background-image: linear-gradient(to right, #3C1053, #9050b2, white);	
+	line-height: 1em;
+}
+.banner-ul {
+	margin-left: 10%;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row nowrap;
+	list-style: none;
+}
+.banner-ul li {	
+	margin: 0px 10px 0px 0px;
 	text-align: center;	
 }
-.sidebuttons {
-  -webkit-display: flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;  
+
+.navlinks {
+	font-size: 12px;
+	padding: 15px 15px;
+	color: #efefef;
+	-webkit-transition: font-size 1s, font-weight 1s, color 1s;
+	transition: font-size 1s, font-weight 1s, color 1s;
+	/*	add stroke effect to text  */
+	
 }
-.sidebutton {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  background-image: linear-gradient(to right, #3C1053, #9050b2);	
-  border: none;
-  color: #FFFFFF;
-  text-align: center;
-  font-size: 24px;
-  padding: 0px 5px 0px 5px;
-  width: 200px;
-  height: 2.5em;
-  word-spacing: 4px;
-  line-height: 1em;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 3px;
+.navlinks:hover {	
+	background-image: linear-gradient(to top, #d9d2dd, white);	
+	text-decoration: none;	
+	font-size: 14px;
+	font-weight: bold;
+	color: #3C1053;	
 }
-.sidebutton span {    
+.navlinks:active {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff3aa;
+}
+
+.nav {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-image: linear-gradient(to top, #d9d2dd, white);	
+	width: 0px;
+	height: 0px;
+	justify-content: center;
+	align-items: flex-start;
+	border-radius: 4px;
+	border: none;
+  	margin: 42px 0px 0px 0px;
+	padding: 0px;
+	word-spacing: 4px;
+	line-height: 1em;
+	transition: width 0.5s height 0.5s;
+	cursor: pointer;
+}
+#courselink:hover .dropdown {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: stretch;
+	width: 200px;
+	height: 8.0em;
+}
+#projectlink:hover .dropdown {
+	display: flex;
+	flex-flow: column nowrap;
+	align-content: stretch;
+	width: 200px;
+	height: 6.0em;
+}
+
+.btnlinks {
+	background-image: linear-gradient(to top, #d9d2dd, white);	
+	border: none;
+	color: #3C1053;	
+	text-align: left;
+	align-items: flex-start;
+  	font-size: 12px;
+  	padding: 0px 5px;
+  	width: 200px;
+  	height: 2.5em;
+  	word-spacing: 4px;
+  	line-height: 1em;
+  	transition: all 0.5s;
+  	cursor: pointer;
+}
+.btnlinks:hover {
+	background-image: linear-gradient(to right, #3C1053, #9050b2);
+	color: #FFFFFF;
+	text-decoration: none;	
+	font-weight: bold;	
+}
+.btnlinks span {    
     margin: 0;
     cursor: pointer;
     display: inline-block;
@@ -49,7 +219,7 @@
     padding-bottom: 0;
     transition: all 0.5s;
 }
-.sidebutton p {    
+.btnlinks div, .btnlinks p {    
     margin: 0;
     line-height: 1em;
     word-spacing: 1px;    
@@ -59,44 +229,147 @@
     padding: 0;
     transition: all 0.5s;
 }
-.sidebutton:hover span {
-  padding-bottom: 5px;
-}
-.sidebutton:hover p {
-    display: inline-block;
-    font-size: 10px;
-    align-self: bottom;
-    opacity: 1;
-  }
 
-/* DISPLAYS CONTENT THAT WAS CLICKED */
-#isds4125, #isds3110, #isds3200, #isds3105, #dCalc, #sEase, #rTool {
-	display: none;
+
+
+
+
+/* MAIN CONTENT */
+/* Column container */
+.row {
+	column-count: 2;
+	-webkit-display: flex;
+	display: flex;
+	-webkit-flex-flow: row nowrap;
+	flex-flow: row nowrap;
+	align-items: stretch;
+	justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-  .side {
-    -webkit-flex-flow: column nowrap;
-    flex-flow: column nowrap;
-    -webkit-flex: 100%, 0 100%;
-    flex: 100%, 0 100%;
-    justify-content: center;
-    padding: 0;
-		margin: 0;
-		width: 100%;
-  }
-  .sidebuttons {
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%;
-  }
-  .sidebutton {
-    font-size: 16px;
-    height: 1.5em;
-    margin: 1px;
-    padding: 0px;
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+
+
+/* Main column */
+.main {	
+	-webkit-flex: 90%;
+  flex: 90%;
+	color: #3C1053;
+  background-color: white;
+	padding: 20px;
+	
+}
+.main h2 {
+	text-shadow: none;
+}
+.main a {
+	font-family: RobotoLight, Nobile, sans-serif;
+	background: transparent;
+	color: #9050b2;	
+	text-decoration: none;
+	padding: 4px;
+	/* border: 2px solid #3C1053; */
+	
+}
+.main a:visited {
+	color: #6a5a72;
+	text-shadow: none;
+}
+.main a:hover {
+	color: #D29F13;
+}
+#about a {
+	border: none;
+}
+.main p {
+	font-family: RobotoLight, Roboto, sans-serif;
+	font-size: 14px;
+	text-indent: 40px;
+	margin-right: 15%;
+}
+.main-tiles h3, .main-tiles div {
+	word-spacing: 3px;
+}
+.main-tiles span {
+	font-family: RobotoLight, Roboto, sans-serif;
+	font-size: 14px;
+	margin-left: 1%;
+}
+
+#isds4125 a, #isds3110 a, #isds3200 a, #isds3105 a, #dCalc a, #sEase a, #rTool a {
+	color: fff3aa;
+	
+}
+
+
+/* Footer */
+.footer {
+	margin: auto;
+	max-width: 100%;
+    padding: 20px;
     text-align: center;
-    width: 95%;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (min-width: 768px) {
+	.sidebar, .container, .overlay {
+		display: none;
+	}
+
+}
+@media screen and (max-width: 768px) {
+	/*	MOBILE NAV	*/	
+	.sidebar {
+		display: none;
+		z-index: 3;
+		width: 70%;
+		font-weight: bold;		
+	}
+	.nav {
+		display: none;		
+	}
+	.navlinks-m {
+		width: 100%;
+		font-size: 22px;
+		transition: display 0.5s;
   }
+	#openNav {
+		font-size: 40px;
+		font-weight: bold;
+		color: #9050b2;
+	}
+
+	/* TRANSITION */
+	#mySidebar, #myOverlay {
+		transition: display 0.5s;
+	}
+
+	
+	.logotext  {
+		padding: 0px;
+	}
+	.row, .banner-ul, .navbar {   
+        flex-flow: column wrap;
+    }
+	.banner-ul {
+		margin: auto;
+		align-content: center;
+	}
+	.banner-ul li {	
+		margin: 0px 0px;
+		text-align: center;	
+}
+	.main p {
+		margin: auto;
+	}
+	.navlinks, .navlinks:hover, .navlinks:active {
+		padding: 5px 10px;
+		font-size: 20px;
+	}
+
+	/* [class*="row"], [class*="banner"], [class*="nav"], [class*="main"]{
+		width: 100%;
+	} */
 }
