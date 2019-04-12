@@ -2,47 +2,75 @@
 /*	COURSE ITEMS   */
 /***************** */
 function courseA() {
-	document.getElementById("isds3110").style.display = "none";
-	document.getElementById("isds3200").style.display = "none";
-	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds4125").style.display = "block";
+	if(window.location.href.indexOf("courses") != -1){
+		document.getElementById("isds3110").style.display = "none";
+		document.getElementById("isds3200").style.display = "none";
+		document.getElementById("isds3105").style.display = "none";
+		document.getElementById("isds4125").style.display = "block";
+	} else {
+		window.open("courses.html");
+	}	
 }
 function courseB() {
-	document.getElementById("isds4125").style.display = "none";
-	document.getElementById("isds3200").style.display = "none";
-	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds3110").style.display = "block";
+	if(window.location.href.indexOf("courses") != -1){
+		document.getElementById("isds4125").style.display = "none";
+		document.getElementById("isds3200").style.display = "none";
+		document.getElementById("isds3105").style.display = "none";
+		document.getElementById("isds3110").style.display = "block";
+	} else {
+		window.open("courses.html");
+	}
 }
 function courseC() {
-	document.getElementById("isds4125").style.display = "none";
-	document.getElementById("isds3110").style.display = "none";
-	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds3200").style.display = "block";
+	if(window.location.href.indexOf("courses") != -1){
+		document.getElementById("isds4125").style.display = "none";
+		document.getElementById("isds3110").style.display = "none";
+		document.getElementById("isds3105").style.display = "none";
+		document.getElementById("isds3200").style.display = "block";
+	} else {
+		window.open("courses.html");
+	}
 }
 function courseD() {
-	document.getElementById("isds4125").style.display = "none";
-	document.getElementById("isds3110").style.display = "none";
-	document.getElementById("isds3200").style.display = "none";
-	document.getElementById("isds3105").style.display = "block";
+	if(window.location.href.indexOf("courses") != -1){
+		document.getElementById("isds4125").style.display = "none";
+		document.getElementById("isds3110").style.display = "none";
+		document.getElementById("isds3200").style.display = "none";
+		document.getElementById("isds3105").style.display = "block";	
+	} else {
+		window.open("courses.html");
+	}
 }
 
 /****************** */
 /*	 PROJECT ITEMS  */
 /****************** */
 function projA() {
-	document.getElementById("dCalc").style.display = "block";
-	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "none";
+	if(window.location.href.indexOf("projects") != -1){
+		document.getElementById("dCalc").style.display = "block";
+		document.getElementById("sEase").style.display = "none";
+		document.getElementById("rTool").style.display = "none";
+	} else {
+		window.open("projects.html");
+	}
 }
 function projB() {
-	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "block";
-	document.getElementById("rTool").style.display = "none";
+	if(window.location.href.indexOf("projects") != -1){
+		document.getElementById("dCalc").style.display = "none";
+		document.getElementById("sEase").style.display = "block";
+		document.getElementById("rTool").style.display = "none";
+	} else {
+		window.open("projects.html");
+	}
 }
 function projC() {
-	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "block";
+	if(window.location.href.indexOf("projects") != -1){
+		document.getElementById("dCalc").style.display = "none";
+		document.getElementById("sEase").style.display = "none";
+		document.getElementById("rTool").style.display = "block";
+	} else {
+		window.open("projects.html");
+	}
 }
 
 

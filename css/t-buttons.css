@@ -3,16 +3,21 @@
 .side {
   -webkit-flex: 10%;
   flex: 10%;
+  background-color: #f1f1f1;
   -webkit-display: flex;   
   display: flex;
   -webkit-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  background-color: #ddd;
   
 }
 .side h2, .sidelinks {
 	color: #3C1053;
 	font-family: Bebas, sans-serif;
   text-align: center;	
+}
+.contentheading {
+  margin: auto;
 }
 .mobileheading {
   display: none;
@@ -122,6 +127,9 @@
   }
   .mobileheading {
     display: block;
+  }
+  .contentheading, #subtxt {
+    display: none;
   }
   .sidebuttons {
     display: flex;

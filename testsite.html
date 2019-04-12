@@ -4,9 +4,9 @@
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
    <title>Home - Chris Hendl</title>
-   <link href="css/test.css" rel="stylesheet" />
+   <link href="css/t-styles.css" rel="stylesheet" />
+   <link href="css/t-buttons.css" rel="stylesheet" />
    <link href="css/fontfaces.css" rel="stylesheet" />
-   <link href="css/buttons.css" rel="stylesheet" />
    <script src="js/ch_sidebar.js"></script>
    <script src="js/ch_display.js"></script>
    
@@ -20,19 +20,19 @@
 			<p>Chris Hendl</p>
 			<p id="myContact"><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> | (225) 571-6108</p>
 		</div>
+	</div>
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** SITE NAV ************************************************** -->
 	<!-- ********************************************************************************************************* -->
-
-	<div class="bannerlinks bannerlinks-s">
-		<ul class="banner-ul">
+	<div class="nav nav-s">
+		<ul class="nav-ul">
 			<li>
-				<div class="nav" id="homelink">
+				<div class="navitems" id="homelink">
 					<a href="index.html" class="navlinks" title="Chris Hendl">About</a>
 				</div>
 			</li>
 			<li>
-				<div class="nav" id="courselink">
+				<div class="navitems" id="courselink">
 					<a href="courses.html" class="navlinks" title="Coursework">Coursework Examples</a>
 					<div class="dropdown">
 						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="courseA()"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
@@ -43,7 +43,7 @@
 				</div>
 			</li>
 			<li>
-				<div class="nav" id="projectlink">
+				<div class="navitems" id="projectlink">
 					<a href="projects.html" class="navlinks" title="Projects">Personal Projects</a>
 					<div class="dropdown">
 						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="projA()"><span>Depreciation Calculator</span></button>
@@ -53,64 +53,17 @@
 				</div>
 			</li>
 			<li>
-				<div class="nav" id="resumelink">
+				<div class="navitems" id="resumelink">
 					<a href="resume.html" class="navlinks" title="Resume">Resume</a>
 				</div>
 			</li>				
 		</ul>			
-	</div>
-		<!--BEGIN NAV FOR MOBILE-->	
-		<nav class="sidebar" id="mySidebar" onclick="xclose()"><br>
-			<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m" >Close Menu</a>			
-			<div class="bannerlinks-m">
-				<a href="index.html" onclick="xclose()" class="navlinks navlinks-m" title="Chris Hendl">About</a></li>
-				<a href="courses.html" onclick="xclose()"class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
-				<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal Projects</a></li>
-				<a href="resume.html" onclick="xclose()" class="navlinks navlinks-m" title="Resume">Resume</a></li>
-			</div>
-		</nav>
-		  
-		<!-- Top menu on small screens -->
-		<header class="container">
-			<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>			
-		</header>
-		  
-		<!-- Overlay effect when opening sidebar on small screens -->
-		<div class="overlay" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>		
-	</div>
-	
-
-	<!-- ********************************************************************************************************* -->
-	<!-- ***************************************** MAIN CONTENT ************************************************** -->
-	<!-- ********************************************************************************************************* -->
-
-	<!-- The flexible grid (content) -->
-	<div class="row row-s">
-		<div class="side side-s side-left">
-			
-		</div>
-		<div class="main main-s">
-			<h2>About Me</h2>
-			<div id="about">
-				<p>My name is Chris Hendl. I am a recent Louisiana State 
-				University graduate, receiving a Bachelor's degree in Information Systems and Decision Sciences. I am someone who has always 
-				been enthusiastic about pushing my own limits. I love finding new and better ways to do things, 
-				especially when those improvements could make life easier for others. In my spare time, I have developed <a href="projects.html" title="projects">several programs</a> for past and current employers
-				specifically with improving process operations in mind. I take pride in my ability to approach problems
-				in unique ways in order to locate better and more-efficient solutions.</p>
-				
-				<p>I understand how important knowledge and experience are to personal and professional growth, and I 
-				am someone who is passionate about learning and achieving. With graduation rapidly approaching, I am excited 
-				to begin a new chapter in my professional career and to take the next step towards achieving my goals.</p>				
-			</div>
-		</div>
-		<div class="side side-s side-right">
-					
-		</div>
 	</div>
 
 	<!-- Footer -->
 	<div class="footer">
 		<h2></h2>
 	</div>
+</body>
+</html>
 	
