@@ -1,77 +1,137 @@
-/***************** */
-/*	COURSE ITEMS   */
-/***************** */
-function courseA() {
-	if(window.location.href.indexOf("courses") != -1){
-		document.getElementById("isds3110").style.display = "none";
-		document.getElementById("isds3200").style.display = "none";
-		document.getElementById("isds3105").style.display = "none";
-		document.getElementById("isds4125").style.display = "block";
-	} else {
-		window.open("courses.html");
-	}	
-}
-function courseB() {
-	if(window.location.href.indexOf("courses") != -1){
-		document.getElementById("isds4125").style.display = "none";
-		document.getElementById("isds3200").style.display = "none";
-		document.getElementById("isds3105").style.display = "none";
-		document.getElementById("isds3110").style.display = "block";
-	} else {
-		window.open("courses.html");
-	}
-}
-function courseC() {
-	if(window.location.href.indexOf("courses") != -1){
-		document.getElementById("isds4125").style.display = "none";
-		document.getElementById("isds3110").style.display = "none";
-		document.getElementById("isds3105").style.display = "none";
-		document.getElementById("isds3200").style.display = "block";
-	} else {
-		window.open("courses.html");
-	}
-}
-function courseD() {
-	if(window.location.href.indexOf("courses") != -1){
-		document.getElementById("isds4125").style.display = "none";
-		document.getElementById("isds3110").style.display = "none";
-		document.getElementById("isds3200").style.display = "none";
-		document.getElementById("isds3105").style.display = "block";	
-	} else {
-		window.open("courses.html");
+// variable to check if user clicked on item in navbar
+var x = false;
+// variable to hold the function of the clicked item
+var item;
+// function to load the appropriate content when the page's body loads
+function loadContent() {
+	if(x != false) {
+		item();
+		x = false;
 	}
 }
 
-/****************** */
-/*	 PROJECT ITEMS  */
-/****************** */
-function projA() {
-	if(window.location.href.indexOf("projects") != -1){
-		document.getElementById("dCalc").style.display = "block";
-		document.getElementById("sEase").style.display = "none";
-		document.getElementById("rTool").style.display = "none";
-	} else {
-		window.open("projects.html");
+
+
+/***************** */
+/*	COURSE ITEMS   */
+/*
+, 'courseA'
+, 'courseB'
+, 'courseC'
+, 'courseD'
+*/
+/***************** */
+
+
+function showCourse(course) {
+		// check if current page url = courses.html
+	if(window.location.href.indexOf("courses") != -1){
+		course();
+	} else  {
+		x = true;
+		item = course;
+		// change url to courses.html
+		window.location.replace("courses.html");
+		return x;
 	}
+	
+}
+function makeActive() {
+	var btnContainer = document.getElementById("contentflex");
+
+	// Get all buttons with class="btn" inside the container
+	var btns = btnContainer.getElementsByClassName("btnlinks");
+
+	// Loop through the buttons and add the active class to the current/clicked button
+	for (var i = 0; i < btns.length; i++) {
+		btns[i].addEventListener("click", function() {
+			var current = document.getElementsByClassName("active");
+  
+	 		// If there's no active class
+	  		if (current.length > 0) {
+				current[0].className = current[0].className.replace(" active", "");
+	  		}
+	  	// Add the active class to the current/clicked button
+	  	this.className += " active";
+		});
+  	} 
+}
+
+
+function courseA() {
+	document.getElementById("isds3110").style.display = "none";
+	document.getElementById("isds3200").style.display = "none";
+	document.getElementById("isds3105").style.display = "none";
+	document.getElementById("isds4125").style.display = "inline-block";
+}
+function courseB() {
+	document.getElementById("isds4125").style.display = "none";
+	document.getElementById("isds3200").style.display = "none";
+	document.getElementById("isds3105").style.display = "none";
+	document.getElementById("isds3110").style.display = "inline-block";
+}
+function courseC() {
+	document.getElementById("isds4125").style.display = "none";
+	document.getElementById("isds3110").style.display = "none";
+	document.getElementById("isds3105").style.display = "none";
+	document.getElementById("isds3200").style.display = "inline-block";
+}
+function courseD() {
+	document.getElementById("isds4125").style.display = "none";
+	document.getElementById("isds3110").style.display = "none";
+	document.getElementById("isds3200").style.display = "none";
+	document.getElementById("isds3105").style.display = "inline-block";
+}
+
+
+// /****************** */
+// /*	 PROJECT ITEMS  */
+// /****************** */
+
+function showProject(project) {
+	// check if current page url = projects.html
+	if(window.location.href.indexOf("projects") != -1){
+		project();
+	} else  {
+	// change url to projects.html
+	x = true;
+	item = project;
+	// change url to projects.html
+	window.location.replace("projects.html");
+	return x;
+	}
+}
+
+
+function projA() {
+	document.getElementById("dCalc").style.display = "inline-block";
+	document.getElementById("sEase").style.display = "none";
+	document.getElementById("rTool").style.display = "none";
 }
 function projB() {
-	if(window.location.href.indexOf("projects") != -1){
-		document.getElementById("dCalc").style.display = "none";
-		document.getElementById("sEase").style.display = "block";
-		document.getElementById("rTool").style.display = "none";
-	} else {
-		window.open("projects.html");
-	}
+	document.getElementById("dCalc").style.display = "none";
+	document.getElementById("sEase").style.display = "inline-block";
+	document.getElementById("rTool").style.display = "none";
+	
 }
 function projC() {
-	if(window.location.href.indexOf("projects") != -1){
-		document.getElementById("dCalc").style.display = "none";
-		document.getElementById("sEase").style.display = "none";
-		document.getElementById("rTool").style.display = "block";
-	} else {
-		window.open("projects.html");
-	}
+	document.getElementById("dCalc").style.display = "none";
+	document.getElementById("sEase").style.display = "none";
+	document.getElementById("rTool").style.display = "inline-block";
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -134,3 +194,95 @@ function changeCourses(e) {
 	}
 }
 */
+// function courseA() {
+// 	if(window.location.href.indexOf("courses") != -1){
+// 		document.getElementById("isds3110").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "none";
+// 		document.getElementById("isds4125").style.display = "block";
+// 	} else {
+// 		window.open("courses.html");
+// 		document.getElementById("isds3110").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "none";
+// 		document.getElementById("isds4125").style.display = "block";
+// 	}	
+// }
+// function courseB() {
+// 	if(window.location.href.indexOf("courses") != -1){
+// 		document.getElementById("isds4125").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "none";
+// 		document.getElementById("isds3110").style.display = "block";
+// 	} else {
+// 		window.open("courses.html");
+// 		document.getElementById("isds4125").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "none";
+// 		document.getElementById("isds3110").style.display = "block";
+// 	}
+// }
+// function courseC() {
+// 	if(window.location.href.indexOf("courses") != -1){
+		// document.getElementById("isds4125").style.display = "none";
+		// document.getElementById("isds3110").style.display = "none";
+		// document.getElementById("isds3105").style.display = "none";
+		// document.getElementById("isds3200").style.display = "block";
+// 	} else {
+// 		window.open("courses.html");
+// 		document.getElementById("isds4125").style.display = "none";
+// 		document.getElementById("isds3110").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "block";
+// 	}
+// }
+// function courseD() {
+// 	if(window.location.href.indexOf("courses") != -1){
+// 		document.getElementById("isds4125").style.display = "none";
+// 		document.getElementById("isds3110").style.display = "none";
+// 		document.getElementById("isds3200").style.display = "none";
+// 		document.getElementById("isds3105").style.display = "block";	
+// 	} else {
+// 		window.open("courses.html");
+		// document.getElementById("isds4125").style.display = "none";
+		// document.getElementById("isds3110").style.display = "none";
+		// document.getElementById("isds3200").style.display = "none";
+		// document.getElementById("isds3105").style.display = "block";
+// 	}
+// }
+// function projA() {
+// 	if(window.location.href.indexOf("projects") != -1){
+		// document.getElementById("dCalc").style.display = "block";
+		// document.getElementById("sEase").style.display = "none";
+		// document.getElementById("rTool").style.display = "none";
+// 	} else {
+// 		window.open("projects.html");
+// 		document.getElementById("dCalc").style.display = "block";
+// 		document.getElementById("sEase").style.display = "none";
+// 		document.getElementById("rTool").style.display = "none";
+// 	}
+// }
+// function projB() {
+// 	if(window.location.href.indexOf("projects") != -1){
+		// document.getElementById("dCalc").style.display = "none";
+		// document.getElementById("sEase").style.display = "block";
+		// document.getElementById("rTool").style.display = "none";
+// 	} else {
+// 		window.open("projects.html");
+// 		document.getElementById("dCalc").style.display = "none";
+// 		document.getElementById("sEase").style.display = "block";
+// 		document.getElementById("rTool").style.display = "none";
+// 	}
+// }
+// function projC() {
+// 	if(window.location.href.indexOf("projects") != -1){
+		// document.getElementById("dCalc").style.display = "none";
+		// document.getElementById("sEase").style.display = "none";
+		// document.getElementById("rTool").style.display = "block";
+// 	} else {
+// 		window.open("projects.html");
+// 		document.getElementById("dCalc").style.display = "none";
+// 		document.getElementById("sEase").style.display = "none";
+// 		document.getElementById("rTool").style.display = "block";
+// 	}
+// }

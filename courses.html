@@ -11,7 +11,7 @@
    <script src="js/ch_display.js"></script>
    
 </head>
-<body>
+<body onload="makeActive()">
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** LOGO CONTENT ************************************************** -->
 	<!-- ********************************************************************************************************* -->
@@ -19,8 +19,10 @@
 	<div class="bannertop" role="navigation">
 		<div class="logotext">
 			<p>Chris Hendl</p>
-			<p><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> | (225)571-6108</p>
-		</div>		
+			<div id="horline-purp"></div>
+			<div id="horline-gold"></div>
+			<p><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> <span id="logotxt-div">|</span> (225)571-6108</p>
+		</div>	
 	</div>
 
 	<!-- ********************************************************************************************************* -->
@@ -36,22 +38,22 @@
 			<li>
 				<div class="navitems" id="courselink">
 					<a href="courses.html" class="navlinks" title="Coursework">Coursework Examples</a>
-					<div class="dropdown">
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="courseA()"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3110" value="" onclick="courseB()"><span>ISDS 3110</span><div><p>Database Processing for Management</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3200" value="" onclick="courseC()"><span>ISDS 3200</span><div><p>Advanced Business Programming</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3105" value="" onclick="courseD()"><span>ISDS 3105</span><div><p>Web Development</p></div></button>
-					</div>
+					<!-- <div class="dropdown">
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="showCourse(courseA)"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3110" value="" onclick="showCourse(courseB)"><span>ISDS 3110</span><div><p>Database Processing for Management</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3200" value="" onclick="showCourse(courseC)"><span>ISDS 3200</span><div><p>Advanced Business Programming</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3105" value="" onclick="showCourse(courseD)"><span>ISDS 3105</span><div><p>Web Development</p></div></button>
+					</div> -->
 				</div>
 			</li>
 			<li>
 				<div class="navitems" id="projectlink">
 					<a href="projects.html" class="navlinks" title="Projects">Personal Projects</a>
-					<div class="dropdown">
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="projA()"><span>Depreciation Calculator</span></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="scrtez" onclick="projB()"><span>ScriptEase</span></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="rsetool" onclick="projC()"><span>RSE Tool</span></button>
-					</div>	
+					<!-- <div class="dropdown">
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="showProject(projA)"><span>Depreciation Calculator</span></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="scrtez" onclick="showProject(projB)"><span>ScriptEase</span></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="rsetool" onclick="showProject(projC)"><span>RSE Tool</span></button>
+					</div>	 -->
 				</div>
 			</li>
 			<li>
@@ -86,6 +88,8 @@
 
 	<!-- The flexible grid (content) -->
 	<div class="row row-s">
+
+		 <!-- * * * * LEFT AREA * * * * -->
 		<div class="side side-s side-left">
 			<h2 class="mobileheading">Coursework</h2>
 			<div class="sidebuttons">
@@ -95,61 +99,70 @@
 				<button class="sidebutton sidebutton-m" id="3105" value="" onclick="courseD()"><span>ISDS 3105</span></button>
 			</div>
 		</div>
+		<!-- * * * * MIDDLE AREA * * * * -->
 		<div class="main main-s">
-			<div class="contentheading">
+			<div class="contentflex" id="contentflex">
 				<h2>Coursework</h2>
-				<h3 id="subtxt">(Under Construction)</h3>
-				<div class="divline"></div>
+				<span class="btnlinks" id="c4125" value="" onclick="courseA()"><p>ISDS 4125</p></span>
+				<span class="btnlinks" id="c3110" value="" onclick="courseB()"><p>ISDS 3110</p></span>
+				<span class="btnlinks" id="c3200" value="" onclick="courseC()"><p>ISDS 3200</p></span>
+				<span class="btnlinks" id="c3105" value="" onclick="courseD()"><p>ISDS 3105</p></span>
+				
 			</div>
-			<div id="isds4125" class="main-tiles">
-				<h2>ISDS 4125</h2>
-				<h3>Analysis and Design of Management Information Systems</h3>			
-				<div><strong>Course Description:</strong></div>
-				<p>Design philosophies and techniques for the creation of information systems for management decision-making; conceptual design of actual information systems.</p>
-				<br>
-				<div><strong>Projects:</strong></div>
-				<div>
-					<p><b>LatinX Caucus Site</b></p>>
-					<!-- <p>For this class, we were given a group assignment in which student teams take on real-life projects and develop
-					</p> -->
-				</div>			
-			</div>
-			<div id="isds3110" class="main-tiles">
-				<h2>ISDS 3110</h2>
-				<h3>Database Processing for Management</h3>				
-				<div><strong>Course Description:</strong></div>
-				<p>Structure and function of managerial databases; design options and implementation of database management systems in the firm; laboratory practice includes use of a particular soft-ware system.</p>
-				<br>
-			</div>
-			<div id="isds3200" class="main-tiles">
-				<h2>ISDS 3200</h2>
-				<h3>Advanced Business Programming</h3>				
-				<div><strong>Course Description:</strong></div>
-				<p>Computer programming methods for business systems emphasizing contemporary programming environments and applications development interfaces.</p>
-				<br>
-			</div>
-			<div id="isds3105" class="main-tiles">
-				<h2>ISDS 3105</h2>
-				<h3>Web Development</h3>				
-				<div><strong>Course Description:</strong></div>
-				<p>Principles and analysis of web design using HTML5, CSS3, and Javascript.</p>
-				<br>
-				<div><strong>Projects:</strong></div>
-				<div>
-					<a href="timelog.html" title="Coursework" target="_blank">Time Log Page</a>
-					<p>Our semester project asked us to demonstrate the skills learned throughout the entire semester. We were tasked with
-						designing a web page where "time" could be logged for a specific task of our choosing. After a user logs new time, 
-						the site needed to display the time entered and inform them whether or not they've met their requirement.
-					</p>
-				</div>				
+			<div id="horline-purp"></div>
+			<div class="main-tiles">
+				<div id="isds4125" class="main-tile">
+					<h2>ISDS 4125</h2>
+					<h3>Analysis and Design of Management Information Systems</h3>			
+					<div><strong>Course Description:</strong></div>
+					<p>Design philosophies and techniques for the creation of information systems for management decision-making; conceptual design of actual information systems.</p>
+					<br>
+					<div><strong>Projects:</strong></div>
+					<div>
+						<p><b>LatinX Caucus Site</b></p>
+						<!-- <p>For this class, we were given a group assignment in which student teams take on real-life projects and develop
+						</p> -->
+					</div>			
+				</div>
+				<div id="isds3110" class="main-tile">
+					<h2>ISDS 3110</h2>
+					<h3>Database Processing for Management</h3>				
+					<div><strong>Course Description:</strong></div>
+					<p>Structure and function of managerial databases; design options and implementation of database management systems in the firm; laboratory practice includes use of a particular soft-ware system.</p>
+					<br>
+				</div>
+				<div id="isds3200" class="main-tile">
+					<h2>ISDS 3200</h2>
+					<h3>Advanced Business Programming</h3>				
+					<div><strong>Course Description:</strong></div>
+					<p>Computer programming methods for business systems emphasizing contemporary programming environments and applications development interfaces.</p>
+					<br>
+				</div>
+				<div id="isds3105" class="main-tile">
+					<h2>ISDS 3105</h2>
+					<h3>Web Development</h3>				
+					<div><strong>Course Description:</strong></div>
+					<p>Principles and analysis of web design using HTML5, CSS3, and Javascript.</p>
+					<br>
+					<div><strong>Projects:</strong></div>
+					<div>
+						<a href="timelog.html" title="Coursework" target="_blank">Time Log Page</a>
+						<p>Our semester project asked us to demonstrate the skills learned throughout the entire semester. We were tasked with
+							designing a web page where "time" could be logged for a specific task of our choosing. After a user logs new time, 
+							the site needed to display the time entered and inform them whether or not they've met their requirement.
+						</p>
+					</div>				
+				</div>
 			</div>
 		</div>
+		<!-- * * * * RIGHT AREA * * * * -->
 		<div class="side side-s side-right">
 					
 		</div>
 	</div>
-
 	<!-- Footer -->
 	<div class="footer">
 		<h2></h2>
 	</div>
+</body>
+</html>

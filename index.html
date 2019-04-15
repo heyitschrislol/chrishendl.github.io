@@ -11,7 +11,7 @@
    <script src="js/ch_display.js"></script>
    
 </head>
-<body>
+<body onload="makeActive()">
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** LOGO CONTENT ************************************************** -->
 	<!-- ********************************************************************************************************* -->
@@ -19,7 +19,9 @@
 	<div class="bannertop" role="navigation">
 		<div class="logotext">
 			<p>Chris Hendl</p>
-			<p><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> | (225)571-6108</p>
+			<div id="horline-purp"></div>
+			<div id="horline-gold"></div>
+			<p><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> <span id="logotxt-div">|</span> (225)571-6108</p>
 		</div>		
 	</div>
 
@@ -36,22 +38,22 @@
 			<li>
 				<div class="navitems" id="courselink">
 					<a href="courses.html" class="navlinks" title="Coursework">Coursework Examples</a>
-					<div class="dropdown">
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="courseA()"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3110" value="" onclick="courseB()"><span>ISDS 3110</span><div><p>Database Processing for Management</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3200" value="" onclick="courseC()"><span>ISDS 3200</span><div><p>Advanced Business Programming</p></div></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3105" value="" onclick="courseD()"><span>ISDS 3105</span><div><p>Web Development</p></div></button>
-					</div>
+					<!-- <div class="dropdown">
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c4125" value="" onclick="showCourse(courseA)"><span>ISDS 4125</span><div><p>Analysis/Design of Management IS</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3110" value="" onclick="showCourse(courseB)"><span>ISDS 3110</span><div><p>Database Processing for Management</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3200" value="" onclick="showCourse(courseC)"><span>ISDS 3200</span><div><p>Advanced Business Programming</p></div></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="c3105" value="" onclick="showCourse(courseD)"><span>ISDS 3105</span><div><p>Web Development</p></div></button>
+					</div> -->
 				</div>
 			</li>
 			<li>
 				<div class="navitems" id="projectlink">
 					<a href="projects.html" class="navlinks" title="Projects">Personal Projects</a>
-					<div class="dropdown">
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="projA()"><span>Depreciation Calculator</span></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="scrtez" onclick="projB()"><span>ScriptEase</span></button>
-						<button class="btnlinks dropdownbutton dropdownbutton-m" id="rsetool" onclick="projC()"><span>RSE Tool</span></button>
-					</div>	
+					<!-- <div class="dropdown">
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="depr" onclick="showProject(projA)"><span>Depreciation Calculator</span></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="scrtez" onclick="showProject(projB)"><span>ScriptEase</span></button>
+						<button class="btnlinks dropdownbutton dropdownbutton-m" id="rsetool" onclick="showProject(projC)"><span>RSE Tool</span></button>
+					</div>	 -->
 				</div>
 			</li>
 			<li>
@@ -86,15 +88,18 @@
 
 	<!-- The flexible grid (content) -->
 	<div class="row row-s">
+
+		<!-- * * * * LEFT AREA * * * * -->
 		<div class="side side-s side-left">
 			
 		</div>
+		<!-- * * * * MIDDLE AREA * * * * -->
 		<div class="main main-s">
-			<div class="contentheading">
+			<div class="contentflex" id="contentflex">
 				<h2>About Me</h2>
-				<div class="divline"></div>
 			</div>
-			<div id="about">
+			<div id="horline-purp"></div>
+			<div class="main-tiles">
 				<p>My name is Chris Hendl. I am a recent Louisiana State 
 				University graduate, receiving a Bachelor's degree in Information Systems and Decision Sciences. I am someone who has always 
 				been enthusiastic about pushing my own limits. I love finding new and better ways to do things, 
@@ -107,6 +112,7 @@
 				to begin a new chapter in my professional career and to take the next step towards achieving my goals.</p>				
 			</div>
 		</div>
+		<!-- * * * * RIGHT AREA * * * * -->
 		<div class="side side-s side-right">
 					
 		</div>
