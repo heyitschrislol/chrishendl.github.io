@@ -1,29 +1,34 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Coursework - Chris Hendl</title>
-   <link rel="icon" href="favicon.ico">
-   <link href="css/styles.css" rel="stylesheet" />
-   <link href="css/fontfaces.css" rel="stylesheet" />
-   <link href="css/buttons.css" rel="stylesheet" />
-   <script src="js/ch_sidebar.js"></script>
-   <script src="js/ch_display.js"></script>
-   
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Coursework - Chris Hendl</title>
+	<link rel="icon" href="favicon.ico">
+	<link href="css/styles.css" rel="stylesheet" />
+	<link href="css/fontfaces.css" rel="stylesheet" />
+	<link href="css/buttons.css" rel="stylesheet" />
+	<script src="js/ch_sidebar.js"></script>
+	<script src="js/ch_display.js"></script>
+
 </head>
+
 <body onload="makeActive()">
 	<!-- ********************************************************************************************************* -->
 	<!-- ***************************************** LOGO CONTENT ************************************************** -->
 	<!-- ********************************************************************************************************* -->
-	
+
 	<div class="bannertop" role="navigation">
-		<div class="logotext">
-			<p>Chris Hendl</p>
+		<a href="index.html" id="linklogo"><img src="media/logo_purple3.gif" alt="Chris Hendl"></a>
+		<div class="logo">
+			<p class="logotext">
+				Chris Hendl
+			</p>
 			<div id="horline-purp"></div>
 			<div id="horline-gold"></div>
 			<p><a href="mailto:chendl@gmail.com">chendl@gmail.com</a> <span id="logotxt-div">|</span> (225)571-6108</p>
-		</div>	
+		</div>
 	</div>
 
 	<!-- ********************************************************************************************************* -->
@@ -61,25 +66,26 @@
 				<div class="navitems" id="resumelink">
 					<a href="resume.html" class="navlinks" title="Resume">Resume</a>
 				</div>
-			</li>				
-		</ul>			
+			</li>
+		</ul>
 	</div>
-	<!--BEGIN NAV FOR MOBILE-->	
+	<!--BEGIN NAV FOR MOBILE-->
 	<nav class="sidebar" id="mySidebar" onclick="xclose()"><br>
-		<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m" >Close Menu</a>			
+		<a href="javascript:void(0)" onclick="xclose()" class="navlinks-m">Close Menu</a>
 		<div class="nav-m">
 			<a href="index.html" onclick="xclose()" class="navlinks navlinks-m" title="Chris Hendl">About</a></li>
-			<a href="courses.html" onclick="xclose()"class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
-			<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal Projects</a></li>
+			<a href="courses.html" onclick="xclose()" class="navlinks navlinks-m" title="Coursework">Coursework</a></li>
+			<a href="projects.html" onclick="xclose()" class="navlinks navlinks-m" title="Projects">Personal
+				Projects</a></li>
 			<a href="resume.html" onclick="xclose()" class="navlinks navlinks-m" title="Resume">Resume</a></li>
 		</div>
 	</nav>
-	  
+
 	<!-- Top menu on small screens -->
 	<header class="container">
-		<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>			
+		<a href="javascript:void(0)" id="openNav" class="navlinks-m" onclick="xopen()"><span>☰</span></a>
 	</header>
-	  
+
 	<!-- Overlay effect when opening sidebar on small screens -->
 	<div class="overlay" onclick="xclose()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
@@ -90,75 +96,94 @@
 	<!-- The flexible grid (content) -->
 	<div class="row row-s">
 
-		 <!-- * * * * LEFT AREA * * * * -->
+		<!-- * * * * LEFT AREA * * * * -->
 		<div class="side side-s side-left">
 			<h2 class="mobileheading">Coursework</h2>
 			<div class="sidebuttons">
-				<button class="sidebutton sidebutton-m" id="4125" value="" onclick="courseA()"><span>ISDS 4125</span></button>
-				<button class="sidebutton sidebutton-m" id="3110" value="" onclick="courseB()"><span>ISDS 3110</span></button>
-				<button class="sidebutton sidebutton-m" id="3200" value="" onclick="courseC()"><span>ISDS 3200</span></button>
-				<button class="sidebutton sidebutton-m" id="3105" value="" onclick="courseD()"><span>ISDS 3105</span></button>
+				<button class="sidebutton sidebutton-m" id="4125" value="" onclick="courseA()"><span>ISDS
+						4125</span></button>
+				<button class="sidebutton sidebutton-m" id="3110" value="" onclick="courseB()"><span>ISDS
+						3110</span></button>
+				<button class="sidebutton sidebutton-m" id="3200" value="" onclick="courseC()"><span>ISDS
+						3200</span></button>
+				<button class="sidebutton sidebutton-m" id="3105" value="" onclick="courseD()"><span>ISDS
+						3105</span></button>
 			</div>
 		</div>
 		<!-- * * * * MIDDLE AREA * * * * -->
 		<div class="main main-s">
 			<div class="contentflex" id="contentflex">
 				<h2>Coursework</h2>
-				<span class="btnlinks" id="c4125" value="" onclick="courseA()"><p>ISDS 4125</p></span>
-				<span class="btnlinks" id="c3110" value="" onclick="courseB()"><p>ISDS 3110</p></span>
-				<span class="btnlinks" id="c3200" value="" onclick="courseC()"><p>ISDS 3200</p></span>
-				<span class="btnlinks" id="c3105" value="" onclick="courseD()"><p>ISDS 3105</p></span>
-				
+				<span class="btnlinks" id="c4125" value="" onclick="courseA()">
+					<p>ISDS 4125</p>
+				</span>
+				<span class="btnlinks" id="c3110" value="" onclick="courseB()">
+					<p>ISDS 3110</p>
+				</span>
+				<span class="btnlinks" id="c3200" value="" onclick="courseC()">
+					<p>ISDS 3200</p>
+				</span>
+				<span class="btnlinks" id="c3105" value="" onclick="courseD()">
+					<p>ISDS 3105</p>
+				</span>
+
 			</div>
 			<div id="horline-purp"></div>
 			<div class="main-tiles">
 				<div id="isds4125" class="main-tile">
 					<h2>ISDS 4125</h2>
-					<h3>Analysis and Design of Management Information Systems</h3>			
+					<h3>Analysis and Design of Management Information Systems</h3>
 					<div><strong>Course Description:</strong></div>
-					<p>Design philosophies and techniques for the creation of information systems for management decision-making; conceptual design of actual information systems.</p>
+					<p>Design philosophies and techniques for the creation of information systems for management
+						decision-making; conceptual design of actual information systems.</p>
 					<br>
 					<div><strong>Projects:</strong></div>
 					<div>
 						<p><b>LatinX Caucus Site</b></p>
 						<!-- <p>For this class, we were given a group assignment in which student teams take on real-life projects and develop
 						</p> -->
-					</div>			
+					</div>
 				</div>
 				<div id="isds3110" class="main-tile">
 					<h2>ISDS 3110</h2>
-					<h3>Database Processing for Management</h3>				
+					<h3>Database Processing for Management</h3>
 					<div><strong>Course Description:</strong></div>
-					<p>Structure and function of managerial databases; design options and implementation of database management systems in the firm; laboratory practice includes use of a particular soft-ware system.</p>
+					<p>Structure and function of managerial databases; design options and implementation of database
+						management systems in the firm; laboratory practice includes use of a particular soft-ware
+						system.</p>
 					<br>
 				</div>
 				<div id="isds3200" class="main-tile">
 					<h2>ISDS 3200</h2>
-					<h3>Advanced Business Programming</h3>				
+					<h3>Advanced Business Programming</h3>
 					<div><strong>Course Description:</strong></div>
-					<p>Computer programming methods for business systems emphasizing contemporary programming environments and applications development interfaces.</p>
+					<p>Computer programming methods for business systems emphasizing contemporary programming
+						environments and applications development interfaces.</p>
 					<br>
 				</div>
 				<div id="isds3105" class="main-tile">
 					<h2>ISDS 3105</h2>
-					<h3>Web Development</h3>				
+					<h3>Web Development</h3>
 					<div><strong>Course Description:</strong></div>
 					<p>Principles and analysis of web design using HTML5, CSS3, and Javascript.</p>
 					<br>
 					<div><strong>Projects:</strong></div>
 					<div>
 						<a href="timelog.html" title="Coursework" target="_blank">Time Log Page</a>
-						<p>Our semester project asked us to demonstrate the skills learned throughout the entire semester. We were tasked with
-							designing a web page where "time" could be logged for a specific task of our choosing. After a user logs new time, 
-							the site needed to display the time entered and inform them whether or not they've met their requirement.
+						<p>Our semester project asked us to demonstrate the skills learned throughout the entire
+							semester. We were tasked with
+							designing a web page where "time" could be logged for a specific task of our choosing. After
+							a user logs new time,
+							the site needed to display the time entered and inform them whether or not they've met their
+							requirement.
 						</p>
-					</div>				
+					</div>
 				</div>
 			</div>
 		</div>
 		<!-- * * * * RIGHT AREA * * * * -->
 		<div class="side side-s side-right">
-					
+
 		</div>
 	</div>
 	<!-- Footer -->
@@ -166,4 +191,5 @@
 		<h2></h2>
 	</div>
 </body>
+
 </html>

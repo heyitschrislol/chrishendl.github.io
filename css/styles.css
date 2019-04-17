@@ -46,11 +46,22 @@ a {
 
 /* BANNER */
 .bannertop {
+	position: relative;
 	display: inline-block;
 	width: 100%;
 }
-
-.logotext {
+.bannertop #linklogo {
+	float: left;
+	margin: 0px 10px 0px 50px;
+}
+.bannertop img {
+	margin: 5px 0px 0px 0px;
+	width: 150px;
+	height: 150px;
+}
+.logo {
+	color: #6c4088;
+	position: relative;
 	-webkit-display: flex;
 	display: flex;
 	-webkit-flex-flow: column wrap;
@@ -60,24 +71,33 @@ a {
 	align-items: flex-start;
 	margin-left: 13%;
 }
-.logotext p {
-	margin: 5px 5px 5px 5px;
+.logotext {
+	color: #6c4088;
+	/* text-shadow: -1px 1px 2px #fff,
+				  1px 1px 2px #fff,
+				  1px -1px 0 #fff,
+				  -1px -1px 0 #fff; */
+}
+
+.logo p {
+	margin: 5px 5px 0px 5px;
 	text-align: center;
 	font-weight: bold;
 	text-shadow: 2px 2px #ddd;
 }
-.logotext p > a {
+.logo p > a {
 	font-family: RobotoLight, sans-serif;
-	color: black;
+	/* color: #3C1053; */
+	color: #6c4088;
 	letter-spacing: 1px;
 }
-.logotext p:first-of-type {
+.logo p:first-of-type {
 	font-family: Bebas, Nobile, sans-serif;
 	font-size: 4.0em;
 	letter-spacing: 4px;
 	word-spacing: 15px;
 }
-.logotext p:nth-of-type(2) {
+.logo p:nth-of-type(2) {
 	font-family: RobotoLight, sans-serif;
 	font-size: 1em;	
 	padding: 0px;
@@ -239,7 +259,7 @@ a {
 	display:flex;
 	flex-flow: column nowrap;
   flex: 90%;
-	color: #3C1053;
+	color: #3c1053;
 	padding: 20px;
 	min-height: 400px;
 	background-color: #fff;
@@ -274,7 +294,7 @@ a {
 .contentflex span {
 	border: 1px solid #ccc;
 	background-image: linear-gradient(to top, #d9d2dd, white);	
-	color: #3C1053;
+	color: #6c4088;
 	display: inline-flex;
 	margin: 0px 10px;
 	/* text-align: center; */
@@ -407,7 +427,7 @@ span p {
 @media screen and (max-width: 900px) {
 	/*	MOBILE NAV	*/	
 	
-	.logotext {
+	.logo {
 		width: 100%;
 		align-items: flex-start;
 		margin: auto;
@@ -449,7 +469,7 @@ span p {
 	}
 
 	
-	.logotext  {
+	.logo  {
 		padding: 3px;
 	}
 	.row, .nav-ul, .navbar {   
