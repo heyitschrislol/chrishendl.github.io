@@ -49,6 +49,7 @@ a {
 	position: relative;
 	display: inline-block;
 	width: 100%;
+	/* width: auto; */
 }
 .bannertop #linklogo {
 	float: left;
@@ -426,8 +427,16 @@ span p {
 }
 @media screen and (max-width: 900px) {
 	/*	MOBILE NAV	*/	
-	
+
+	.bannertop #linklogo {
+		margin: auto;
+		position: absolute;
+		opacity: 0.3;
+		z-index: -1;
+		left: 25%;
+	}
 	.logo {
+		padding: 0px;
 		width: 100%;
 		align-items: flex-start;
 		margin: auto;
@@ -466,11 +475,6 @@ span p {
 	/* TRANSITION */
 	#mySidebar, #myOverlay {
 		transition: display 0.5s;
-	}
-
-	
-	.logo  {
-		padding: 3px;
 	}
 	.row, .nav-ul, .navbar {   
         flex-flow: column wrap;
