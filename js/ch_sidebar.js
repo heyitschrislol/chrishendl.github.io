@@ -62,25 +62,25 @@ function courseA() {
 	document.getElementById("isds3110").style.display = "none";
 	document.getElementById("isds3200").style.display = "none";
 	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds4125").style.display = "inline-block";
+	document.getElementById("isds4125").style.display = "block";
 }
 function courseB() {
 	document.getElementById("isds4125").style.display = "none";
 	document.getElementById("isds3200").style.display = "none";
 	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds3110").style.display = "inline-block";
+	document.getElementById("isds3110").style.display = "block";
 }
 function courseC() {
 	document.getElementById("isds4125").style.display = "none";
 	document.getElementById("isds3110").style.display = "none";
 	document.getElementById("isds3105").style.display = "none";
-	document.getElementById("isds3200").style.display = "inline-block";
+	document.getElementById("isds3200").style.display = "block";
 }
 function courseD() {
 	document.getElementById("isds4125").style.display = "none";
 	document.getElementById("isds3110").style.display = "none";
 	document.getElementById("isds3200").style.display = "none";
-	document.getElementById("isds3105").style.display = "inline-block";
+	document.getElementById("isds3105").style.display = "block";
 }
 
 
@@ -104,20 +104,20 @@ function showProject(project) {
 
 
 function projA() {
-	document.getElementById("dCalc").style.display = "inline-block";
+	document.getElementById("dCalc").style.display = "block";
 	document.getElementById("sEase").style.display = "none";
 	document.getElementById("rTool").style.display = "none";
 }
 function projB() {
 	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "inline-block";
+	document.getElementById("sEase").style.display = "block";
 	document.getElementById("rTool").style.display = "none";
 	
 }
 function projC() {
 	document.getElementById("dCalc").style.display = "none";
 	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "inline-block";
+	document.getElementById("rTool").style.display = "block";
 	
 }
 

@@ -402,7 +402,7 @@ span p {
 .main-tile {
 	position: relative;
 	min-height: 500px;
-	max-height: 550px;
+	max-height: 650px;
 }
 /* .side-left {
 	position: absolute;
@@ -429,7 +429,7 @@ span p {
 
 /* Footer */
 .footer {
-	position: absolute;
+	position: relative;
 	/* bottom: 12%; */
 	margin: auto;
 	width: 100%;
