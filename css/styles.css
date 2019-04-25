@@ -117,7 +117,7 @@ a {
 #horline-purp {
 	position: relative;
 	/* flex-shrink: 0; */
-	width: calc(100% - 300px);
+	width: calc(100% - 100px);
 	height: 2px;
 	background-image: linear-gradient(to left,#e9dcf1, #3C1053);	
 	margin-bottom: 4px;
@@ -126,7 +126,7 @@ a {
 #horline-gold {
 	position: relative;
 	/* flex-shrink: 0; */
-	width: calc(100% - 300px);
+	width: calc(100% - 100px);
 	height: 2px;
 	background-image: linear-gradient(to left,#f5e6bd, #D29F13);
 	/* padding-right: 10px; */
@@ -402,7 +402,6 @@ span p {
 .main-tile {
 	position: relative;
 	min-height: 500px;
-	max-height: 650px;
 }
 /* .side-left {
 	position: absolute;
