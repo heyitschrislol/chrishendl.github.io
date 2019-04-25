@@ -4,24 +4,47 @@
 .main-thumbs {
 	-webkit-display: flex;
 	display: flex;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 2em;
 }
-.main-gallery > .gallery {
-  padding: 0 8px;
-}
+/* .main-thumbs {
+  display: block;
+  margin: auto;
+  padding-left: 12%;
+  padding-right: 12%;
+  width: 100%;
+} */
 
 .main-gallery:after {
   content: "";
   clear: both;
 }
+/* .main-gallery {
+  display: inline-block;
+  margin: auto;
+  padding: 0 5%;
 
+} */
 .gallery {
-  float: left;
-  width: 25%;
+  position: relative;
+  cursor: pointer;
+  padding: 0px;
+  transition: all .5s ease;
 }
+.gallery:hover {
+  border: 2px solid #D29F13;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* opacity: .5; */
+}
+/* .gallery:hover .img-overlay {
+  opacity: .5;
+} */
 .dc-img, .se-img, .rt-img {
+  position: relative;
 	width: 200px;
-	height: 133.33px;
+  height: 133.33px;
+  cursor: pointer;
 }
 
 /* The Modal (background) */

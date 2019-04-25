@@ -243,6 +243,7 @@ a {
 /* MAIN CONTENT */
 /* Column container */
 .row {
+	position: relative;
 	background-color: #ddd;
 	/* background-image: linear-gradient(to left, #b3b3b5, #faf9f9); */
 	column-count: 3;
@@ -303,34 +304,24 @@ a {
 .contentflex span {
 	border: 1px solid #ccc;
 	background-image: linear-gradient(to top, #d9d2dd, white);	
-	color: #6c4088;
+	
 	display: inline-flex;
 	margin: 0px 10px;
-	/* text-align: center; */
-	align-self: center;
-	/* white-space: wrap; */
-  /* font-size: 12px; */
+	align-self: flex-end;
   padding: 0px 10px;
 	width: 150px;
   height: 3.5em;
-  /* word-spacing: 4px;
-  line-height: 1.5em; */
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 	cursor: pointer;
 }
 .contentflex span:hover {
 	background-image: linear-gradient(to bottom, #3C1053, #9050b2);
 	border: 1px solid #fff;
-	/* white-space: nowrap; */
-	color: #FFFFFF;
-	/* text-decoration: none;	
-	font-weight: bold;	 */
+	
 }
 .contentflex span.active {
 	background-image: linear-gradient(to bottom, #20052d, #3C1053);
 	border: 1px solid #fff;
-	/* white-space: nowrap; */
-	color: #FFFFFF;
 	text-decoration: none;	
 		
 }
@@ -338,13 +329,16 @@ a {
 	text-align: center;
 	font-size: 14px;
 	word-spacing: 4px;
-  line-height: 1.5em;
-  transition: all 0.5s;
+	line-height: 1.5em;
+	text-decoration: none;
+	color: #6c4088;
+  transition: font-size 1s, font-weight 1s, color 1s ease;
 }
 .contentflex span:hover p, .contentflex span.active p {
 	font-size: 16px;
-	/* white-space: nowrap; */
-	text-decoration: none;	
+	font-weight: bold;
+	color: #FFFFFF;
+		
 	
 }
 .contentflex span:first-of-type {
@@ -405,6 +399,23 @@ span p {
 	font-size: 14px;
 	margin-left: 1%;
 }
+.main-tile {
+	position: relative;
+	min-height: 500px;
+	max-height: 550px;
+}
+/* .side-left {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	left: 0;
+}
+.side-right {
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	right: 0;
+} */
 
 
 
@@ -418,9 +429,10 @@ span p {
 
 /* Footer */
 .footer {
-	position: relative;
+	position: absolute;
+	/* bottom: 12%; */
 	margin: auto;
-	max-width: 100%;
+	width: 100%;
   padding: 20px;
 	text-align: center;
   background-image: linear-gradient(to right, #3C1053, #9050b2, white);	
@@ -441,12 +453,12 @@ span p {
 		position: absolute;
 		opacity: 0.3;
 		z-index: -1;
-		left: 25%;
+		left: 125px;
 	}
 	.logo {
 		padding: 0px;
 		width: 100%;
-		align-items: flex-start;
+		align-items: center;
 		margin: auto;
 	}
 	#logotxt-div {
@@ -495,8 +507,8 @@ span p {
 		margin: 0px 0px;
 		text-align: center;	
 }
-	.main p {
-		margin: auto;
+	.main-tiles p:first-of-type {
+		margin: auto auto 1.5em auto;
 	}
 	.navlinks, .navlinks:hover, .navlinks:active {
 		padding: 5px 10px;
