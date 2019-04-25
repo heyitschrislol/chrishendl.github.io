@@ -72,6 +72,14 @@ a {
 	align-items: flex-start;
 	margin-left: 13%;
 }
+#linklogo {
+	transition: all 4s;
+}
+#linklogo:hover {
+	-ms-transform: rotate(720deg); /* IE 9 */
+  -webkit-transform: rotate(720deg); /* Safari */
+  transform: rotate(720deg);
+}
 .logotext {
 	color: #6c4088;
 	/* text-shadow: -1px 1px 2px #fff,
