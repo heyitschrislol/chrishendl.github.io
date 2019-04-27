@@ -1,424 +1,78 @@
 @charset "utf-8";
 
-/*******************/
-/*TEXT STROKE CODE**/
-/*******************/
-/*
-
-text-shadow:
-   -1px -1px 0 #000,  
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-     1px 1px 0 #000;
-	 
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Anton|Open+Sans+Condensed:300|Oswald|Shadows+Into+Light');
+/* 
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Amatic SC', cursive;
+font-family: 'Oswald', sans-serif; 
 */
-
-
 * {
-	font-family: Bebas, Nobile, sans-serif;
 	box-sizing: border-box;
 }
-html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
-}
 body {
-	font-family: Roboto, Nobile, sans-serif;
-	font-size: 14px;	 
-	margin: 0;
+	font-family: 'ShadowsIntoLight', cursive;
+	color: #000;
+	font-size: 1em;
 }
-p {
-	font-family: Roboto, Nobile, sans-serif;
-	font-size: 14px;
-}
-h1 {
-	text-shadow: 2px 2px #ddd;
-}
-h2 {
-	text-shadow: 2px 2px #ddd;
-}
-a {
-	background: transparent;
-	color: #dddddd;	
-	text-decoration: none;
-	font-weight: bold;
-}
-
-/* BANNER */
-.bannertop {
-	/* border: 3px solid orange; */
-	display: inline-block;
-	width: 100%;
-}
-
-.logotext {
-	/* border: 3px solid green; */
-	-webkit-display: flex;
-	display: flex;
-	-webkit-flex-flow: column wrap;
-	margin-right: 55%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	flex-flow: column wrap;
-	align-items: center;	
-}
-.logotext p {
-	/* border: 2px dashed blueviolet; */
-	margin: 5px 5px 5px 5px;
-	text-align: center;
-	font-weight: bold;
-	text-shadow: 2px 2px #ddd;
-}
-.logotext p > a {
-	font-family: RobotoLight, sans-serif;
-	color: black;
-	letter-spacing: 1px;
-}
-.logotext p:first-of-type {
-	font-family: Bebas, Nobile, sans-serif;
-	font-size: 4.0em;
-	letter-spacing: 4px;
-	word-spacing: 15px;
-}
-
-
-.logotext p:nth-of-type(2) {
-	font-family: RobotoLight, sans-serif;
-	font-size: 1em;	
-	padding: 0px;
-	letter-spacing: 1px;
-	word-spacing: 20px;
-}
-
-/*	NAV BAR	*/
-.nav-m {
-	width: 100%;
-	-webkit-display: flex;
-	display: flex;
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-	background-image: linear-gradient(to bottom, #3C1053, #9050b2);	
-	line-height: 1em;
-	align-content: left;
-}
-.nav {	
-	width: 100%;
-	-webkit-display: flex;
-	display: flex;
-	-webkit-flex-flow: column wrap;
-	flex-flow: column wrap;
-	background-image: linear-gradient(to right, #3C1053, #9050b2, white);	
-	line-height: 1em;
-	
-}
-.nav-ul {
-	/* margin-left: 10%; */
-	margin: 0;
-	padding: 0 0 0 10%;
-	-webkit-display: flex;
-	display: flex;
-	-webkit-flex-flow: row wrap;
-	flex-flow: row nowrap;
-	list-style: none;
-	height: 44px;
-}
-.nav-ul li {	
-	margin: 0px 0px;
-	padding: 0px;
-	height: 44px;
-	text-align: center;	
-}
-.nav-ul li:hover {
-	background-image: linear-gradient(to top, #d9d2dd, white);
-}
-
-.navitems {
-	display: flex;
-	flex-flow: column wrap;
-	align-content: stretch;
-	/*	add stroke effect to text  */
-	
-}
-.navitems a {
-	font-size: 12px;
-	padding: 15px 15px;
-	color: #efefef;
-	-webkit-transition: font-size 1s, font-weight 1s, color 1s;
-	transition: font-size 1s, font-weight 1s, color 1s;
-}
-.navitems a:hover  {		
-	text-decoration: none;	
-	font-size: 14px;
-	font-weight: bold;
-	color: #3C1053;	
-}
-.navitems a:active {
-	font-size: 14px;
-	font-weight: bold;
-	color: #fff3aa;
-}
-
-
-/* .dropdown {
-	display: none;
-	position: absolute;
-	flex: 0 1 100px;
-	background-image: linear-gradient(to top, #d9d2dd, white);	
-	width: 0px;
-	height: 0px;
-	justify-content: center;
-	align-items: flex-start;
-	border-radius: 4px;
-	border: none;
-  margin: 44.5px 0px 0px 0px;
-	padding: 0px;
-	word-spacing: 4px;
-	line-height: 1em;
-	transition: width 0.5s height 0.5s;
-	cursor: pointer;
-}
-#courselink:hover .dropdown {
-	display: flex;
-	flex-flow: column nowrap;
-	align-content: stretch;
-	width: auto;
-	height: 8.0em;
-}
-#projectlink:hover .dropdown {
-	display: flex;
-	flex-flow: column nowrap;
-	align-content: stretch;
-	width: auto;
-	height: 6.0em;
-} */
-
-
-
-
-
-
-
-/* MAIN CONTENT */
-/* Column container */
-.row {
-	/* background-color: #ddd; */
-	background-image: linear-gradient(to left, #b3b3b5, rgb(250, 249, 249));
-	column-count: 2;
-	-webkit-display: flex;
-	display: flex;
-	-webkit-flex-flow: row nowrap;
-	flex-flow: row nowrap;
-	align-items: stretch;
-	justify-content: center;
-}
-
-
-/* Create two unequal columns that sits next to each other */
-/* ###### sidebar/left column ###### */
-
-
-/* ######	center column ###### */
-/*	content heading	*/
-.main {	
-	-webkit-flex: 90%;
-	display:flex;
-	flex-flow: column nowrap;
-  flex: 90%;
-	color: #3C1053;
-	padding: 20px;
-	min-height: 400px;	
-}
-
-
-
-.headingflex {
-	/*! border: 1px dashed red; */
-	display: flex;
-	flex-flow: row nowrap;
-	padding: 5px;
-}
-.contentflex h2 {
-	letter-spacing: 3px;
-	word-spacing: 10px;
-}
-.contentflex {
-	/*! border: 1px dotted green; */
-	display: flex;
-	flex-flow: row nowrap;
-	align-content: flex-end;
-	padding: 0px 10px 0px 40px;
-}
-.contentflex span {
-	border: 1px solid #ccc;
-	background-image: linear-gradient(to top, #d9d2dd, white);	
-	color: #3C1053;
-	display: inline-flex;
-	margin: 0px 10px;
-	text-align: center;
-	align-self: center;
-  font-size: 12px;
-  padding: 0px 10px;
-	width: 150px;
-  height: 2.5em;
-  word-spacing: 4px;
-  line-height: 1.5em;
-  transition: all 0.5s;
-	cursor: pointer;
-}
-.contentflex span:hover, .contentflex span.active {
-	background-image: linear-gradient(to bottom, #3C1053, #9050b2);
-	border: 1px solid #fff;
-	color: #FFFFFF;
-	text-decoration: none;	
-	font-weight: bold;	
-}
-.contentflex span:first-of-type {
-	margin-left: 30%;
-}
-.btnlinks p {
-	margin: auto;
-}
-#horline {
-	padding: 0;
-	position: relative;
-	flex-shrink: 0;
-	width: 100%;
-	height: 2px;
-	background-color: #3C1053;
-}
-#vertline {
-	display: none;
-	transition: all 0.5s;
-	padding: 0;
-	position: absolute;
-	width: 2px;
-	height: 0%;
-	background-color: #3C1053;
-}
-
-.main-tiles a {
-	font-family: RobotoLight, Nobile, sans-serif;
-	background: transparent;
-	color: #9050b2;	
-	text-decoration: none;
-	padding: 4px;
-	/* border: 2px solid #3C1053; */
-	
-}
-.main-tiles a:visited {
-	color: #6a5a72;
-	text-shadow: none;
-}
-.main-tiles a:hover {
-	color: #D29F13;
-}
-#about a {
+img {
 	border: none;
 }
-
-.main-tiles p {
-	font-family: RobotoLight, Roboto, sans-serif;
-	font-size: 14px;
-	text-indent: 40px;
-	margin-right: 15%;
-}
-span p {
-	font-family: Bebas, Nobile, sans-serif;
-}
-.main-tile h3, .main-tile div {
-	word-spacing: 3px;
-}
-.main-tile span {
-	font-family: RobotoLight, Roboto, sans-serif;
-	font-size: 14px;
-	margin-left: 1%;
-}
-
-
-
-
-
-#isds4125 a, #isds3110 a, #isds3200 a, #isds3105 a, #dCalc a, #sEase a, #rTool a {
-	color: fff3aa;
-	
-}
-
-
-/* Footer */
-.footer {
+.header {
+	display: block;
 	position: relative;
+	width: auto;
+	/* border: 1px solid blue; */
+	margin: 0px;
+}
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin: 0px;
+	padding: 0px;
+}
+.smallhead {
+	/* border: 1px solid red; */
+	word-spacing: 0.3em;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1em;
+	/* font-variant: small-caps; */
+}
+.largehead {
+	/* border: 1px solid red; */
+	font-weight: bold;
+	font-style: normal;
+	font-size: 3.5em;
+	letter-spacing: 2.5px;
+	line-height: 1em;
+	/* font-variant: small-caps; */
+}
+.header-image {
+	border: none;
+	position: relative;
+	margin: 100px auto auto auto;
+	padding: 0px;
+	width: 100%;
+}
+.header-image img {
+	border-radius: 50%;
+	display: block;
+	padding: 0px;
 	margin: auto;
+	width: 400px;
 	max-width: 100%;
-  padding: 20px;
-	text-align: center;
-  background-image: linear-gradient(to right, #3C1053, #9050b2, white);	
+	height: auto;
+	border: none;
+	overflow: hidden;
+  background-color: #838183;
+	box-shadow: 0 2px 4px 0 #D29F13, 0 2px 10px 0 #D29F13;
+	transition: all 0.5s ease;
+} 
+.header-image img:hover {
+	border: none;
+	box-shadow: 0 4px 8px 0 #D29F13, 0 6px 20px 0 #D29F13;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (min-width: 768px) {
-	.sidebar, .container, .overlay {
-		display: none;
-	}
 
-}
-@media screen and (max-width: 900px) {
-	/*	MOBILE NAV	*/	
-	
-	.logotext {
-		margin: 0% 30% 0% 30%;
-	}
-	.contentheading, #subtxt {
-    display: none;
-  }
-	.sidebar {
-		display: none;
-		z-index: 3;
-		width: 70%;
-		font-weight: bold;		
-	}
-	.nav {
-		display: none;		
-	}
-	.navlinks-m {
-		width: 100%;
-		font-size: 22px;
-		transition: display 0.5s;
-  }
-	#openNav {
-		font-size: 50px;
-		font-weight: bold;
-		color: #9050b2;
-	}
-
-	/* TRANSITION */
-	#mySidebar, #myOverlay {
-		transition: display 0.5s;
-	}
-
-	
-	.logotext  {
-		padding: 0px;
-	}
-	.row, .nav-ul, .navbar {   
-        flex-flow: column wrap;
-    }
-	.nav-ul {
-		margin: auto;
-		align-content: center;
-	}
-	.nav-ul li {	
-		margin: 0px 0px;
-		text-align: center;	
-}
-	.main p {
-		margin: auto;
-	}
-	.navlinks, .navlinks:hover, .navlinks:active {
-		padding: 5px 10px;
-		font-size: 20px;
-	}
-
-	/* [class*="row"], [class*="nav"], [class*="nav"], [class*="main"]{
-		width: 100%;
-	} */
-}
