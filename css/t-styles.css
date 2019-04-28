@@ -5,9 +5,9 @@
 }
 
 body {
-    font-family: 'ShadowsIntoLight', cursive;
+    font-family: 'OpenSansCondensed', cursive;
     color: #000;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 img {
@@ -55,46 +55,107 @@ h3 {
     position: relative;
     margin: 100px auto auto auto;
     padding: 0px;
-	width: 100%;
+    width: 100%;
 }
 
 .header-image img {
     border-radius: 50%;
     display: block;
     padding: 0px;
-    margin: auto;
+    margin: auto auto 5em auto;
     width: 400px;
-	max-width: 100%;
-	opacity: .5;
+    max-width: 100%;
+    /* opacity: .5; */
     height: auto;
     border: none;
     overflow: hidden;
     background-color: #838183;
-    box-shadow: 0 2px 4px 0 #D29F13, 0 2px 10px 0 #D29F13;
-    /* transition: box-shadow 0.5s transform 4s ease; */
+    box-shadow: 0 4px 8px 0 #D29F13, 0 4px 30px 0 #D29F13;
+    transition: all 0.5s ease;
 }
 
-/* .header-image img:hover {
-    border: none;
-	box-shadow: 0 4px 8px 0 #D29F13, 0 6px 20px 0 #D29F13;
-	-ms-transform: rotate(720deg);
-  	-webkit-transform: rotate(720deg); 
-  	transform: rotate(720deg);
+#logoimage {
+    transition: transform 10s ease;
+}
+
+#logoimage:hover {
+    -ms-transform: rotate(1080deg);
+    /* IE 9 */
+    -webkit-transform: rotate(1080deg);
+    /* Safari */
+    transform: rotate(1080deg);
+}
+
+.hline1 {
+    position: relative;
+    width: calc(95% - 100px);
+    height: 2px;
+    background-image: linear-gradient(to left, #e9dcf1, #3C1053);
+    margin: 10px auto;
+}
+
+.hline2 {
+    position: relative;
+    width: calc(85% - 100px);
+    height: 2px;
+    background-image: linear-gradient(to left, rgb(219, 195, 128), #D29F13);
+    margin: 10px auto;
+}
+
+.hline3 {
+    position: relative;
+    width: calc(75% - 100px);
+    height: 2px;
+    background-image: linear-gradient(to left, #e9dcf1, #3C1053);
+    margin: 10px auto;
+}
+
+/* .header .hline1, .header .hline2 {
+    
 } */
-
-
-
 .about {
-	display: block;
-    margin: 300px auto auto auto;
+    display: block;
+    margin: auto;
 }
+
 .about h1 {
-	padding: 20px 0;
+    padding: 20px 0;
 }
-.h-line {
-	position: relative;
-	width: calc(75% - 100px);
-	height: 2px;
-	background-image: linear-gradient(to left,#e9dcf1, #3C1053);	
-	margin: auto;
+
+.ab-content {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+}
+
+
+
+.examples {
+    display: block;
+    margin: auto;
+}
+.examples h2 {
+    margin: 2em auto;
+}
+.ex-nav {
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 100px;
+    background-image: linear-gradient(to right, #3C1053, #9050b2, white);
+}
+.ex-tabs {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+}
+.ex-links {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+}
+#dCalc, #sEase, #rTool {
+    display: none;
 }
