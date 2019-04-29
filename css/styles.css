@@ -255,13 +255,30 @@ img {
     position: relative;
 }
 
+/* .ex-tile {
+    display: block;
+    width: 70%;
+    margin: auto;
+} */
 .ex-tile {
+    display: block;
+    width: 95%;
+    margin: auto;
+} 
+
+.ex-tiledesc {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.ex-tilegallery {
     display: block;
     width: 70%;
     margin: auto;
 }
 
 .ex-thumbs {
+    width: 70%;
     border: 3px solid #9050b2;
     margin: 3em auto auto auto;
     display: flex;
@@ -282,7 +299,8 @@ img {
     box-shadow: 0 0 10px;
 }
 
-.ex-imagedisplay {
+.ex-imgdisplay {
+    display: block;
     margin-top: 1em;
 }
 
@@ -355,6 +373,9 @@ img {
     #ex-rightline {
         display: none;
     }
+    .ex-tilegallery {
+        width: 97%
+    }
 
     .ex-links {
         font-size: 1em;
@@ -379,7 +400,7 @@ img {
     #dc-image,
     #se-image,
     #rt-image {
-        max-width: 375px;
+        max-width: 325px;
         margin: auto;
     }
 
