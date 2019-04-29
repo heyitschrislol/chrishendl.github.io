@@ -304,7 +304,6 @@ a {
 .contentflex span {
 	border: 1px solid #ccc;
 	background-image: linear-gradient(to top, #d9d2dd, white);	
-	
 	display: inline-flex;
 	margin: 0px 10px;
 	align-self: flex-end;
@@ -322,8 +321,7 @@ a {
 .contentflex span.active {
 	background-image: linear-gradient(to bottom, #20052d, #3C1053);
 	border: 1px solid #fff;
-	text-decoration: none;	
-		
+	text-decoration: none;
 }
 .contentflex span p {
 	text-align: center;
