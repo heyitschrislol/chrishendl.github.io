@@ -4,9 +4,11 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>testsite</title>
+	<title>test site</title>
+	<link rel="icon" href="favicon.ico">
 	<link href="css/t-styles.css" rel="stylesheet" />
-	<link href="css/altfonts.css" rel="stylesheet" />
+	<link href="css/t-sprites.css" rel="stylesheet" />
+	<link href="css/fontfaces.css" rel="stylesheet" />
 	<script src="js/ch_tabs.js"></script>
 	<script src="js/ch_gallery.js"></script>
 </head>
@@ -26,72 +28,105 @@
 	<div class="about">
 		<h1 class="largehead">ABOUT CHRIS</h1>
 		<div class="hline3"></div>
-		<p class="ab-content" style="margin-bottom: 2em">
-			Windguardian leviosa. It's leviosa not leviosa. Avada kadavra. Sometimes I will start a
-			sentence and I don't even know where it's going.
+		<p class="content ab-content" style="margin-bottom: 2em">
+			My name is Chris Hendl. I am an application developer experienced in many
+			programming/markup/scripting/database
+			languages such as: C#, Java, VB.Net, HTML5, CSS3, Javascript, SQL, and XML. I thoroughly enjoy making
+			programs as
+			both a professional skill and personal hobby.
+			<!-- Windguardian leviosa. It's leviosa not leviosa. Avada kadavra. Sometimes I will start a
+			sentence and I don't even know where it's going. -->
 		</p>
-		<p class="ab-content" style="margin-bottom: 10em">
-			We found ourselves on the, less prepared
+		<p class="content ab-content" style="margin-bottom: 2em">
+			I understand how important knowledge and experience are to personal and professional growth, and I
+			am someone who is passionate about learning and achieving. As an LSU graduate majoring in Information
+			Systems and Decision Sciences, I aspire to one day gain professional experience working with IS, IT, and Big
+			Data.
+		</p>
+		<p class="content ab-content" style="margin-bottom: 10em">
+			In March 2019, I started a position as an Application Developer at the IBM CIC in Baton Rouge, LA. I am very
+			excited
+			for this opportunity to hone my professional skillset and advance my career goals.
+			<!-- We found ourselves on the, less prepared
 			side of things when Stanley had his-- when his heart went bezerk. And I knew exactly what
 			to do but in a much more real sense I had <i>no idea</i> what to do. So I thought we should have
 			a CPR training class. And... of course you can't get the practice dummy, unless the
-			instructor comes along with it. Red Cross... racquet.
+			instructor comes along with it. Red Cross... racquet. -->
 		</p>
 	</div>
+	
 	<div class="examples">
 		<div class="hline3"></div>
 		<h2 id="ex-bkm">SOME OF MY WORK</h2>
-		<div class="ex-nav">
-			<div class="ex-tabs" id="ex-tabs">
-				<a class="ex-links" href="#ex-bkm" value="" id="ex-tabDC" onclick="exampA();dcImages();">Depreciation
+		<div class="down ex-down">
+			<div class="top-arrow ex-top-arrow"></div>
+			<div class="middle-arrow ex-middle-arrow"></div>
+			<div class="bottom-arrow ex-bottom-arrow"></div>
+		</div>
+		
+		<!-- <div class="nav ex-nav">
+			<div class="tabs ex-tabs" id="ex-tabs">
+				<a class="links ex-links" href="#ex-bkm" value="" id="ex-tabDC" onclick="exampA();dcImages();">Depreciation
 					Calculator</a>
-				<a class="ex-links" href="#ex-bkm" value="" id="ex-tabSE" onclick="exampB();seImages();">ScriptEase</a>
-				<a class="ex-links" href="#ex-bkm" value="" id="ex-tabRT" onclick="exampC();rtImages();">Trace RSE
+				<a class="links ex-links" href="#ex-bkm" value="" id="ex-tabSE" onclick="exampB();seImages();">ScriptEase</a>
+				<a class="links ex-links" href="#ex-bkm" value="" id="ex-tabRT" onclick="exampC();rtImages();">Trace RSE
 					Tool</a>
 			</div>
-		</div>
-		<div id="ex-leftline"></div>
+		</div> -->
+		<!-- <div id="ex-leftline"></div>
 		<div id="ex-rightline"></div>
-		<div class="ex-content">
+		<div class="content ex-content">
 			<span class="close" value="" id="ex-close" onclick="closeExamples()">Close</span>
 			<div id="dCalc" class="ex-tile">
-				<h2>DEPRECIATION CALCULATOR</h2>
-				<p><a href="https://github.com/heyitschrislol/DepreciationCalculator">Download (github)</a>
-					<div><strong>Program Description:</strong></div>
-					<p>Calculates depreciation using both the straight-line and double-declining methods</p>
-					<br>
-					<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
-					<div><b>WHY: </b><span>The original intention behind writing this program was to help my
-							girlfriend with her accounting homework.
-							I thought I could use what I was learning in class to make something that would
-							alleviate some of the repetitiveness of her accounting homework calculations.
-							Truth be told, a large part of my motivation came from excitement at what I was learning
-							in class, and I was rather anxious
-							to see what my newfound "knowledge" could do.</span></div>
-					<div class="ex-gallery">
-						<div class="ex-thumbs" id="dc-thumbs">
-							<img src="media/dcalc1.jpg" class="ex-thumb" id="dc-thumb1" onclick="dcImage(this);"
-								alt="Depreciation Calculator">
-							<img src="media/dcalc2.jpg" class="ex-thumb" id="dc-thumb2" onclick="dcImage(this);"
-								alt="Depreciation Calculator">
-							<img src="media/dcalc3.jpg" class="ex-thumb" id="dc-thumb3" onclick="dcImage(this);"
-								alt="Depreciation Calculator">
+				<div class="ex-tiledesc">
+					<h2>DEPRECIATION CALCULATOR</h2>
+					<p><a href="https://github.com/heyitschrislol/DepreciationCalculator">Download (github)</a>
+						<div><strong>Program Description:</strong></div>
+						<p style="margin-bottom: 1em">Calculates depreciation using both the straight-line and
+							double-declining methods</p>
+						<div>
+							<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
 						</div>
-						<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
-						<div class="ex-imagedisplay">
-							<img id="dc-image">
+						<div>
+							<b>WHY: </b><span>The original intention behind writing this program was to help my
+								girlfriend with her accounting homework.
+								I thought I could use what I was learning in class to make something that would
+								alleviate some of the repetitiveness of her accounting homework calculations.
+								Truth be told, a large part of my motivation came from excitement at what I was learning
+								in class, and I was rather anxious
+								to see what my newfound "knowledge" could do.</span>
 						</div>
+				</div>
+				<div class="ex-tilegallery">
+					<div class="ex-thumbs" id="dc-thumbs">
+						<img src="media/dcalc1.jpg" class="ex-thumb" id="dc-thumb1" onclick="dcImage(this);"
+							alt="Depreciation Calculator">
+						<img src="media/dcalc2.jpg" class="ex-thumb" id="dc-thumb2" onclick="dcImage(this);"
+							alt="Depreciation Calculator">
+						<img src="media/dcalc3.jpg" class="ex-thumb" id="dc-thumb3" onclick="dcImage(this);"
+							alt="Depreciation Calculator">
 					</div>
+					<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+					<div class="ex-imgdisplay">
+						<img id="dc-image">
+					</div>
+				</div>
 			</div>
 			<div id="sEase" class="ex-tile">
-				<h2>SCRIPTEASE</h2>
-				<p><a href="https://github.com/heyitschrislol/ScriptEase/">Download (github)</a>
-					<div><strong>Program Description:</strong></div>
-					<p>A tool to streamline and organize the many functions and procedures required for Government
+				<div class="ex-tiledesc">
+					<h2>SCRIPTEASE</h2>
+					<p><a href="https://github.com/heyitschrislol/ScriptEase/">Download (github)</a></p>
+					<div>
+						<strong>Program Description:</strong>
+					</div>
+					<p style="margin-bottom: 1em">A tool to streamline and organize the many functions and procedures
+						required for Government
 						Help Desk employees.</p>
-					<br>
-					<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
-					<div><b>WHY: </b><span>For a few months, I worked at a high-volume helpdesk where we were
+					<div>
+						<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
+					</div>
+					<div>
+						<b>WHY: </b><span>For a few months, I worked at a high-volume helpdesk where we were
 							required to keep extensive records of
 							each call/interaction and submit them for review. I unfortunately found that the
 							recording procedure that we were trained to
@@ -102,30 +137,36 @@
 							I decided in my free time that I would create a program that combined the functions of
 							several of the applications into one
 							small program in hopes to provide a little less chaos to the recording process.
-						</span></div>
-					<br />
-					<div class="ex-gallery">
-						<div class="ex-thumbs" id="se-thumbs">
-							<img src="media/scriptease1.jpg" class="ex-thumb" id="se-thumb1" onclick="seImage(this);"
-								alt="ScriptEase">
-							<img src="media/scriptease2.jpg" class="ex-thumb" id="se-thumb2" onclick="seImage(this);"
-								alt="ScriptEase">
-						</div>
-						<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
-						<div class="ex-imagedisplay">
-							<img id="se-image">
-						</div>
+						</span>
 					</div>
+				</div>
+				<div class="ex-tilegallery">
+					<div class="ex-thumbs" id="se-thumbs">
+						<img src="media/scriptease1.jpg" class="ex-thumb" id="se-thumb1" onclick="seImage(this);"
+							alt="ScriptEase">
+						<img src="media/scriptease2.jpg" class="ex-thumb" id="se-thumb2" onclick="seImage(this);"
+							alt="ScriptEase">
+					</div>
+					<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+					<div class="ex-imagedisplay">
+						<img id="se-image">
+					</div>
+				</div>
 			</div>
 			<div id="rTool" class="ex-tile">
-				<h2>TRACE RSE TOOL</h2>
-				<p><a href="https://github.com/heyitschrislol/RSETool">Download (github)</a>
-					<div><strong>Program Description:</strong></div>
+				<div class="ex-tiledesc">
+					<h2>TRACE RSE TOOL</h2>
+					<p><a href="https://github.com/heyitschrislol/RSETool">Download (github)</a></p>
+					<div>
+						<strong>Program Description:</strong>
+					</div>
 					<p>A tool to manage and organize some of the work involved in running, recording, and reporting
 						remote social engineering projects</p>
-					<br>
-					<div><b>HOW: </b><span>This program was created using C# and Visual Studio</span></div>
-					<div><b>WHY: </b><span>The goal of the RSE Tool was to help TraceSecurity employees manage
+					<div>
+						<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
+					</div>
+					<div>
+						<b>WHY: </b><span>The goal of the RSE Tool was to help TraceSecurity employees manage
 							remote social engineering campaigns
 							more easily. This tool can extract project scoping data from documents (such as client
 							employee names, phone numbers, and email addresses)
@@ -133,40 +174,41 @@
 							other programs. This feature is particularly useful
 							for projects where the scoping information received from the client is poorly organized
 							and/or labeled, and would otherwise force the analyst
-							to copy/paste items line-by-line.</span></div>
+							to copy/paste items line-by-line.</span>
+					</div>
 					<div style="text-indent: 30px;">
 						<p>Another useful feature of this program is that it allows the user to quickly locate the
 							desired email template and
 							copy its HTML code to the computer clipboard. It is also capable of adding new templates
 							(locally) to its list for use in the future.</p>
 					</div>
-					<br />
-					<div class="ex-gallery">
-						<div class="ex-thumbs" id="rt-thumbs">
-							<img src="media/rsetool1.jpg" class="ex-thumb" id="rt-thumb1" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool2.jpg" class="ex-thumb" id="rt-thumb2" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool3.jpg" class="ex-thumb" id="rt-thumb3" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool4.jpg" class="ex-thumb" id="rt-thumb4" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool5.jpg" class="ex-thumb" id="rt-thumb5" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool6.jpg" class="ex-thumb" id="rt-thumb6" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool7.jpg" class="ex-thumb" id="rt-thumb7" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-							<img src="media/rsetool8.jpg" class="ex-thumb" id="rt-thumb8" onclick="rtImage(this);"
-								alt="Trace RSE Tool">
-						</div>
-						<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
-						<div class="ex-imagedisplay">
-							<img id="rt-image">
-						</div>
+				</div>
+				<div class="ex-tilegallery">
+					<div class="ex-thumbs" id="rt-thumbs">
+						<img src="media/rsetool1.jpg" class="ex-thumb" id="rt-thumb1" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool2.jpg" class="ex-thumb" id="rt-thumb2" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool3.jpg" class="ex-thumb" id="rt-thumb3" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool4.jpg" class="ex-thumb" id="rt-thumb4" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool5.jpg" class="ex-thumb" id="rt-thumb5" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool6.jpg" class="ex-thumb" id="rt-thumb6" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool7.jpg" class="ex-thumb" id="rt-thumb7" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
+						<img src="media/rsetool8.jpg" class="ex-thumb" id="rt-thumb8" onclick="rtImage(this);"
+							alt="Trace RSE Tool">
 					</div>
-			</div>
-		</div>
+					<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+					<div class="ex-imagedisplay">
+						<img id="rt-image">
+					</div>
+				</div>
+			</div> -->
+	</div>
 	</div>
 
 </body>

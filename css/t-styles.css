@@ -13,25 +13,83 @@ X.7		-		@MEDIA RULES
 */
 
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	font-family: 'OpenSansCondensed', cursive;
-	color: #000;
+    font-family: 'OpenSansCondensed', cursive;
+    color: #000;
 }
+
 h1,
 h2,
 h3 {
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	margin: 0px;
-	padding: 0px;
-}
-img {
-	border: none;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
 }
 
+img {
+    border: none;
+}
+
+.down {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+.down:hover {
+    cursor: pointer;
+}
+.top-arrow {
+    background: url('../media/blkarrow2.png');
+    background-position: 0 0;
+    width: 200px;
+    height: 40px;
+    transition: all .5s;
+}
+.down:hover .top-arrow {
+    background: url('../media/purparrow2.png');
+    background-position: 0 0;
+    width: 200px;
+    height: 40px;
+}
+
+.middle-arrow {
+    background: url('../media/blkarrow2.png');
+    background-position: 0px -45px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+.down:hover .middle-arrow {
+    background: url('../media/purparrow2.png');
+    background-position: 0px -45px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+.bottom-arrow {
+    background: url('../media/blkarrow2.png');
+    background-position: 0px -86px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+.down:hover .bottom-arrow {
+    background: url('../media/purparrow2.png');
+    background-position: 0px -86px;
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+}
 
 /*
 ############################
@@ -39,83 +97,83 @@ img {
 ############################
 */
 .header {
-	display: block;
-	position: relative;
-	width: auto;
-	margin: 0px;
-	font-size: 1.2em;
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 0px;
+    font-size: 1.2em;
 }
 
 .smallhead {
-	word-spacing: 0.3em;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1em;
+    word-spacing: 0.3em;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1em;
 }
 
 .largehead {
-	font-weight: bold;
-	font-style: normal;
-	font-size: 3.5em;
-	letter-spacing: 2.5px;
-	line-height: 1em;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3.5em;
+    letter-spacing: 2.5px;
+    line-height: 1em;
 }
 
 .header-image {
-	border: none;
-	position: relative;
-	margin: 100px auto 14em auto;
-	padding: 0px;
-	width: 100%;
+    border: none;
+    position: relative;
+    margin: 100px auto 14em auto;
+    padding: 0px;
+    width: 100%;
 }
 
 .header-image img {
-	border-radius: 50%;
-	display: block;
-	padding: 0px;
-	margin: auto;
-	width: 400px;
-	max-width: 100%;
-	height: auto;
-	border: none;
-	overflow: hidden;
-	background-color: #838183;
-	box-shadow: 0 4px 8px 0 #D29F13, 0 4px 30px 0 #D29F13;
-	transition: all 0.5s ease;
+    border-radius: 50%;
+    display: block;
+    padding: 0px;
+    margin: auto;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    overflow: hidden;
+    background-color: #838183;
+    box-shadow: 0 4px 8px 0 #D29F13, 0 4px 30px 0 #D29F13;
+    transition: all 0.5s ease;
 }
 
 #logoimage {
-	transition: transform 10s ease;
+    transition: transform 10s ease;
 }
 
 #logoimage:hover {
-	-ms-transform: rotate(1080deg);
-	-webkit-transform: rotate(1080deg);
-	transform: rotate(1080deg);
+    -ms-transform: rotate(1080deg);
+    -webkit-transform: rotate(1080deg);
+    transform: rotate(1080deg);
 }
 
 .hline1 {
-	position: relative;
-	width: calc(95% - 100px);
-	height: 3px;
-	background-color: #3C1053;
-	margin: 10px auto;
+    position: relative;
+    width: calc(95% - 100px);
+    height: 3px;
+    background-color: #3C1053;
+    margin: 10px auto;
 }
 
 .hline2 {
-	position: relative;
-	width: calc(85% - 100px);
-	height: 2px;
-	background-color: #D29F13;
-	margin: 10px auto;
+    position: relative;
+    width: calc(85% - 100px);
+    height: 2px;
+    background-color: #D29F13;
+    margin: 10px auto;
 }
 
 .hline3 {
-	position: relative;
-	width: calc(75% - 100px);
-	height: 1px;
-	background-color: #3C1053;
-	margin: 10px auto;
+    position: relative;
+    width: calc(75% - 100px);
+    height: 1px;
+    background-color: #3C1053;
+    margin: 10px auto;
 }
 
 
@@ -127,20 +185,20 @@ img {
 ############################
 */
 .about {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 .about h1 {
-	padding: 20px 0;
+    padding: 20px 0;
 }
 
 .ab-content {
-	position: relative;
-	text-align: center;
-	margin: auto;
-	width: 40%;
-	font-size: 1.2em;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    font-size: 1.2em;
 }
 
 
@@ -155,138 +213,190 @@ img {
 ############################
 */
 .examples {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
 
 .examples h2 {
-	margin: 2em auto;
+    margin: 2em auto;
+}
+.ex-down {
+    
 }
 
+/* .ex-top-arrow {
+    display: inline-block;
+}
+
+.ex-middle-arrow {
+    display: inline-block;
+}
+
+.ex-bottom-arrow {
+    display: inline-block;
+} */
+
+
+
 .ex-nav {
-	display: block;
-	margin: auto;
-	width: 95%;
-	height: 100px;
-	background-image: linear-gradient(to bottom, #9050b2, #ab7ac7, #bb90d4);
+    display: block;
+    margin: auto;
+    width: 95%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #9050b2, #ab7ac7, #bb90d4);
 }
 
 .ex-tabs {
-	display: flex;
-	flex-flow: row nowrap;
-	align-content: center;
-	justify-content: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
 }
 
 .ex-links {
-	margin: 0px 5px;
-	position: relative;
-	bottom: 30px;
-	font-family: 'Oswald', sans-serif;
-	text-align: center;
-	color: white;
-	text-decoration: none;
-	padding: 5px;
-	background-image: linear-gradient(to bottom, #9050b2, #925ab1);
-	border-radius: 5px;
-	font-size: 1.2em;
+    margin: 0px 5px;
+    position: relative;
+    bottom: 30px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    background-image: linear-gradient(to bottom, #9050b2, #925ab1);
+    border-radius: 5px;
+    font-size: 1.2em;
 }
 
 .ex-links:hover {
-	background-image: linear-gradient(to bottom, #3C1053, #925ab1);
-	text-decoration: none;
+    background-image: linear-gradient(to bottom, #3C1053, #925ab1);
+    text-decoration: none;
 }
 
 .ex-links.active-tab {
-	background-image: linear-gradient(to bottom, #3C1053, #54236e, #925ab1);
-	box-shadow: inset 0px -3px 10px #925ab1;
-	text-decoration: none;
+    background-image: linear-gradient(to bottom, #3C1053, #54236e, #925ab1);
+    box-shadow: inset 0px -3px 10px #925ab1;
+    text-decoration: none;
 }
+
 .close {
-	text-align: center;
-	display: block;
-	width: 10%;
-	margin: auto;
+    text-align: center;
+    display: block;
+    width: 10%;
+    margin: auto;
 }
+
 #ex-close {
-	display: none;
-	padding: 10px;
-	border-bottom: 2px solid #fff;
-	transition: all 0.5s ease;
+    display: none;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
 }
+
 #ex-close:hover {
-	border-bottom: 2px solid #925ab1;
-	cursor: pointer;
+    border-bottom: 2px solid #925ab1;
+    cursor: pointer;
 
 }
+
 #ex-leftline {
-	display: none;
-	position: absolute;
-	left: 3%;
-	background-color: #bb90d4;
-	width: 2px;
-	height: 100%;
+    display: none;
+    position: absolute;
+    left: 3%;
+    background-color: #bb90d4;
+    width: 2px;
+    height: 100%;
 }
+
 #ex-rightline {
-	display: none;
-	position: absolute;
-	margin: auto;
-	right: 3%;
-	background-color: #bb90d4;
-	width: 2px;
-	height: 100%;
+    display: none;
+    position: absolute;
+    margin: auto;
+    right: 3%;
+    background-color: #bb90d4;
+    width: 2px;
+    height: 100%;
 }
 
 #dCalc,
 #sEase,
 #rTool {
-	display: none;
+    display: none;
 }
+
 .ex-content {
-	display: block;
-	position: relative;
+    display: block;
+    position: relative;
 }
+
+
 .ex-tile {
-	display: block;
-	width: 70%;
-	margin: auto;
+    display: block;
+    width: 95%;
+    margin: auto;
 }
+
+.ex-tiledesc {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.ex-tilegallery {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
 .ex-thumbs {
-	border: 3px solid #9050b2;
-	margin: 3em auto auto auto;
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
+    width: 70%;
+    border: 3px solid #9050b2;
+    margin: 3em auto auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
+
 .ex-thumb {
-	margin: 1em;
-	max-width: 200px;
-	height: 133.33px;
-	transition: all 0.5s ease;
+    margin: 1em;
+    max-width: 200px;
+    height: 133.33px;
+    transition: all 0.5s ease;
 }
+
 .ex-thumb:hover {
-	cursor: pointer;
-	box-shadow: 0 0 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px;
 }
-.ex-imagedisplay {
-	margin-top: 1em;
+
+.ex-imgdisplay {
+    display: block;
+    margin-top: 1em;
 }
-#dc-image, #se-image, #rt-image {
-	display: none;
-	max-width: 600px;
-	/* height: 624px; */
-	margin: auto;
+
+#dc-image,
+#se-image,
+#rt-image {
+    display: none;
+    max-width: 600px;
+    /* height: 624px; */
+    margin: auto;
 }
-#dc-close, #se-close, #rt-close {
-	display: none;
-	padding: 10px;
-	border-bottom: 2px solid #fff;
-	transition: all 0.5s ease;
+
+#dc-close,
+#se-close,
+#rt-close {
+    display: none;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
 }
-#dc-close:hover, #se-close:hover, #rt-close:hover {
-	border-bottom: 2px solid #925ab1;
-	cursor: pointer;
+
+#dc-close:hover,
+#se-close:hover,
+#rt-close:hover {
+    border-bottom: 2px solid #925ab1;
+    cursor: pointer;
 }
 
 
@@ -295,7 +405,7 @@ img {
 ##	  X.7		-		@MEDIA RULES	##
 ################################
 */
-	/*
+/*
 	##################################################
 	##						VIEWPORT SIZE CHART								##
 	##	------------------------------------------	##
@@ -310,40 +420,59 @@ img {
 
 
 @media screen and (max-width: 550px) {
-	.hline1 {
-		width: 95%
-	}
-	.hline2 {
-		width: 85%
-	}
-	.hline3 {
-		width: 75%
-	}
-	.ab-content {
-		width: 75%;
-	}
-	#ex-leftline {
-		display: none;
-	}
-	#ex-rightline {
-		display: none;
-	}
-	.ex-links {
-		font-size: 1em;
-	}
-	.close {
-		width: auto;
-	}
-	#ex-close, #dc-close, #se-close, #rt-close {
-		font-size: 2em;
-		border-bottom: 2px solid #9050b2;
-	}
-	.ex-thumbs {
-		flex-flow: column wrap;
-	}
-	#dc-image, #se-image, #rt-image {
-		max-width: 375px;
-		margin: auto;
-	}
-	
+    .hline1 {
+        width: 95%
+    }
+
+    .hline2 {
+        width: 85%
+    }
+
+    .hline3 {
+        width: 75%
+    }
+
+    .ab-content {
+        width: 75%;
+    }
+
+    #ex-leftline {
+        display: none;
+    }
+
+    #ex-rightline {
+        display: none;
+    }
+
+    .ex-tilegallery {
+        width: 97%
+    }
+
+    .ex-links {
+        font-size: 1em;
+    }
+
+    .close {
+        width: auto;
+    }
+
+    #ex-close,
+    #dc-close,
+    #se-close,
+    #rt-close {
+        font-size: 2em;
+        border-bottom: 2px solid #9050b2;
+    }
+
+    .ex-thumbs {
+        flex-flow: column wrap;
+    }
+
+    #dc-image,
+    #se-image,
+    #rt-image {
+        max-width: 325px;
+        margin: auto;
+    }
+
 }
