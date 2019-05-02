@@ -1,117 +1,124 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-   <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>Video Game Playtime Log</title>
-   <link href="css/styles.css" rel="stylesheet" />
-   <link href="css/fontfaces.css" rel="stylesheet" />
-   <link href="css/buttons.css" rel="stylesheet" />
-   <script src="js/ptl_courses.js"></script>
-   <script src="js/ptl_newtime.js" async></script>
-   <style>
-    .bannertop {
-		box-sizing: border-box;
-		-webkit-display: flex;
-		display: flex;
-		-webkit-flex-flow: column nowrap;
-		flex-flow: column nowrap;
-		align-items: flex-start;
-		width: 100%;	
-	}	
-	.bannerlogo {
-		-webkit-display: flex;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: flex-start;
-		align-items: center;
-		margin-top: 1%;
-		margin-bottom: 1%;
-		margin-left: 10%;
-	}
-	.logoimg {		
-		margin-right: 20px;
-	}
-	.logoimg img {		
-	    padding: 0px;
-	    width: 100px;
-	}
-	.logotext {
-		-webkit-display: flex;
-		display: flex;
-		flex-flow: column wrap;
-		align-items: center;
-		line-height: 0;		
-		padding: 0px;
-	}
-	.logotext p {
-		text-align: center;
-		font-family: Bebas, Nobile, sans-serif;
-		letter-spacing: 3px;
-		font-weight: bold;
-		font-size: 3.5em;
-		text-shadow: 2px 2px #ddd;
-	}
-	.logotext p > a {
-		font-family: RobotoLight, sans-serif;
-		color: black;
-		letter-spacing: 1px;
-	}
-   </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Video Game Playtime Log</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/fontfaces.css" rel="stylesheet" />
+    <link href="css/buttons.css" rel="stylesheet" />
+    <script src="js/ptl_courses.js"></script>
+    <script src="js/ptl_newtime.js" async></script>
+    <style>
+        .bannertop {
+            box-sizing: border-box;
+            -webkit-display: flex;
+            display: flex;
+            -webkit-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .bannerlogo {
+            -webkit-display: flex;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 1%;
+            margin-bottom: 1%;
+            margin-left: 10%;
+        }
+
+        .logoimg {
+            margin-right: 20px;
+        }
+
+        .logoimg img {
+            padding: 0px;
+            width: 100px;
+        }
+
+        .logotext {
+            -webkit-display: flex;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            line-height: 0;
+            padding: 0px;
+        }
+
+        .logotext p {
+            text-align: center;
+            font-family: Bebas, Nobile, sans-serif;
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-size: 3.5em;
+            text-shadow: 2px 2px #ddd;
+        }
+
+        .logotext p>a {
+            font-family: RobotoLight, sans-serif;
+            color: black;
+            letter-spacing: 1px;
+        }
+    </style>
 </head>
+
 <body>
-	<div class="bannertop" role="navigation">
-		<div class="bannerlogo">
-			<div class="logoimg">
-				<img src="media\gamepad-2.png">
-			</div>
-			<div class="logotext">
-				<p>Log Your Playtime</p>
-			</div>			
-		</div>
-		<div class="bannerlinks bannerlinks-s">
-			<ul class="banner-ul">
-				<li><a href="#" class="navlinks" title="Games">Games</a></li>
-				<li><a href="timelog.html" class="navlinks" title="Log Time">Log Time</a></li>
-				<li><a href="#" class="navlinks" title="Stats">Stats</a></li>
-				<li><a href="#" class="navlinks" title="Links">Links</a></li>				
-			</ul>			
-		</div>
-	</div>
-	
-	
-	<!-- MAIN CONTENT -->	
-	<div class="row row-s">
-		<div class="side side-s">
-			<!-- SIDE BAR WHERE LOGS OF PLAY TIME SUBMISSIONS WILL SHOW -->
-			<h2>Log:</h2>
-			<ul id="side-log">
+    <div class="bannertop" role="navigation">
+        <div class="bannerlogo">
+            <div class="logoimg">
+                <img src="media\gamepad-2.png">
+            </div>
+            <div class="logotext">
+                <p>Log Your Playtime</p>
+            </div>
+        </div>
+        <div class="bannerlinks bannerlinks-s">
+            <ul class="banner-ul">
+                <li><a href="#" class="navlinks" title="Games">Games</a></li>
+                <li><a href="timelog.html" class="navlinks" title="Log Time">Log Time</a></li>
+                <li><a href="#" class="navlinks" title="Stats">Stats</a></li>
+                <li><a href="#" class="navlinks" title="Links">Links</a></li>
+            </ul>
+        </div>
+    </div>
 
-			</ul>
-		</div>
-		<div class="main main-s">
-			<div id="thisForm">
-				<h2>Log New Play Time</h2>
-				<!-- ADD FORM -->	
-				<form id="logForm" name="logForm">
-					<div><label>UserID*: <input name="userID" type="text" id="userID" minlength="1" maxlength="8" required></label></div>
-					<div><label>Hours Played*: <input name="hours" type="number" id="hours" min="0" max="24" required></label></div>
-					<div><label>Minutes Played*: <input name="minutes" type="number" id="minutes" step="15" min="0" max="60" required></label></div>
-					<div><label>Game Played*: <input name="desc" type="text" id="desc" maxlength="30" required></label></div>
-					<div><input type="button" id="submit" name="submit" value="Submit" ></div>					
-				</form>
-				<p id="mytime"></p>		
-				<p id="results"></p>
-				<br />
-				<h3>Must log at least 3 hours per day</h3>				
-								
-				
-			</div>			
-		</div>
-	</div>
 
-	<!-- Footer -->
-	<div class="footer">
-		
-	</div>
-	
+    <!-- MAIN CONTENT -->
+    <div class="row row-s">
+        <div class="side side-s">
+            <!-- SIDE BAR WHERE LOGS OF PLAY TIME SUBMISSIONS WILL SHOW -->
+            <h2>Log:</h2>
+            <ul id="side-log">
+
+            </ul>
+        </div>
+        <div class="main main-s">
+            <div id="thisForm">
+                <h2>Log New Play Time</h2>
+                <!-- ADD FORM -->
+                <form id="logForm" name="logForm">
+                    <div><label>UserID*: <input name="userID" type="text" id="userID" minlength="1" maxlength="8" required></label></div>
+                    <div><label>Hours Played*: <input name="hours" type="number" id="hours" min="0" max="24" required></label></div>
+                    <div><label>Minutes Played*: <input name="minutes" type="number" id="minutes" step="15" min="0" max="60" required></label></div>
+                    <div><label>Game Played*: <input name="desc" type="text" id="desc" maxlength="30" required></label></div>
+                    <div><input type="button" id="submit" name="submit" value="Submit"></div>
+                </form>
+                <p id="mytime"></p>
+                <p id="results"></p>
+                <br />
+                <h3>Must log at least 3 hours per day</h3>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+
+    </div>

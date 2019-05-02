@@ -1,12 +1,15 @@
 // var toggle = false;
 
-function descSHOW(pName) {
+function descSHOW(banner, pName) {
+	var nav = document.getElementById(banner.id).parentElement;
 	var show = document.getElementById(pName);
 	if (show.style.display == "none") {
-		show.style.display = "block";
+		show.style.display = "flex";
+		nav.style.backgroundImage = "linear-gradient(to bottom, #9050b2, #f57e39)";
 	}
 	else {
 		show.style.display = "none";
+		nav.style.backgroundImage = "linear-gradient(to bottom, #9050b2, #ab7ac7, #bb90d4)";
 	}
 }
 

@@ -26,73 +26,31 @@
 		</div>
 		<div class="nav ex-nav">
 			<div class="navlinks ex-navlinks" id="ex-navlinks">
-				<a class="navlink ex-navlink" href="#ex-bkm" value="" id="dclink">
-					<div class="navbanner ex-navbanner" onclick="descSHOW('dc-descriptions');">
+				<div class="navlink ex-navlink">
+					<a class="navbanner ex-navbanner" href="#ex-bkm" value="" id="dclink"
+						onclick="descSHOW(this, 'dc-descriptions');">
 						<div class="left-arrow"></div>
 						<div class="largehead">DEPRECIATION CALCULATOR</div>
 						<div class="smallhead">A PROGRAM TO CALCULATE DEPRECIATION</div>
 						<div class="right-arrow"></div>
-					</div>
+					</a>
 					<ul class="description dc-descriptions" id="dc-descriptions">
+						<div class="hline4"></div>
 						<li class="desc dc-desc">
 							<!-- THUMBNAIL IMAGE -->
-							<img class="thumbs dc-thumbs" src="media/dcalc1.jpg" alt="Depreciation Calculator Interface"
-								onclick="dcImage(this, 'dc-img1');">
-							<!-- TEXT BELOW THUMB  -->
-							<span>The program begins calculation upon clicking either the "Get Straight
-								Line" or "Get Double Declining" buttons.
-							</span>
-							<!-- FULL IMAGE BACKGROUND  -->
-							<div class="container dc-container" id="dc-cont1"></div>
-							<!-- FULL IMAGE PLACEHOLDER  -->
-							<img class="dc-displayimg" id="dc-img1" onclick="dcClose(this);">
-						</li>
-						<li class="desc dc-desc">
-							<!-- THUMBNAIL IMAGE -->
-							<img class="thumbs dc-thumbs" src="media/dc-onclick.jpg"
-								alt="Depreciation Calculator OnClick Code" onclick="dcImage(this, 'dc-img2');">
-							<!-- TEXT BELOW THUMB  -->
-							<span>Values are pulled from the text-boxes and stored as variables to be passed
-								into one of two methods (depending on which button is pressed).
-							</span>
-							<!-- FULL IMAGE BACKGROUND  -->
-							<div class="container dc-container" id="dc-cont2"></div>
-							<!-- FULL IMAGE PLACEHOLDER  -->
-							<img class="dc-displayimg" id="dc-img2" onclick="dcClose(this);">
-						</li>
-						<li class="desc dc-desc">
-							<!-- THUMBNAIL IMAGE -->
-							<img class="thumbs dc-thumbs" src="media/dc-method.jpg"
-								alt="Depreciation Calculator Method Code" onclick="dcImage(this, 'dc-img3');">
-							<!-- TEXT BELOW THUMB  -->
-							<span>Within the method, the program loops through each year of the inputted "Use Life"
-								and calculates both yearly and total depreciation values using the parameter values
-								that were passed. Additionally, each loop within the method creates a new table row
-								to store its' yearly calculations and appends the new row to a data table.
-							</span>
-							<!-- FULL IMAGE BACKGROUND  -->
-							<div class="container dc-container" id="dc-cont3"></div>
-							<!-- FULL IMAGE PLACEHOLDER  -->
-							<img class="dc-displayimg" id="dc-img3" onclick="dcClose(this);">
-
-						</li>
-						<li class="desc dc-desc">
-							<!-- THUMBNAIL IMAGE -->
-							<img class="thumbs dc-thumbs" src="media/dcalc2.jpg" alt="Depreciation Calculator Output"
-								onclick="dcImage(this,'dc-img4');">
+							<img class="thumbs dc-thumbs" src="media/dcalc1.jpg"
+								alt="Depreciation Calculator Interface">
 							<!-- TEXT BELOW THUMB  -->
 							<span>
-								The calculated data are displayed to the user within a data table object,
-								divided neatly into columns and rows in ascending order beginning with the
-								first year of depreciation.
+								The program begins calculation upon clicking either the "Get Straight
+								Line" or "Get Double Declining" buttons.
 							</span>
-							<!-- FULL IMAGE BACKGROUND  -->
-							<div class="container dc-container" id="dc-cont4"></div>
-							<!-- FULL IMAGE PLACEHOLDER  -->
-							<img class="dc-displayimg" id="dc-img4" onclick="dcClose(this);">
 						</li>
+						<div class="hline4"></div>
 					</ul>
-				</a>
+				</div>
+
+
 			</div>
 		</div>
 </body>

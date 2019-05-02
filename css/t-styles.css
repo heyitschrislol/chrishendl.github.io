@@ -47,6 +47,29 @@ img {
 ##	  X.0		-		SECTION STANDARDS		##
 ##################################################
 */
+.hline1 {
+    position: relative;
+    width: calc(95% - 100px);
+    height: 3px;
+    background-color: #3C1053;
+    margin: 10px auto;
+}
+
+.hline2 {
+    position: relative;
+    width: calc(85% - 100px);
+    height: 2px;
+    background-color: #D29F13;
+    margin: 10px auto;
+}
+
+.hline3 {
+    position: relative;
+    width: calc(75% - 100px);
+    height: 1px;
+    background-color: #3C1053;
+    margin: 10px auto;
+}
 .smallhead {
     word-spacing: 0.3em;
     font-weight: normal;
@@ -177,29 +200,7 @@ img {
     transform: rotate(1080deg);
 }
 
-.hline1 {
-    position: relative;
-    width: calc(95% - 100px);
-    height: 3px;
-    background-color: #3C1053;
-    margin: 10px auto;
-}
 
-.hline2 {
-    position: relative;
-    width: calc(85% - 100px);
-    height: 2px;
-    background-color: #D29F13;
-    margin: 10px auto;
-}
-
-.hline3 {
-    position: relative;
-    width: calc(75% - 100px);
-    height: 1px;
-    background-color: #3C1053;
-    margin: 10px auto;
-}
 
 
 
