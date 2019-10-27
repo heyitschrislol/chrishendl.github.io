@@ -2,7 +2,6 @@
 /*		
 ------------------------
 KEY:
-X.0     -       SECTION STANDARDS
 X.1 	-		HEADER
 X.2		-		ABOUT
 X.3		-		EXAMPLES
@@ -22,11 +21,6 @@ body {
     color: #000;
 }
 
-a {
-    text-decoration: none;
-    color: #3C1053;
-}
-
 h1,
 h2,
 h3 {
@@ -41,12 +35,19 @@ img {
 }
 
 
-
 /*
-##################################################
-##	  X.0		-		SECTION STANDARDS		##
-##################################################
+############################
+##	  X.1		-		HEADER		##
+############################
 */
+.header {
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 0px;
+    font-size: 1.2em;
+}
+
 .smallhead {
     word-spacing: 0.3em;
     font-weight: normal;
@@ -61,88 +62,6 @@ img {
     letter-spacing: 2.5px;
     line-height: 1em;
 }
-.navlink {
-    display: block;
-    width: 95%;
-    background-image: linear-gradient(to bottom, #9050b2, #ab7ac7, #bb90d4);
-    padding: 1em;
-    color: #FFF;
-}
-
-.down {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-}
-
-.down:hover {
-    cursor: pointer;
-}
-
-.top-arrow {
-    background: url('../media/blkarrow3.png');
-    background-position: 0 0;
-    width: 200px;
-    height: 40px;
-    transition: all .5s;
-}
-
-.down:hover .top-arrow {
-    background: url('../media/purparrow3.png');
-    background-position: 0 0;
-    width: 200px;
-    height: 40px;
-}
-
-.middle-arrow {
-    background: url('../media/blkarrow3.png');
-    background-position: 0px -45px;
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-    transition: all .5s;
-}
-
-.down:hover .middle-arrow {
-    background: url('../media/purparrow3.png');
-    background-position: 0px -45px;
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-.bottom-arrow {
-    background: url('../media/blkarrow3.png');
-    background-position: 0px -86px;
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-    transition: all .5s;
-}
-
-.down:hover .bottom-arrow {
-    background: url('../media/purparrow3.png');
-    background-position: 0px -86px;
-    width: 200px;
-    height: 40px;
-    margin-top: 10px;
-}
-
-/*
-######################################
-##	  X.0		-		HEADER		##
-######################################
-*/
-.header {
-    display: block;
-    position: relative;
-    width: auto;
-    margin: 0px;
-    font-size: 1.2em;
-}
 
 .header-image {
     border: none;
@@ -150,32 +69,63 @@ img {
     margin: 100px auto 14em auto;
     padding: 0px;
     width: 100%;
+    height: 400px;
 }
 
 .header-image img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    /* transition: transform .5s ease; */
+    border: none;
+    overflow: hidden;
+    /* background-color: #838183; */
+    /* box-shadow: 0 4px 8px 0 #D29F13, 0 4px 30px 0 #D29F13; */
     display: block;
     padding: 0px;
     margin: auto;
-    width: 400px;
+    width: 600px;
     max-width: 100%;
     height: auto;
-    border: none;
-    overflow: hidden;
+}
+
+.logo {
+    transition: transform .5s ease;
+    /* display: none; */
+    border-radius: 50%;
     background-color: #838183;
+    
+    width: 400px;
+    /* position: relative; */
+    left: 38%;
+    position: absolute;
+    margin: auto;
+
+}
+.logo:hover {
     box-shadow: 0 4px 8px 0 #D29F13, 0 4px 30px 0 #D29F13;
-    transition: all 0.5s ease;
+}
+.logostatic {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logoanim {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.logostatic:hover {
+    opacity: 0;
+    /* display: inline; */
+}
+.logoanim:hover {
+    opacity: 100;
+    /* display: inline; */
 }
 
-#logoimage {
-    transition: transform 10s ease;
-}
-
-#logoimage:hover {
-    -ms-transform: rotate(1080deg);
-    -webkit-transform: rotate(1080deg);
-    transform: rotate(1080deg);
-}
+/* #logoimage:hover {
+    background: url("../media/nubiconani1.gif") repeat;
+} */
 
 .hline1 {
     position: relative;
@@ -205,9 +155,9 @@ img {
 
 
 /*
-######################################
-##	  X.0		-		ABOUT		##
-######################################
+############################
+##	  X.2		-		ABOUT			##
+############################
 */
 .about {
     display: block;
@@ -233,150 +183,57 @@ img {
 
 
 /*
-##########################################
-##	  X.0		-		EXAMPLES		##
-##########################################
+############################
+##	  X.3		-		EXAMPLES	##
+############################
 */
 .examples {
     display: block;
-	margin: auto;
+    margin: auto;
 }
 
 .examples h2 {
     margin: 2em auto;
 }
 
-.ex-down {}
-
-/* .ex-top-arrow {
-    display: inline-block;
-}
-
-.ex-middle-arrow {
-    display: inline-block;
-}
-
-.ex-bottom-arrow {
-    display: inline-block;
-} */
-
-
-
 .ex-nav {
     display: block;
-    margin: 10em auto auto auto;
+    margin: auto;
     width: 95%;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #9050b2, #ab7ac7, #bb90d4);
 }
 
-.ex-navlinks {
+.ex-tabs {
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
-	justify-content: center;
-	margin: 0px 5px;
+    justify-content: center;
+}
+
+.ex-links {
+    margin: 0px 5px;
     position: relative;
+    bottom: 30px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     color: white;
     text-decoration: none;
     padding: 5px;
+    background-image: linear-gradient(to bottom, #9050b2, #925ab1);
     border-radius: 5px;
-	font-size: 1.2em;
-	
+    font-size: 1.2em;
 }
 
-
-.ex-navlink {
-	display: block;
-	width: 95%;
-	background-color: #9050b2;
-    padding: 1em;
-	color: #FFF;
-}
-.ex-navbanner {
-	position: relative;
-	display: block;
-	width: 99%;
-	padding: 2em auto;
-	margin: auto;
-}
-.left-arrow {
-	background: url('../media/whtarrow.png');
-    background-position: 0px -86px;
-    width: 200px;
-    height: 40px;
-	position: absolute;
-	left: 5em;
-	top: 2em;
-}
-.right-arrow {
-	background: url('../media/whtarrow.png');
-    background-position: 0px -86px;
-    width: 200px;
-    height: 40px;
-	position: absolute;
-	right: 5em;
-	top: 2em;
+.ex-links:hover {
+    background-image: linear-gradient(to bottom, #3C1053, #925ab1);
+    text-decoration: none;
 }
 
-.dc-descriptions {
-    display: none;
-	/* display: block; */
-	width: 95%;
-	padding-bottom: 10em;
-	margin: 4em auto auto auto;
-	position: relative;
-    text-align: center;
-	justify-content: center;
-	list-style: none;
-}
-.dc-desc {
-	position: relative;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	list-style: none;
-}
-.dc-click {
-	position: relative;
-	width: auto;
-	margin: auto;
-}
-.dc-thumbs {
-	/* display: block; */
-	margin: 2em auto;
-	max-width: 400px;
-	height: 266.66px;
-	border: 4px solid #9050b2;
-	border-radius: 50%;
-	transition: all 0.5s ease;
-}
-.dc-thumbs:hover {
-	border: 4px solid #fff;
-}
-.dc-container {
-	background-color: #000;
-	display: none;
-	opacity: .4;
-	/* width: 56.2em;
-	height: 37.5em;
-	position: absolute;
-	left: calc(50% - 25em);
-	right: calc(50% - 25em);
-	top: calc(50% - 18.75em);
-	bottom: calc(50% - 18.75em); */
-}
-.dc-displayimg {
-	display: none;
-	/* margin: auto; */
-	position: absolute;
-	left: calc(50% - 25em);
-	right: calc(50% - 25em);
-	top: calc(50% - 18.75em);
-	bottom: calc(50% - 18.75em);
-	width: 50em;
-	height: 39.5em;
-	z-index: 1;
+.ex-links.active-tab {
+    background-image: linear-gradient(to bottom, #3C1053, #54236e, #925ab1);
+    box-shadow: inset 0px -3px 10px #925ab1;
+    text-decoration: none;
 }
 
 .close {
@@ -399,27 +256,143 @@ img {
 
 }
 
+#ex-leftline {
+    display: none;
+    position: absolute;
+    left: 3%;
+    background-color: #bb90d4;
+    width: 2px;
+    height: 100%;
+}
+
+#ex-rightline {
+    display: none;
+    position: absolute;
+    margin: auto;
+    right: 3%;
+    background-color: #bb90d4;
+    width: 2px;
+    height: 100%;
+}
+
+#dCalc,
+#sEase,
+#rTool {
+    display: none;
+}
+
+.ex-content {
+    display: block;
+    position: relative;
+}
+
+/* .ex-tile {
+    display: block;
+    width: 70%;
+    margin: auto;
+} */
+.ex-tile {
+    display: block;
+    width: 95%;
+    margin: auto;
+} 
+
+.ex-tiledesc {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+.ex-tilegallery {
+    display: block;
+    width: 70%;
+    margin: auto;
+}
+
+.ex-thumbs {
+    width: 70%;
+    border: 3px solid #9050b2;
+    margin: 3em auto auto auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.ex-thumb {
+    margin: 1em;
+    max-width: 200px;
+    height: 133.33px;
+    transition: all 0.5s ease;
+}
+
+.ex-thumb:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px;
+}
+
+.ex-imgdisplay {
+    display: block;
+    margin-top: 1em;
+}
+
+#dc-image,
+#se-image,
+#rt-image {
+    display: none;
+    max-width: 600px;
+    /* height: 624px; */
+    margin: auto;
+}
+
+#dc-close,
+#se-close,
+#rt-close {
+    display: none;
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+}
+
+#dc-close:hover,
+#se-close:hover,
+#rt-close:hover {
+    border-bottom: 2px solid #925ab1;
+    cursor: pointer;
+}
+
 
 /*
-##############################################
-##	  X.0		-		@MEDIA RULES		##
-##############################################
+################################
+##	  X.7		-		@MEDIA RULES	##
+################################
 */
 /*
-	##################################################################
-	##						VIEWPORT SIZE CHART			            ##
-	##	----------------------------------------------------------- ##
-	##			iPhone XR/XS Max	-		414 x 896	            ##
-	##			iPhone X/XS				-		375 x 812	        ##
-	##			iPhone 7P/8P			-		414 x 736	        ##
-	##			iPhone 7/8				-		375 x 667	        ##
-	##			iPhone 6P/6SP			-		414 x 736	        ##
-	##			iPhone 6/6S				-		375 x 667	        ##
-	##################################################################
+	##################################################
+	##						VIEWPORT SIZE CHART								##
+	##	------------------------------------------	##
+	##			iPhone XR/XS Max	-		414 x 896					##
+	##			iPhone X/XS				-		375 x 812					##
+	##			iPhone 7P/8P			-		414 x 736					##
+	##			iPhone 7/8				-		375 x 667					##
+	##			iPhone 6P/6SP			-		414 x 736					##
+	##			iPhone 6/6S				-		375 x 667					##
+	##################################################
 	*/
 
 
 @media screen and (max-width: 550px) {
+    .logo {
+        top: 0;
+        left: 0;
+    }
+    .logostatic {
+        top: 0;
+        left: 0;
+    }
+    .logoanim {
+        top: 0;
+        left: 0;
+    }
     .hline1 {
         width: 95%
     }
@@ -443,12 +416,11 @@ img {
     #ex-rightline {
         display: none;
     }
-
     .ex-tilegallery {
         width: 97%
     }
 
-    .ex-navlink {
+    .ex-links {
         font-size: 1em;
     }
 
