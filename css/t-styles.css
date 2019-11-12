@@ -87,6 +87,13 @@ img {
     height: auto;
 }
 
+.logo {
+    padding: 0;
+    width: 600px;
+    height: 750px;
+    overflow: show;
+    margin: auto;
+}
 .lego {
     padding: 0;
     width: 600px;
@@ -95,14 +102,24 @@ img {
     margin: auto;
     background:url("../media/nubicon_v3.png") no-repeat;
 }
-.lego:hover {
+.logo:hover #waves {
+    display: block;
+    margin: auto;
+}
+/* .lego:hover {
     padding: 0;
     width: 600px;
     height: 750px;
     overflow: show;
     margin: auto;
-    background:url("../media/nubiconanim3.gif") no-repeat;
-}
+    background:url("../media/chris_logo.gif") no-repeat;
+} */
+  #waves {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 45%;
+  }
 
 .hline1 {
     position: relative;
@@ -364,18 +381,27 @@ img {
         max-width: 100%;
         height: 150px;
     }
-    .lego {
+    #waves {
+        visibility: hidden;
+    }
+    /* .logo {
         width: 300px;
         height: 400px;
-        /* margin: auto; */
+        margin: auto; 
+        background:url("../media/nubicon_sm3.png") no-repeat;
+    } */
+     .lego {
+        width: 300px;
+        height: 400px;
+        margin: auto; 
         background:url("../media/nubicon_sm3.png") no-repeat;
     }
     .lego:hover {
         width: 300px;
         height: 400px;
-        /* margin: auto; */
-        background:url("../media/nubiconanim3_sm.gif") no-repeat;
-    }
+        margin: auto;
+        background:url("../media/chris_logo.gif") no-repeat;
+    } 
     .hline1 {
         width: 95%
     }
