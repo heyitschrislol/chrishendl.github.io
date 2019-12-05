@@ -1,4 +1,19 @@
-
+function pbImage(imgs) {
+	// Get the expanded image
+	var expandImg = document.getElementById("pb-image");
+	expandImg.src = imgs.src;
+	// Show the container element (hidden with CSS)
+	expandImg.style.display = "block";
+	document.getElementById("pb-close").style.display = "block";
+}
+function mmImage(imgs) {
+	// Get the expanded image
+	var expandImg = document.getElementById("mm-image");
+	expandImg.src = imgs.src;
+	// Show the container element (hidden with CSS)
+	expandImg.style.display = "block";
+	document.getElementById("mm-close").style.display = "block";
+}
 function dcImage(imgs) {
 	// Get the expanded image
 	var expandImg = document.getElementById("dc-image");
@@ -24,9 +39,13 @@ function rtImage(imgs) {
 	document.getElementById("rt-close").style.display = "block";
 }
 function closeImages() {
+	document.getElementById("pb-image").style.display = "none";
+	document.getElementById("mm-image").style.display = "none";
 	document.getElementById("dc-image").style.display = "none";
 	document.getElementById("se-image").style.display = "none";
 	document.getElementById("rt-image").style.display = "none";
+	document.getElementById("pb-close").style.display = "none";
+	document.getElementById("mm-close").style.display = "none";
 	document.getElementById("dc-close").style.display = "none";
 	document.getElementById("se-close").style.display = "none";
 	document.getElementById("rt-close").style.display = "none";

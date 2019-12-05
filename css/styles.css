@@ -185,13 +185,13 @@ img {
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .ex-links {
-    margin: 0px 5px;
+    margin: 0px 5px 0px 0px;
     position: relative;
-    bottom: 30px;
+    bottom: 50px;
     font-family: 'Oswald', sans-serif;
     text-align: center;
     color: white;
@@ -199,7 +199,7 @@ img {
     padding: 5px;
     background-image: linear-gradient(to bottom, #9050b2, #925ab1);
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 2em;
 }
 
 .ex-links:hover {
@@ -254,8 +254,14 @@ img {
 
 #dCalc,
 #sEase,
-#rTool {
+#rTool,
+#pediabuilder,
+#monomano {
     display: none;
+}
+#mm-clips {
+    width: 100%;
+    margin: auto;
 }
 
 .ex-content {
@@ -311,7 +317,8 @@ img {
     display: block;
     margin-top: 1em;
 }
-
+#pb-image,
+#mm-image,
 #dc-image,
 #se-image,
 #rt-image {
@@ -321,6 +328,8 @@ img {
     margin: auto;
 }
 
+#pb-close,
+#mm-close,
 #dc-close,
 #se-close,
 #rt-close {
@@ -330,6 +339,8 @@ img {
     transition: all 0.5s ease;
 }
 
+#pb-close:hover,
+#mm-close:hover,
 #dc-close:hover,
 #se-close:hover,
 #rt-close:hover {
@@ -410,7 +421,8 @@ img {
     .close {
         width: auto;
     }
-
+    #pb-close,
+    #mm-close,
     #ex-close,
     #dc-close,
     #se-close,
@@ -422,7 +434,8 @@ img {
     .ex-thumbs {
         flex-flow: column wrap;
     }
-
+    #pb-image,
+    #mm-image,
     #dc-image,
     #se-image,
     #rt-image {

@@ -119,34 +119,28 @@ function closeCourse() {
 // 	return x;
 // 	}
 // }
-
-
-function exampA() {
-	document.getElementById("dCalc").style.display = "block";
-	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "none";
+function javaEX() {
+  document.getElementById("java").style.display = "block";
+  document.getElementById("pediabuilder").style.display = "block";
+  document.getElementById("monomano").style.display = "block";
+  document.getElementById("csharp").style.display = "none";
+  document.getElementById("dCalc").style.display = "none";
+  document.getElementById("sEase").style.display = "none";
+  document.getElementById("rTool").style.display = "none";
 	document.getElementById("ex-close").style.display = "block";
 	if (window.innerWidth >= 900) {
 		document.getElementById("ex-leftline").style.display = "inline";
 		document.getElementById("ex-rightline").style.display = "inline";
 	}
 }
-
-function exampB() {
-	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "block";
-	document.getElementById("rTool").style.display = "none";
-	document.getElementById("ex-close").style.display = "block";
-	if (window.innerWidth >= 900) {
-		document.getElementById("ex-leftline").style.display = "inline";
-		document.getElementById("ex-rightline").style.display = "inline";
-	}
-}
-
-function exampC() {
-	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "block";
+function csharpEX() {
+  document.getElementById("csharp").style.display = "block";
+  document.getElementById("dCalc").style.display = "block";
+  document.getElementById("sEase").style.display = "block";
+  document.getElementById("rTool").style.display = "block";
+  document.getElementById("java").style.display = "none";
+  document.getElementById("pediabuilder").style.display = "none";
+  document.getElementById("monomano").style.display = "none";
 	document.getElementById("ex-close").style.display = "block";
 	if (window.innerWidth >= 900) {
 		document.getElementById("ex-leftline").style.display = "inline";
@@ -154,13 +148,20 @@ function exampC() {
 	}
 }
 function closeExamples() {
-	document.getElementById("dCalc").style.display = "none";
-	document.getElementById("sEase").style.display = "none";
-	document.getElementById("rTool").style.display = "none";
+	document.getElementById("java").style.display = "none";
+	document.getElementById("csharp").style.display = "none";
 	document.getElementById("ex-leftline").style.display = "none";
 	document.getElementById("ex-rightline").style.display = "none";
 	document.getElementById("ex-close").style.display = "none";
 }
+// function closeExamples() {
+// 	document.getElementById("dCalc").style.display = "none";
+// 	document.getElementById("sEase").style.display = "none";
+// 	document.getElementById("rTool").style.display = "none";
+// 	document.getElementById("ex-leftline").style.display = "none";
+// 	document.getElementById("ex-rightline").style.display = "none";
+// 	document.getElementById("ex-close").style.display = "none";
+// }
 
 
 
