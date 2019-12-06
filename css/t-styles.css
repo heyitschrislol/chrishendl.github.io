@@ -185,31 +185,40 @@ img {
     display: flex;
     flex-flow: row nowrap;
     align-content: center;
-    justify-content: left;
+    justify-content: center;
+    margin: 0em 3em;
 }
 
 .ex-links {
-    margin: 0px 5px 0px 0px;
+    margin: 5px 20px;
+    align-items: center;
     position: relative;
-    bottom: 50px;
+    /* bottom: 25px; */
     font-family: 'Oswald', sans-serif;
+    line-height: 1em;
+    font-weight: bold;
+    font-size: 4.5em;
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 5px;
-    background-image: linear-gradient(to bottom, #9050b2, #925ab1);
+    padding: 0px 5px;
+    transition: all 0.5s;
+    /* background: black; */
+    /* background-image: linear-gradient(to bottom, #9050b2, #925ab1); */
     border-radius: 5px;
-    font-size: 2em;
+    /* font-size: 2em; */
 }
 
 .ex-links:hover {
-    background-image: linear-gradient(to bottom, #3C1053, #925ab1);
+    /* background-image: linear-gradient(to bottom, #3C1053, #925ab1); */
+    color: rgb(240, 195, 73);
     text-decoration: none;
 }
 
 .ex-links.active-tab {
-    background-image: linear-gradient(to bottom, #3C1053, #54236e, #925ab1);
-    box-shadow: inset 0px -3px 10px #925ab1;
+    /* background-image: linear-gradient(to bottom, #3C1053, #54236e, #925ab1); */
+    color: #D29F13;
+    /* box-shadow: inset 0px -3px 10px #925ab1; */
     text-decoration: none;
 }
 

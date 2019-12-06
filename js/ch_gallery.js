@@ -1,44 +1,69 @@
+function mobileImage(imgs) {
+	if (window.innerWidth < 900) {
+		var expandImg = document.getElementById(imgs);
+		expandImg.src = imgs.src;
+		// Show the container element (hidden with CSS)
+		expandImg.style.display = "block";
+		document.getElementById(imgs).style.display = "block";
+	}	
+}
 function pbImage(imgs) {
 	// Get the expanded image
+	if (window.innerWidth < 900) {
+
 	var expandImg = document.getElementById("pb-image");
 	expandImg.src = imgs.src;
 	// Show the container element (hidden with CSS)
 	expandImg.style.display = "block";
 	document.getElementById("pb-close").style.display = "block";
+	}
 }
 function mmImage(imgs) {
+	if (window.innerWidth < 900) {
+
 	// Get the expanded image
 	var expandImg = document.getElementById("mm-image");
 	expandImg.src = imgs.src;
 	// Show the container element (hidden with CSS)
 	expandImg.style.display = "block";
 	document.getElementById("mm-close").style.display = "block";
+	}
 }
 function dcImage(imgs) {
+	if (window.innerWidth < 900) {
+
 	// Get the expanded image
 	var expandImg = document.getElementById("dc-image");
 	expandImg.src = imgs.src;
 	// Show the container element (hidden with CSS)
 	expandImg.style.display = "block";
 	document.getElementById("dc-close").style.display = "block";
+	}
 }
 function seImage(imgs) {
+	if (window.innerWidth < 900) {
+
 	// Get the expanded image
 	var expandImg = document.getElementById("se-image");
 	expandImg.src = imgs.src;
 	// Show the container element (hidden with CSS)
 	expandImg.style.display = "block";
 	document.getElementById("se-close").style.display = "block";
+	}
 }
 function rtImage(imgs) {
+	if (window.innerWidth < 900) {
+
 	// Get the expanded image
 	var expandImg = document.getElementById("rt-image");
 	expandImg.src = imgs.src;
 	// Show the container element (hidden with CSS)
 	expandImg.style.display = "block";
 	document.getElementById("rt-close").style.display = "block";
+	}
 }
 function closeImages() {
+	document.getElementById("mobile-ex-gallery").style.display = "none";
 	document.getElementById("pb-image").style.display = "none";
 	document.getElementById("mm-image").style.display = "none";
 	document.getElementById("dc-image").style.display = "none";
