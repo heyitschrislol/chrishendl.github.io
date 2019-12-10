@@ -63,7 +63,7 @@ function rtImage(imgs) {
 	}
 }
 function closeImages() {
-	document.getElementById("mobile-ex-gallery").style.display = "none";
+	// document.getElementById("mobile-ex-gallery").style.display = "none";
 	document.getElementById("pb-image").style.display = "none";
 	document.getElementById("mm-image").style.display = "none";
 	document.getElementById("dc-image").style.display = "none";
