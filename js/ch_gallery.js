@@ -1,12 +1,12 @@
-function mobileImage(imgs) {
-	if (window.innerWidth < 900) {
-		var expandImg = document.getElementById(imgs);
-		expandImg.src = imgs.src;
-		// Show the container element (hidden with CSS)
-		expandImg.style.display = "block";
-		document.getElementById(imgs).style.display = "block";
-	}	
-}
+// function mobileImage(imgs) {
+// 	if (window.innerWidth < 900) {
+// 		var expandImg = document.getElementById(imgs);
+// 		expandImg.src = imgs.src;
+// 		// Show the container element (hidden with CSS)
+// 		expandImg.style.display = "block";
+// 		document.getElementById(imgs).style.display = "block";
+// 	}	
+// }
 function pbImage(imgs) {
 	// Get the expanded image
 	if (window.innerWidth < 900) {
