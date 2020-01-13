@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+* {
+	box-sizing: border-box;
+}
+.logosec {
+    border: 2px solid blue;
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+#mainpic {
+    position: absolute;
+    top: 200px;
+    transition: content 1.0s, top 1.0s ease;
+    transition-delay: content 0.5s;
+
+}
+#mainpic:hover {
+    top: 140px;
+    content:url("../media/handhover.gif");
+}
