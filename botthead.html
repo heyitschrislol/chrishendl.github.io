@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Botthead</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="css/t-styles.css" rel="stylesheet" />
+    <link href="css/fontfaces.css" rel="stylesheet" />
+    <script src="js/ch_test.js"></script>
+    <script src="js/ch_gallery.js"></script>
+</head>
+
+<body onload="makeActive();">
+    <div class="header">
+       
+    <div class="examples">
+        <div class="hline3"></div>
+        <h2 id="ex-bkm">SOME OF MY WORK</h2>
+        <div class="ex-nav">
+            <div class="ex-tabs" id="ex-tabs">
+                <a class="ex-links" href="#ex-bkm" value="" id="ex-Java" onclick="javaEX();dcImages();">Java</a>
+                <a class="ex-links" href="#ex-bkm" value="" id="ex-CSharp" onclick="csharpEX();seImages();">C#</a>
+                <!-- <a class="ex-links" href="#ex-bkm" value="" id="ex-tabRT" onclick="exampC();rtImages();">Trace RSE
+					Tool</a> -->
+                <!-- <a class="ex-links" href="#ex-bkm" value="" id="ex-tabDC" onclick="exampA();dcImages();">Depreciation
+					Calculator</a>
+				<a class="ex-links" href="#ex-bkm" value="" id="ex-tabSE" onclick="exampB();seImages();">ScriptEase</a>
+				<a class="ex-links" href="#ex-bkm" value="" id="ex-tabRT" onclick="exampC();rtImages();">Trace RSE
+					Tool</a> -->
+            </div>
+        </div>
+        <div id="ex-leftline"></div>
+        <div id="ex-rightline"></div>
+        <div class="ex-content">
+            <span class="close" value="" id="ex-close" onclick="closeExamples()">Close</span>
+            <div id="java" class="ex-tile">
+                <div id="pediabuilder">
+                    <div class="ex-tiledesc">
+                        <h2>Pedia Builder/Pediate</h2>
+						<p><a href="https://github.com/heyitschrislol/PediaBuilder">Download PediaBuilder(java.swing)</a>
+							<br><a href="https://github.com/heyitschrislol/Pediate">Download Pediate(javafx)</a></p>
+                            <div><strong>Program Description:</strong></div>
+							<p style="margin-bottom: 1em">Users can create a "pedia" of important project terms to help them
+							when joining a new project. Users can also quiz themselves on the terms multiple times with the question-order 
+							and answer pool changing each time. </p>
+                            <div>
+                                <b>TAGS: </b><span>Java, Java Swing, JavaFX, MySQL, JDBC </span>
+                            </div>
+                            <div>
+                                <b>WHY: </b><span>The original intention behind writing this program was to help my
+                                    girlfriend at the time with her accounting homework.
+                                    I thought I could use what I was learning in class to make something that would
+                                    alleviate some of the repetitiveness of her accounting homework calculations.
+                                    Truth be told, a large part of my motivation came from excitement at what I was learning
+                                    in class, and I was rather anxious
+                                    to see what my newfound "knowledge" could do.</span>
+                            </div>
+                    </div>
+                    <div class="ex-tilegallery">
+                        <div class="ex-thumbs" id="dc-thumbs">
+                            <img src="media/pediate1.jpg" class="ex-thumb" id="pb-thumb1" onclick="pbImage(this);" alt="Pediate">
+                            <img src="media/pediate2.jpg" class="ex-thumb" id="pb-thumb2" onclick="pbImage(this);" alt="Pediate">
+                            <img src="media/pediate3.jpg" class="ex-thumb" id="pb-thumb3" onclick="pbImage(this);" alt="Pediate">
+                            <img src="media/pediate4.jpg" class="ex-thumb" id="pb-thumb3" onclick="pbImage(this);" alt="Pediate">
+                        </div>
+                        <span class="close" value="" id="pb-close" onclick="closeImages()">Close</span>
+                        <div class="ex-imgdisplay">
+                            <img id="pb-image">
+                        </div>
+                    </div>
+                </div>
+                <div id="monomano" class="ex-tile">
+                    <div class="ex-tiledesc">
+                        <h2>Mono Mano</h2>
+                        <p><a href="https://github.com/heyitschrislol/MonoMano/">Download (github)</a></p>
+                        <div>
+                            <strong>Program Description:</strong>
+                        </div>
+                        <p style="margin-bottom: 1em">A (currently) incomplete 2d game I made.</p>
+                        <div>
+                            <b>TAGS: </b><span>Java, JavaFX, Photoshop</span>
+                        </div>
+                        <div>
+                            <b>WHY: </b><span>For a few months, I worked at a high-volume helpdesk where we were
+                                required to keep extensive records of
+                                each call/interaction and submit them for review. I unfortunately found that the
+                                recording procedure that we were trained to
+                                perform each and every call was extremely clunky and disorganized, with each monitor
+                                divided into multiple applications that
+                                were resized into awkward "sections" in order to fit the other necessary applications.
+
+                                I decided in my free time that I would create a program that combined the functions of
+                                several of the applications into one
+                                small program in hopes to provide a little less chaos to the recording process.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="ex-tilegallery">
+                        <div class="ex-thumbs" id="se-thumbs">
+								<img src="media/monomano1.jpg" class="ex-thumb" id="mm-thumb1" onclick="seImage(this);" alt="Mono Mano">
+								<img src="media/monomano2.jpg" class="ex-thumb" id="mm-thumb2" onclick="seImage(this);" alt="Mono Mano">
+								<img src="media/monomano3.jpg" class="ex-thumb" id="mm-thumb3" onclick="seImage(this);" alt="Mono Mano">
+								<img src="media/monomano4.jpg" class="ex-thumb" id="mm-thumb4" onclick="seImage(this);" alt="Mono Mano">
+								<img src="media/monomano5.jpg" class="ex-thumb" id="mm-thumb5" onclick="seImage(this);" alt="Mono Mano">
+                        </div>
+                        <span class="close" value="" id="mm-close" onclick="closeImages()">Close</span>
+                        <div class="ex-imagedisplay">
+                            <img id="mm-image">
+                        </div>
+                    </div>
+                </div>
+			</div>
+			<div id="csharp" class="ex-tile">
+					<div id="dCalc">
+						<div class="ex-tiledesc">
+							<h2>DEPRECIATION CALCULATOR</h2>
+							<p><a href="https://github.com/heyitschrislol/DepreciationCalculator">Download (github)</a>
+								<div><strong>Program Description:</strong></div>
+								<p style="margin-bottom: 1em">Calculates depreciation using both the straight-line and
+									double-declining methods</p>
+								<div>
+									<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
+								</div>
+								<div>
+									<b>WHY: </b><span>The original intention behind writing this program was to help my
+										girlfriend at the time with her accounting homework.
+										I thought I could use what I was learning in class to make something that would
+										alleviate some of the repetitiveness of her accounting homework calculations.
+										Truth be told, a large part of my motivation came from excitement at what I was learning
+										in class, and I was rather anxious
+										to see what my newfound "knowledge" could do.</span>
+								</div>
+						</div>
+						<div class="ex-tilegallery">
+							<div class="ex-thumbs" id="dc-thumbs">
+								<img src="media/dcalc1.jpg" class="ex-thumb" id="dc-thumb1" onclick="dcImage(this);" alt="Depreciation Calculator">
+								<img src="media/dcalc2.jpg" class="ex-thumb" id="dc-thumb2" onclick="dcImage(this);" alt="Depreciation Calculator">
+								<img src="media/dcalc3.jpg" class="ex-thumb" id="dc-thumb3" onclick="dcImage(this);" alt="Depreciation Calculator">
+							</div>
+							<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+							<div class="ex-imgdisplay">
+								<img id="dc-image">
+							</div>
+						</div>
+					</div>
+					<div id="sEase" class="ex-tile">
+						<div class="ex-tiledesc">
+							<h2>SCRIPTEASE</h2>
+							<p><a href="https://github.com/heyitschrislol/ScriptEase/">Download (github)</a></p>
+							<div>
+								<strong>Program Description:</strong>
+							</div>
+							<p style="margin-bottom: 1em">A tool to streamline and organize the many functions and procedures
+								required for Government
+								Help Desk employees.</p>
+							<div>
+								<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
+							</div>
+							<div>
+								<b>WHY: </b><span>For a few months, I worked at a high-volume helpdesk where we were
+									required to keep extensive records of
+									each call/interaction and submit them for review. I unfortunately found that the
+									recording procedure that we were trained to
+									perform each and every call was extremely clunky and disorganized, with each monitor
+									divided into multiple applications that
+									were resized into awkward "sections" in order to fit the other necessary applications.
+	
+									I decided in my free time that I would create a program that combined the functions of
+									several of the applications into one
+									small program in hopes to provide a little less chaos to the recording process.
+								</span>
+							</div>
+						</div>
+						<div class="ex-tilegallery">
+							<div class="ex-thumbs" id="se-thumbs">
+								<img src="media/scriptease1.jpg" class="ex-thumb" id="se-thumb1" onclick="seImage(this);" alt="ScriptEase">
+								<img src="media/scriptease2.jpg" class="ex-thumb" id="se-thumb2" onclick="seImage(this);" alt="ScriptEase">
+							</div>
+							<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+							<div class="ex-imagedisplay">
+								<img id="se-image">
+							</div>
+						</div>
+					</div>
+					<div id="rTool" class="ex-tile">
+						<div class="ex-tiledesc">
+							<h2>TRACE RSE TOOL</h2>
+							<p><a href="https://github.com/heyitschrislol/RSETool">Download (github)</a></p>
+							<div>
+								<strong>Program Description:</strong>
+							</div>
+							<p>A tool to manage and organize some of the work involved in running, recording, and reporting
+								remote social engineering projects</p>
+							<div>
+								<b>HOW: </b><span>This program was created using C# and Visual Studio</span>
+							</div>
+							<div>
+								<b>WHY: </b><span>The goal of the RSE Tool was to help TraceSecurity employees manage
+									remote social engineering campaigns
+									more easily. This tool can extract project scoping data from documents (such as client
+									employee names, phone numbers, and email addresses)
+									and reorganize/reformat/relabel the information so that it is readable and usable by
+									other programs. This feature is particularly useful
+									for projects where the scoping information received from the client is poorly organized
+									and/or labeled, and would otherwise force the analyst
+									to copy/paste items line-by-line.</span>
+							</div>
+							<div style="text-indent: 30px;">
+								<p>Another useful feature of this program is that it allows the user to quickly locate the
+									desired email template and
+									copy its HTML code to the computer clipboard. It is also capable of adding new templates
+									(locally) to its list for use in the future.</p>
+							</div>
+						</div>
+						<div class="ex-tilegallery">
+							<div class="ex-thumbs" id="rt-thumbs">
+								<img src="media/rsetool1.jpg" class="ex-thumb" id="rt-thumb1" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool2.jpg" class="ex-thumb" id="rt-thumb2" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool3.jpg" class="ex-thumb" id="rt-thumb3" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool4.jpg" class="ex-thumb" id="rt-thumb4" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool5.jpg" class="ex-thumb" id="rt-thumb5" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool6.jpg" class="ex-thumb" id="rt-thumb6" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool7.jpg" class="ex-thumb" id="rt-thumb7" onclick="rtImage(this);" alt="Trace RSE Tool">
+								<img src="media/rsetool8.jpg" class="ex-thumb" id="rt-thumb8" onclick="rtImage(this);" alt="Trace RSE Tool">
+							</div>
+							<span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
+							<div class="ex-imagedisplay">
+								<img id="rt-image">
+							</div>
+						</div>
+					</div>
+				</div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
