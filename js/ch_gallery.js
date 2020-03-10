@@ -7,6 +7,25 @@
 // 		document.getElementById(imgs).style.display = "block";
 // 	}	
 // }
+
+// window.onload = setInterval(aboutswitch, 5000);
+var index = 0;
+// function abouttimer() {
+// 	window.setInterval(aboutswitch, 2);
+// }
+function aboutswitch() {
+	var currentimg = document.getElementById("about-img");
+	if (index == 0) {
+		currentimg.src = "media/chrishendl_head.jpg";
+		index = 1;
+	} else if (index == 1) {
+		currentimg.src = "media/gobhead.png";
+		index = 0;
+	}
+}
+
+
+
 function pbImage(imgs) {
 	// Get the expanded image
 	// if (window.innerWidth > 900) {

@@ -136,20 +136,121 @@ img {
 ##	  X.2		-		ABOUT			##
 ############################
 */
-.about {
-    display: block;
+.about-content {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
     margin: auto;
 }
+.about-head {
 
+}
 .about h1 {
     padding: 20px 0;
 }
 
-.ab-content {
-    position: relative;
-    text-align: center;
+.about-left {
+    border: solid black 1px;
+    width: 35%;
+}
+.about-box {
+    display: block;
+    width: 100%;
     margin: auto;
-    width: 40%;
+}
+
+#about-img {
+    display: block;
+    position: relative;
+    /* overflow: show; */
+    width: 400px;
+    height: 400px;
+    /* max-width: 100%; */
+    margin: 2.5em auto auto auto;
+    /* width: 65%; */
+    /* animation-name: picswitch;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+}
+#aboutfader {
+    display: block;
+    position: relative;
+    margin: auto;
+}
+#aboutfader img {
+    max-width: 350px;
+    max-height: 350px;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+/* #aboutfader img.transparent {
+  opacity:0;
+} */
+/* .about-img1 {
+    position: absolute;
+    right: 1em;
+} */
+/* .about-img2 {
+    
+} */
+@keyframes aboutfade {
+    0% {
+    opacity:1;
+  }
+  45% {
+  opacity:1;
+  }
+  55% {
+  opacity:0;
+  }
+  100% {
+  opacity:0;
+  }
+  }
+  
+  /* #aboutfader img.about1 {
+    position: absolute;
+    right: 1em;
+    animation-name: aboutfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+  } */
+  #aboutfader img.about2 {
+    position: absolute;
+    right: 1em;
+    animation-name: aboutfade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-direction: alternate;
+  }
+
+/* @keyframes picswitch {
+    0%   {background: url("../media/gobhead.png")}
+    50%  {background: url("../media/chrishendl_head.jpg")}
+    100% {background: url("../media/chris-nub-to-sky.png")}
+  } */
+
+.about-right {
+    border: solid red 1px;
+    width: 65%;
+}
+
+.about-info {
+    position: relative;
+    text-align: left;
+    width: 75%;
+    margin-top: 2.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
     font-size: 1.2em;
 }
 
@@ -403,9 +504,17 @@ img {
     .hline3 {
         width: 75%
     }
+    .about-left {
 
-    .ab-content {
+    }
+
+    .about-right {
         width: 75%;
+
+    }
+
+    .about-info {
+        
     }
 
     #ex-leftline {

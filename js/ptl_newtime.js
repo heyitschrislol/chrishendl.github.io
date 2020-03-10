@@ -1,4 +1,4 @@
-// Functions set to load when window loads
+0// Functions set to load when window loads
 window.onload = timeCalc;
 
 // Variables to hold user and time values
