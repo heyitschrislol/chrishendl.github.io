@@ -15,6 +15,6 @@ function featuredUpdate() {
 			document.getElementById("featured-txt-2c").innerHTML = myArr[2].date;
 		}
 	};
-	xmlhttp.open("GET", "js/updates.txt", true);
+	xmlhttp.open("GET", "sprinkles/js/updates.txt", true);
 	xmlhttp.send();
 }
