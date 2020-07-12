@@ -1,0 +1,17 @@
+{
+    "featured" : {
+        "type" : "Keto Cakes",
+        "title" : "KETO STRAWBERRIES & CREAM CUPCAKES",
+        "date" : "July 9, 2020"
+    },
+    "subfeatured-a" : {
+        "type" : "Keto Cakes",
+        "title" : "4TH OF JULY KETO FRUIT PIZZA",
+        "date" : "June 30, 2020"
+    },
+    "subfeatured-b" : {
+        "type" : "Keto Cakes",
+        "title" : "KETO MINT CHOCOLATE WHOOPIE PIES",
+        "date" : "May 20, 2020"
+    }
+}
