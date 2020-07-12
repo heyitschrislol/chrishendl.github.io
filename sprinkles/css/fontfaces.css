@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+/************/
+/* HELVETICA */
+/************/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Helvetica.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Helvetica.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Helvetica.svg#helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/********************/
+/* PACIFICO-REGULAR */
+/********************/
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Pacifico-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Pacifico-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Pacifico-Regular.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
