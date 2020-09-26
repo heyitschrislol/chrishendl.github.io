@@ -1,3 +1,4 @@
+var y;
 function whatsNew() {
 	var xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function () {
@@ -49,7 +50,7 @@ function createShell(id) {
 	newarticle.appendChild(blogtextdiv);
 
 	var posts = document.getElementsByClassName("blog-item");
-	var y = posts[0];
+	y = posts[0];
 	document.getElementById("blog-section").replaceChild(newpost, document.getElementsByClassName("blog-item")[0]);
 	
 }

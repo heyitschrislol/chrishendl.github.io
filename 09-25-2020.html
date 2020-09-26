@@ -6,29 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chris Hendl</title>
     <link rel="icon" href="favicon.ico">
-    <link href="css/t-styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/ch_tabs.js"></script>
     <script src="js/ch_gallery.js"></script>
+    <script src="js/js_updates.js"></script>
 </head>
 
 <body onload="makeActive();">
     <section class="blog-section blog-section-sm">
         <div class="blog-section-head">
-            <div class="blog-section-headline">WHAT'S NEW</div>
+            <!-- <div class="blog-section-headline">WHAT'S NEW</div> -->
         </div>
         <div class="bline1"></div>
         <article class="blog-item blog-item-sm" id="blog1">
             <div class="blog-item-headline blog-item-headline-sm">
-                <img class="blog-item-icon blog-item-icon-sm" src="media/handmedallion1.png">
+                <img id="blog1-icon" class="blog-item-icon blog-item-icon-sm" src="media/handmedallion1.png">
                 <div class="blog-item-title blog-item-title-sm">
-                    <span class="blog-item-title-text blog-item-title-text-sm">Using GitHub Webhooks to Receive
-                        Repository Notifications</span><br />
-                    <span class="blog-item-subtitle-text blog-item-subtitle-text-sm">Created: 25 September 2020</span>
+                    <span id="blog1-title" class="blog-item-title-text blog-item-title-text-sm">Creating a Webhook to
+                        Receive GitHub Repository Notifications</span><br />
+                    <span id="blog1-subtitle" class="blog-item-subtitle-text blog-item-subtitle-text-sm">Created: 25
+                        September 2020</span>
                 </div>
             </div>
             <div class="bline2"></div>
-            <div class="blog-item-text blog-item-text-sm">
+            <div id="blog1-item" class="blog-item-text blog-item-text-sm">
                 <p class="blog-text-p blog-text-p-sm">
                     A few days ago, my brother approached me with a "project" that he wanted my help with. He is
                     currently developing his own professional-grade graphics engine which is -- suffice to say --
@@ -40,32 +42,49 @@
                 <p class="blog-text-p blog-text-p-sm">Admittedly, I started this endeavor with near-zero knowledge of
                     how to <i>any</i> of this. However, I took this as an excellent opportunity to learn
                     new, useful things. And one of the first useful things I learned was how to use GitHub's built-in
-                    WebHook system for repositories. The process for receiving notifications from GitHub
+                    Webhook system for repositories. The process for receiving notifications from GitHub
                     is actually quite simple:</p>
 
-                <p class="blog-text-p blog-text-p-sm"><a class="blog-thumb-url" href="media/blog1img1.png"
-                        target="_blank"><img src="media/blog1img1.png" class="blog-thumb blog thumb-sm"></a></p>
-                <p class="blog-text-p blog-text-p-sm">If you open up your repository and navigate to <b>Settings</b>,
-                    you'll see <b>WebHook</b> is listed right there under the left navigation menu. Unfortunately (or
-                    fortunately, depending
-                    on your perspective), the WebHook setting is only available to repository-owners, and not to
-                    collaborators.</p>
-                <p class="blog-text-p blog-text-p-sm"><a class="blog-thumb-url" href="media/blog1img2.png"
-                        target="_blank"><img src="media/blog1img2.png" class="blog-thumb blog thumb-sm"></a></p>
-
-                <p class="blog-text-p blog-text-p-sm"></p>
-
-                <!-- <p class="blog-text-p">How do I create a class design that is structured to both:</p>
-                <ul class="blog-text-p">
-                    <li class="blog-text-span">A.) store perfectly parsed, sorted, and organized JSON Objects from any structurally-valid JSON source</li>
-                    <li class="blog-text-span">B.) generate child/parent relationship mappings for all stored JSON Objects *all* levels of
-                            complexity</li>
-                </ul>
-                <p class="blog-text-p">   
-                It doesn't seem that difficult on the surface, I know. I've already successfully coded several
-                iterations of my parser that work flawlessly when parsing a family of JSON objects whose
-                relationship depth is less like a "tree" and more like a "sapling".
-                </p> -->
+                <a class="blog-thumb-url" href="media/blog1img1.png" target="_blank">
+                    <img id="blog1-thumb-1" src="media/blog1img1.png" class="blog-thumb blog thumb-sm">
+                </a>
+                <p class="blog-text-p blog-text-p-sm">When you create a Webhook for a repository, GitHub will begin
+                    listening for specific events, which - when triggered - will send a payload to a specified server URL.
+                    In my case, I had never made use of a Webhook before, so the first goal was to simply test the functionality 
+                    and visualize the output. To that end, I followed <a href="https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/configuring-your-server-to-receive-payloads#using-ngrok">GitHub's own tutorial</a> 
+                    and downloaded <a href="https://ngrok.com/download">ngrok</a>. This simple and easy program exposes your
+                    local host to the internet, and generates a URL that you can use to as a target for sending payloads. 
+                    That payload contains all the details of the event, formatted as JSON script.
+                    According to the documentation, this JSON script can be sent as one of two content types: <samp
+                        class="professional">application/json</samp> - which sends the payload directly to the body of
+                    the <samp class="professional">POST</samp> request,
+                    or <samp class="professional">application/x-www-form-urlencoded</samp> - which sends a form
+                    parameter (called a <samp class="professional">payload</samp>) containing the JSON script. Before
+                    activating the Webhook, select the content type you prefer (otherwise, the default setting is <samp
+                    class="professional">application/json</samp>).
+                </p>
+                <a class="blog-thumb-url" href="media/blog1img3.png" target="_blank">
+                    <img id="blog1-thumb-2" src="media/blog1img3.png" class="blog-thumb blog thumb-sm"></span>
+                </a>
+                <p class="blog-text-p blog-text-p-sm">Another important option to consider is
+                    which events you want to trigger. The default setting is "Just the push event", which was 
+                    exactly what I was looking for. But out of curiousity, I decided to look at which other events were available,
+                    and the list is... big.
+                </p>
+                <a class="blog-thumb-url" href="media/blog1img2.png" target="_blank">
+                    <img id="blog1-thumb-3" src="media/blog1img2.png" class="blog-thumb blog thumb-sm">
+                </a>
+                <p class="blog-text-p blog-text-p-sm">Maybe (<samp class="professional">likely</samp>) it was just my own inexperience using
+                    GitHub features outside of "Push" and "Pull", but I was genuinely surprised at the number of events that could be
+                    listened for. While I couldn't fit them in a single screenshot, I counted <b>37</b> events total. Thankfully, I held back the urge to 
+                    "click shiny things", and changed the setting back to "Just the push event" before finalizing my choices and activating my WebHook. 
+                </p>
+                <a class="blog-thumb-url" href="media/blog1img6.png" target="_blank">
+                    <img id="blog1-thumb-4" src="media/blog1img6.png" class="blog-thumb blog thumb-sm">
+                </a>
+                <p class="blog-text-p blog-text-p-sm">With the Webhook created, active, and ready to send payloads, I'm almost ready to test the feature out. But first, I will
+                    need to set up things on the receiving end. In my next post, I'll be writing a Java application to run the local host server, receive the JSON payloads, 
+                    and print the data out to the console. </p>
             </div>
         </article>
         <div class="bline1"></div>
