@@ -9,10 +9,11 @@
     <link href="css/t-styles.css" rel="stylesheet" />
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/ch_tabs.js"></script>
-    <script src="js/ch_gallery.js"></script>
+    <script src="js/js_updates.js"></script>
+    <script src="js/blog.json"></script>
 </head>
 
-<body onload="makeActive();">
+<body onload="makeActive();whatsNew();">
     <div class="header">
         <h2 class="smallhead">THE PERSONAL SITE OF</h2>
         <h1 class="largehead">CHRIS HENDL</h1>
@@ -27,70 +28,43 @@
         <div class="hline2"></div>
         <div class="hline3"></div>
     </div>
-    <section class="blog-section">
+    <section class="blog-section blog-section-sm" id="blogstart">
         <div class="blog-section-head">
             <div class="blog-section-headline">WHAT'S NEW</div>
         </div>
         <div class="bline1"></div>
-        <article class="blog-item" id="blog1">
-            <div class="blog-item-headline">
-                <img class="blog-item-icon" src="media/handmedallion1.png">
-                <div class="blog-item-title">
-                    <span class="blog-item-title-text">Creating a JSON Parser from scratch using Java</span><br/>
-                    <span class="blog-item-subtitle-text">Created: 25 September 2020</span>
-                </div>
+        <!-- <article class="blog-item blog-item-sm" id="blog">
+
+        </article> -->
+        <article class="blog-item blog-item-sm" id="blog2">
+            <div class="blog-item-headline blog-item-headline-sm">
+                <img id="blog2-icon">
+                <div class="blog-item-title blog-item-title-sm">
+                    <span id="blog2-title" class="blog-item-title-text blog-item-title-text-sm"><br/>
+                    <span id="blog2-subtitle" class="blog-item-subtitle-text blog-item-subtitle-text-sm"></span>
+                    </div>
             </div>
             <div class="bline2"></div>
-            <div class="blog-item-text">
-                    <p class="blog-text-p">
-                    A few days ago, my brother approached me with a "project" that he wanted my help with. He is currently developing his own professional-grade graphics engine which is -- suffice to say --  
-                    a rather ambitious endeavor (especially alone). He explained that he could really use a web site to act as a designated download/information hub for each new build of his engine. More specifically:
-                    he wanted something that would listen for each new push to his GitHub repository, retrieve the new build, and automatically upload it to his own website. </p>
+            <div id="blog2-content" class="blog-item-text blog-item-text-sm">
                     
-                    <p class="blog-text-p">Admittedly, I started this endeavor with near-zero experience developing a significant portion of this. However, I took this as an excellent opportunity to learn
-                        new, useful things. And one of the first useful things I learned was how to use GitHub's built-in WebHook system for repositories.  </p>
-
-                    <p class="blog-text-p"></p>
+            </div>
+        </article>
+        <div class="bline1"></div>
+        <article class="blog-item blog-item-sm" id="blog3">
+            <div class="blog-item-headline blog-item-headline-sm">
+                <img id="blog3-icon">
+                <div class="blog-item-title blog-item-title-sm">
+                    <span id="blog3-title" class="blog-item-title-text blog-item-title-text-sm"><br/>
+                    <span id="blog3-subtitle" class="blog-item-subtitle-text blog-item-subtitle-text-sm"></span>
+                    </div>
+            </div>
+            <div class="bline2"></div>
+            <div id="blog3-content" class="blog-item-text blog-item-text-sm">
                     
-                    <!-- <p class="blog-text-p">How do I create a class design that is structured to both:</p>
-                    <ul class="blog-text-p">
-                        <li class="blog-text-span">A.) store perfectly parsed, sorted, and organized JSON Objects from any structurally-valid JSON source</li>
-                        <li class="blog-text-span">B.) generate child/parent relationship mappings for all stored JSON Objects *all* levels of
-                                complexity</li>
-                    </ul>
-                    <p class="blog-text-p">   
-                    It doesn't seem that difficult on the surface, I know. I've already successfully coded several
-                    iterations of my parser that work flawlessly when parsing a family of JSON objects whose
-                    relationship depth is less like a "tree" and more like a "sapling".
-                    </p> -->
             </div>
         </article>
         <div class="bline1"></div>
     </section>
-    <!-- <div class="about">
-
-       
-        <p class="ab-content" style="margin-bottom: 2em">
-            My name is Chris Hendl. I am an application developer experienced in many
-            programming/markup/scripting/database
-            languages such as: C#, Java, VB.Net, HTML5, CSS3, Javascript, SQL, and XML. I thoroughly enjoy making
-            programs as
-            both a professional skill and personal hobby.
-         </p>
-        <p class="ab-content" style="margin-bottom: 2em">
-            I understand how important knowledge and experience are to personal and professional growth, and I
-            am someone who is passionate about learning and achieving. As an LSU graduate majoring in Information
-            Systems and Decision Sciences, I aspire to one day gain professional experience working with IS, IT, and Big
-            Data.
-        </p>
-        <p class="ab-content" style="margin-bottom: 10em">
-            In March 2019, I started a position as an Application Developer at the IBM CIC in Baton Rouge, LA. This has proven to be a very
-            exciting opportunity for me to hone my professional skillset and advance my career goals. In July, I completed a 2-week Java Bootcamp.
-            Since then, I have begun and completed several personal "passion" projects using Java, utilizing popular
-            industry APIs/frameworks/utilities such as JDBC, JavaFX, Maven, and JSP (<b>I hope to have examples of these up soon</b>). On August 31st 2019 I finished my
-            first client project, working with IBM's Financial Transaction Manager system.
-         </p>
-    </div> -->
     <div class="examples">
 
         <h2 id="ex-bkm">SOME OF MY WORK</h2>

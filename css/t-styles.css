@@ -257,7 +257,7 @@ img {
     display: block;
     font-family: 'IBMPlexSansCondensed', sans-serif;
     /* font-weight: bold; */
-    text-align: justify;
+    text-align: left;
     padding: 0 10%;
     font-size: 1em;
 }
@@ -267,7 +267,15 @@ ul.blog-text-p {
 .blog-text-span {
     text-indent: 25px;
 }
-
+.blog-thumb {
+    margin: 1% 15%;
+    /* border: 2px solid #3C1053;
+    border-radius: 10px; */
+    outline: 3px outset #3C1053;
+    outline-offset: 10px;
+    width: 65%;
+    height: auto;
+}
 
 
 
@@ -518,6 +526,32 @@ ul.blog-text-p {
         height: 400px;
         /* margin: auto; */
         background: url("../media/nubiconmattesm.gif") no-repeat;
+    }
+    .bline2 {
+        width: 90%;
+    }
+    .blog-item-sm {
+
+    }
+    .blog-section-sm {
+        margin: 2%
+    }
+    .blog-item-headline-sm {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .blog-item-title-text-sm {
+        font-size: 20px;;
+    }
+    .blog-item-icon-sm {
+        width: 55px;
+        height: 55px;
+    }
+    .blog-text-p {
+        padding: 0 5%;
+        text-indent: 1.5em;
+        font-size: 14px;
     }
 
     .hline1 {

@@ -1,0 +1,39 @@
+[ 
+    {   "postname" : "blog1",
+        "headline" : "Using GitHub Webhooks to Receive Repository Notifications",
+        "icon" : "media/handmedallion1.png",
+        "date" : "09/25/2020",
+        "p1": {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "text" : "A few days ago, my brother approached me with a project that he wanted my help with. He is currently developing his own professional-grade graphics engine which is -- suffice to say -- a rather ambitious endeavor (especially alone). He explained that he could really use a web site to act as a designated download/information hub for each new build of his engine. More specifically: he wanted something that would listen for each new push to his GitHub repository, retrieve the new build, and automatically upload it to his own website."
+        },
+        "p2": {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "text" : "Admittedly, I started this endeavor with near-zero knowledge of how to <i>any</i> of this. However, I took this as an excellent opportunity to learn new, useful things. And one of the first useful things I learned was how to use GitHub's built-in WebHook system for repositories.  The process for receiving notifications from GitHub is actually quite simple:"
+        },
+        "thumb1": {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "aclass" : "blog-thumb-url",
+            "ahref" : "media/blog1img1.png",
+            "atarget" : "_blank",
+            "imgsrc" : "media/blog1img1.png",
+            "imgclass" : "blog-thumb blog thumb-sm"
+        },
+        "p3": {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "text" : "If you open up your repository and navigate to <b>Settings</b>, you'll see <b>WebHook</b> is listed right there under the left navigation menu. Unfortunately (or fortunately, depending on your perspective), the WebHook setting is only available to repository-owners, and not to collaborators."
+        },
+        "thumb2": {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "aclass" : "blog-thumb-url",
+            "ahref" : "media/blog1img2.png",
+            "atarget" : "_blank",
+            "imgsrc" : "media/blog1img2.png",
+            "imgclass" : "blog-thumb blog thumb-sm"
+        },
+        "p4" : {
+            "pclass" : "blog-text-p blog-text-p-sm",
+            "text" : "f you open up your repository and navigate to <b>Settings</b>, you'll see <b>WebHook</b> is listed right there under the left navigation menu. Unfortunately (or fortunately, depending on your perspective), the WebHook setting is only available to repository-owners, and not to collaborators."
+        }
+    }
+]

@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Post</title>
+    <script src="js/js_updates.js"></script>
+</head>
+
+<body>
+    <form id="newpost" action="index.html" target="_self" method="post">
+        <fieldset>
+            <legend>New Post</legend>
+            <label for="headline">Headline</label><br>
+            <input type="text" id="headline" required="true" style="width:45%;"><br>
+            <label for="icon">Icon Name</label><br>
+            <input type="text" id="icon" required="true" style="width: 45%;"><br>
+            <label for="postdate">Post Date</label><br>
+            <input type="date" id="postdate" name="postdate" required="true"><br>
+            <label for="postcontent">Content:</label><br>
+            <textarea name="postcontent" style="width: 75%; height: 250px;"></textarea><br><br>
+            <input type="submit" value="Post" id="submit">
+        </fieldset>
+    </form>
+    <p>Or upload from a JSON file</p>
+    <form id="jsonpost" action="index.html" target="_self" method="post">
+        <fieldset>
+            <legend>New Post</legend>
+            <label for="jsonfile">Select a file:</label><br>
+            <input type="file" id="jsonfile" name="jsonfile"><br><br>
+            <input type="submit" value="Post" id="submitjson">
+        </fieldset>
+    </form>
+</body>
+</html>

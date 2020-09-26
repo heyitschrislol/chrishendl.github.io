@@ -93,15 +93,16 @@ img {
     height: 750px;
     overflow: show;
     margin: auto;
-    background:url("../media/nubicon_v3.png") no-repeat;
+    background: url("../media/nubicon_v3.png") no-repeat;
 }
+
 .lego:hover {
     padding: 0;
     width: 600px;
     height: 750px;
     overflow: show;
     margin: auto;
-    background:url("../media/nubiconmattelg.gif") no-repeat;
+    background: url("../media/nubiconmattelg.gif") no-repeat;
 }
 
 .hline1 {
@@ -131,6 +132,10 @@ img {
 
 
 
+
+
+
+
 /*
 ############################
 ##	  X.2		-		ABOUT			##
@@ -152,8 +157,125 @@ img {
     width: 40%;
     font-size: 1.2em;
 }
+/*
+############################
+##	  X.2		-		BLOG			##
+############################
+*/
+.bline1 {
+    position: relative;
+    /* width: calc(85% - 100px); */
+    width: 95%;
+    height: 10px;
+    background-image: linear-gradient(to right, #aca3b1,  #3C1053, #aca3b1);
+    margin: 10px auto;
+}
+.bline2 {
+    position: relative;
+    width: calc(85% - 100px);
+    /* width: 100%; */
+    height: 2px;
+    background-image: linear-gradient(to right, #3C1053, #ab7ac7, #e4dfe7);
+    margin: 5px auto;
+}
+.blog-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #eeeeee;
+    /* width: 100%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.blog-section-head {
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 0px;
+    font-size: 1.2em;
+}
+.blog-section-headline {
+    color: #D29F13;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #3C1053;
+    font-style: normal;
+    font-size: 3.5em;
+    letter-spacing: 2.5px;
+    line-height: 1em;
+}
+.blog-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* display: block;
+    margin: auto; */
+}
+.blog-item-headline {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* padding: 2em 0; */
+    /* align-self: center; */
+}
+.blog-item-icon {
+    /* margin: 0em 0em 0em 1em; */
+    /* align-self: center; */
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+}
+.blog-item-title {
+    display: block;
+}
+.blog-item-title-text {
+    color: #D29F13;
+    font-size: 2.5em;
+    font-family: 'Anton', sans-serif;
+    /* justify-self: flex-start; */
+    /* padding: 0em 0em 0em .5em; */
+}
+.blog-item-text {
+    display: block;
 
+}
+.blog-item-subtitle-text {
+    color: #3C1053;
+    font-size: .85em;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 3px #D29F13;
+    font-weight: bold;
+    /* justify-self: flex-end; */
 
+    /* margin: 0 0 0 13%; */
+}
+.blog-text-p {
+    display: block;
+    font-family: 'IBMPlexSansCondensed', sans-serif;
+    /* font-weight: bold; */
+    text-align: left;
+    padding: 0 10%;
+    font-size: 1em;
+}
+ul.blog-text-p {
+    list-style-type: none;
+}
+.blog-text-span {
+    text-indent: 25px;
+}
+.blog-thumb {
+    margin: 1% 15%;
+    /* border: 2px solid #3C1053;
+    border-radius: 10px; */
+    outline: 3px outset #3C1053;
+    outline-offset: 10px;
+    width: 65%;
+    height: auto;
+}
 
 
 
@@ -172,6 +294,7 @@ img {
 .examples h2 {
     margin: 2em auto;
 }
+
 #mobile-ex-gallery {
     display: none;
 }
@@ -271,6 +394,7 @@ img {
 #monomano {
     display: none;
 }
+
 #mm-clips {
     width: 100%;
     margin: auto;
@@ -290,13 +414,14 @@ img {
     display: block;
     width: 95%;
     margin: auto;
-} 
+}
 
 .ex-tiledesc {
     display: block;
     width: 70%;
     margin: auto;
 }
+
 .ex-tilegallery {
     display: block;
     width: 70%;
@@ -329,6 +454,7 @@ img {
     display: block;
     margin-top: 1em;
 }
+
 #pb-image,
 #mm-image,
 #dc-image,
@@ -387,18 +513,47 @@ img {
         max-width: 100%;
         height: 150px;
     }
+
     .lego {
         width: 300px;
         height: 400px;
         /* margin: auto; */
-        background:url("../media/nubicon_sm3.png") no-repeat;
+        background: url("../media/nubicon_sm3.png") no-repeat;
     }
+
     .lego:hover {
         width: 300px;
         height: 400px;
         /* margin: auto; */
-        background:url("../media/nubiconmattesm.gif") no-repeat;
+        background: url("../media/nubiconmattesm.gif") no-repeat;
     }
+    .bline2 {
+        width: 90%;
+    }
+    .blog-item-sm {
+
+    }
+    .blog-section-sm {
+        margin: 2%
+    }
+    .blog-item-headline-sm {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        width: 90%;
+    }
+    .blog-item-title-text-sm {
+        font-size: 20px;;
+    }
+    .blog-item-icon-sm {
+        width: 55px;
+        height: 55px;
+    }
+    .blog-text-p {
+        padding: 0 5%;
+        text-indent: 1.5em;
+        font-size: 14px;
+    }
+
     .hline1 {
         width: 95%
     }
@@ -422,9 +577,11 @@ img {
     #ex-rightline {
         display: none;
     }
+
     .ex-tilegallery {
         width: 100%
     }
+
     .ex-thumb {
         margin: 1em;
         max-width: 75px;
@@ -435,6 +592,7 @@ img {
     .close {
         width: auto;
     }
+
     #pb-close,
     #mm-close,
     #ex-close,
@@ -448,6 +606,7 @@ img {
     .ex-thumbs {
         flex-flow: row wrap;
     }
+
     #pb-image,
     #mm-image,
     #ex-image,

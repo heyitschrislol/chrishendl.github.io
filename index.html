@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,6 +10,7 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/ch_tabs.js"></script>
     <script src="js/ch_gallery.js"></script>
+    <!-- <script src="js/js_updates.js"></script> -->
 </head>
 
 <body onload="makeActive();">
@@ -26,18 +28,62 @@
         <div class="hline2"></div>
         <div class="hline3"></div>
     </div>
-    <div class="about">
-        <h1 class="largehead">ABOUT CHRIS</h1>
-        <div class="hline3"></div>
+    <section class="blog-section blog-section-sm">
+        <div class="blog-section-head">
+            <div class="blog-section-headline">WHAT'S NEW</div>
+        </div>
+        <div class="bline1"></div>
+        <article class="blog-item blog-item-sm" id="blog1">
+            <div class="blog-item-headline blog-item-headline-sm">
+                <img class="blog-item-icon blog-item-icon-sm" src="media/handmedallion1.png">
+                <div class="blog-item-title blog-item-title-sm">
+                    <span class="blog-item-title-text blog-item-title-text-sm">Using GitHub Webhooks to Receive Repository Notifications</span><br/>
+                    <span class="blog-item-subtitle-text blog-item-subtitle-text-sm">Created: 25 September 2020</span>
+                </div>
+            </div>
+            <div class="bline2"></div>
+            <div class="blog-item-text blog-item-text-sm">
+                    <p class="blog-text-p blog-text-p-sm">
+                    A few days ago, my brother approached me with a "project" that he wanted my help with. He is currently developing his own professional-grade graphics engine which is -- suffice to say --  
+                    a rather ambitious endeavor (especially alone). He explained that he could really use a web site to act as a designated download/information hub for each new build of his engine. More specifically:
+                    he wanted something that would listen for each new push to his GitHub repository, retrieve the new build, and automatically upload it to his own website. </p>
+                    
+                    <p class="blog-text-p blog-text-p-sm">Admittedly, I started this endeavor with near-zero knowledge of how to <i>any</i> of this. However, I took this as an excellent opportunity to learn
+                        new, useful things. And one of the first useful things I learned was how to use GitHub's built-in WebHook system for repositories.  The process for receiving notifications from GitHub 
+                        is actually quite simple:</p>
+
+                    <p class="blog-text-p blog-text-p-sm"><a class="blog-thumb-url" href="media/blog1img1.png" target="_blank"><img src="media/blog1img1.png" class="blog-thumb blog thumb-sm"></a></p>
+                    <p class="blog-text-p blog-text-p-sm">If you open up your repository and navigate to <b>Settings</b>, you'll see <b>WebHook</b> is listed right there under the left navigation menu. Unfortunately (or fortunately, depending
+                        on your perspective), the WebHook setting is only available to repository-owners, and not to collaborators.</p>
+                    <p class="blog-text-p blog-text-p-sm"><a class="blog-thumb-url" href="media/blog1img2.png" target="_blank"><img src="media/blog1img2.png" class="blog-thumb blog thumb-sm"></a></p>
+
+                    <p class="blog-text-p blog-text-p-sm"></p>
+                    
+                    <!-- <p class="blog-text-p">How do I create a class design that is structured to both:</p>
+                    <ul class="blog-text-p">
+                        <li class="blog-text-span">A.) store perfectly parsed, sorted, and organized JSON Objects from any structurally-valid JSON source</li>
+                        <li class="blog-text-span">B.) generate child/parent relationship mappings for all stored JSON Objects *all* levels of
+                                complexity</li>
+                    </ul>
+                    <p class="blog-text-p">   
+                    It doesn't seem that difficult on the surface, I know. I've already successfully coded several
+                    iterations of my parser that work flawlessly when parsing a family of JSON objects whose
+                    relationship depth is less like a "tree" and more like a "sapling".
+                    </p> -->
+            </div>
+        </article>
+        <div class="bline1"></div>
+    </section>
+    <!-- <div class="about">
+
+       
         <p class="ab-content" style="margin-bottom: 2em">
             My name is Chris Hendl. I am an application developer experienced in many
             programming/markup/scripting/database
             languages such as: C#, Java, VB.Net, HTML5, CSS3, Javascript, SQL, and XML. I thoroughly enjoy making
             programs as
             both a professional skill and personal hobby.
-            <!-- Windguardian leviosa. It's leviosa not leviosa. Avada kadavra. Sometimes I will start a
-			sentence and I don't even know where it's going. -->
-        </p>
+         </p>
         <p class="ab-content" style="margin-bottom: 2em">
             I understand how important knowledge and experience are to personal and professional growth, and I
             am someone who is passionate about learning and achieving. As an LSU graduate majoring in Information
@@ -50,15 +96,10 @@
             Since then, I have begun and completed several personal "passion" projects using Java, utilizing popular
             industry APIs/frameworks/utilities such as JDBC, JavaFX, Maven, and JSP (<b>I hope to have examples of these up soon</b>). On August 31st 2019 I finished my
             first client project, working with IBM's Financial Transaction Manager system.
-            <!-- We found ourselves on the, less prepared
-			side of things when Stanley had his-- when his heart went bezerk. And I knew exactly what
-			to do but in a much more real sense I had <i>no idea</i> what to do. So I thought we should have
-			a CPR training class. And... of course you can't get the practice dummy, unless the
-			instructor comes along with it. Red Cross... racquet. -->
-        </p>
-    </div>
+         </p>
+    </div> -->
     <div class="examples">
-        <div class="hline3"></div>
+
         <h2 id="ex-bkm">SOME OF MY WORK</h2>
         <div class="ex-nav">
             <div class="ex-tabs" id="ex-tabs">
@@ -80,7 +121,8 @@
                         <h2>Pedia Builder</h2>
                         <div><strong>Program Description:</strong></div>
                         <p style="margin-bottom: 1em">Users can create a "pedia" of important project terms to help them
-                            when joining a new project. Users can also quiz themselves on the terms multiple times with the question-order
+                            when joining a new project. Users can also quiz themselves on the terms multiple times with
+                            the question-order
                             and answer pool changing each time. </p>
                         <div>
                             <b>TAGS: </b><span>Java, Java Swing, JavaFX, MySQL, JDBC </span>
@@ -88,16 +130,22 @@
                         <div>
                             <b>WHY: </b><span><i>(text placeholder)</i></span>
                         </div>
-                        <p><a href="https://github.com/heyitschrislol/PediaBuilderOld">Download Pedia Builder Old(old version; java.swing)</a>
-                            <br><a href="https://github.com/heyitschrislol/PediaBuilder">Download Pedia Builder(current version; javafx)</a></p>
+                        <p><a href="https://github.com/heyitschrislol/PediaBuilderOld">Download Pedia Builder Old(old
+                                version; java.swing)</a>
+                            <br><a href="https://github.com/heyitschrislol/PediaBuilder">Download Pedia Builder(current
+                                version; javafx)</a></p>
                     </div>
-                    
+
                     <div class="ex-tilegallery">
                         <div class="ex-thumbs" id="pb-thumbs">
-                            <img src="media/screens/pediabuilder1.jpg" class="ex-thumb" id="pb-thumb1" onclick="pbImage(this);" alt="Pedia Builder">
-                            <img src="media/screens/pediabuilder2.jpg" class="ex-thumb" id="pb-thumb2" onclick="pbImage(this);" alt="Pedia Builder">
-                            <img src="media/screens/pediabuilder3.jpg" class="ex-thumb" id="pb-thumb3" onclick="pbImage(this);" alt="Pedia Builder">
-                            <img src="media/screens/pediabuilder4.jpg" class="ex-thumb" id="pb-thumb3" onclick="pbImage(this);" alt="Pedia Builder">
+                            <img src="media/screens/pediabuilder1.jpg" class="ex-thumb" id="pb-thumb1"
+                                onclick="pbImage(this);" alt="Pedia Builder">
+                            <img src="media/screens/pediabuilder2.jpg" class="ex-thumb" id="pb-thumb2"
+                                onclick="pbImage(this);" alt="Pedia Builder">
+                            <img src="media/screens/pediabuilder3.jpg" class="ex-thumb" id="pb-thumb3"
+                                onclick="pbImage(this);" alt="Pedia Builder">
+                            <img src="media/screens/pediabuilder4.jpg" class="ex-thumb" id="pb-thumb3"
+                                onclick="pbImage(this);" alt="Pedia Builder">
                         </div>
                         <span class="close" value="" id="pb-close" onclick="closeImages()">Close</span>
                         <div class="ex-imgdisplay">
@@ -121,8 +169,8 @@
                         </div>
                         <p><a href="https://github.com/heyitschrislol/MonoMano/">Download Mono Mano(github)</a></p>
                         <div id="mm-clips">
-							<br><i><span style="width:100%; margin:auto">Game music created myself</i></span>
-							<br>
+                            <br><i><span style="width:100%; margin:auto">Game music created myself</i></span>
+                            <br>
                             <span>
                                 <audio controls>
                                     <source src="audio/bgins.mp3" type="audio/mp3">
@@ -146,12 +194,18 @@
                     </div>
                     <div class="ex-tilegallery">
                         <div class="ex-thumbs" id="mm-thumbs">
-                            <img src="media/screens/monomano1.jpg" class="ex-thumb" id="mm-thumb1" onclick="mmImage(this);" alt="Mono Mano">
-                            <img src="media/screens/monomano2.jpg" class="ex-thumb" id="mm-thumb2" onclick="mmImage(this);" alt="Mono Mano">
-                            <img src="media/screens/monomano3.jpg" class="ex-thumb" id="mm-thumb3" onclick="mmImage(this);" alt="Mono Mano">
-                            <img src="media/screens/monomano4.jpg" class="ex-thumb" id="mm-thumb4" onclick="mmImage(this);" alt="Mono Mano">
-                            <img src="media/screens/monomano5.jpg" class="ex-thumb" id="mm-thumb5" onclick="mmImage(this);" alt="Mono Mano">
-                            <img src="media/screens/monomano6.jpg" class="ex-thumb" id="mm-thumb5" onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano1.jpg" class="ex-thumb" id="mm-thumb1"
+                                onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano2.jpg" class="ex-thumb" id="mm-thumb2"
+                                onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano3.jpg" class="ex-thumb" id="mm-thumb3"
+                                onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano4.jpg" class="ex-thumb" id="mm-thumb4"
+                                onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano5.jpg" class="ex-thumb" id="mm-thumb5"
+                                onclick="mmImage(this);" alt="Mono Mano">
+                            <img src="media/screens/monomano6.jpg" class="ex-thumb" id="mm-thumb5"
+                                onclick="mmImage(this);" alt="Mono Mano">
                         </div>
                         <span class="close" value="" id="mm-close" onclick="closeImages()">Close</span>
                         <div class="ex-imagedisplay">
@@ -164,29 +218,33 @@
                 <div id="dCalc">
                     <div class="ex-tiledesc">
                         <h2>Depreciation Calculator</h2>
-                            <div><strong>Program Description:</strong></div>
-                            <p style="margin-bottom: 1em">Calculates depreciation using both the straight-line and
-                                double-declining methods</p>
-                            <div>
-									<b>TAGS: </b><span>C#, Visual Studio</span>
-							</div>
-                            <div>
-                                <b>WHY: </b><span>The original intention behind writing this program was to help my
-                                    girlfriend at the time with her accounting homework.
-                                    I thought I could use what I was learning in class to make something that would
-                                    alleviate some of the repetitiveness of her accounting homework calculations.
-                                    Truth be told, a large part of my motivation came from excitement at what I was learning
-                                    in class, and I was rather anxious
-                                    to see what my newfound "knowledge" could do.</span>
-                            </div>
-                            <p><a href="https://github.com/heyitschrislol/DepreciationCalculator">Download Depreciation Calculator(github)</a>
+                        <div><strong>Program Description:</strong></div>
+                        <p style="margin-bottom: 1em">Calculates depreciation using both the straight-line and
+                            double-declining methods</p>
+                        <div>
+                            <b>TAGS: </b><span>C#, Visual Studio</span>
+                        </div>
+                        <div>
+                            <b>WHY: </b><span>The original intention behind writing this program was to help my
+                                girlfriend at the time with her accounting homework.
+                                I thought I could use what I was learning in class to make something that would
+                                alleviate some of the repetitiveness of her accounting homework calculations.
+                                Truth be told, a large part of my motivation came from excitement at what I was learning
+                                in class, and I was rather anxious
+                                to see what my newfound "knowledge" could do.</span>
+                        </div>
+                        <p><a href="https://github.com/heyitschrislol/DepreciationCalculator">Download Depreciation
+                                Calculator(github)</a>
 
                     </div>
                     <div class="ex-tilegallery">
                         <div class="ex-thumbs" id="dc-thumbs">
-                            <img src="media/screens/dcalc1.jpg" class="ex-thumb" id="dc-thumb1" onclick="dcImage(this);mobileImage(this);" alt="Depreciation Calculator">
-                            <img src="media/screens/dcalc2.jpg" class="ex-thumb" id="dc-thumb2" onclick="dcImage(this);" alt="Depreciation Calculator">
-                            <img src="media/screens/dcalc3.jpg" class="ex-thumb" id="dc-thumb3" onclick="dcImage(this);" alt="Depreciation Calculator">
+                            <img src="media/screens/dcalc1.jpg" class="ex-thumb" id="dc-thumb1"
+                                onclick="dcImage(this);mobileImage(this);" alt="Depreciation Calculator">
+                            <img src="media/screens/dcalc2.jpg" class="ex-thumb" id="dc-thumb2" onclick="dcImage(this);"
+                                alt="Depreciation Calculator">
+                            <img src="media/screens/dcalc3.jpg" class="ex-thumb" id="dc-thumb3" onclick="dcImage(this);"
+                                alt="Depreciation Calculator">
                         </div>
                         <span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
                         <div class="ex-imgdisplay">
@@ -200,12 +258,13 @@
                         <div>
                             <strong>Program Description:</strong>
                         </div>
-                        <p style="margin-bottom: 1em">A tool to streamline and organize the many functions and procedures
+                        <p style="margin-bottom: 1em">A tool to streamline and organize the many functions and
+                            procedures
                             required for Government
                             Help Desk employees.</p>
                         <div>
-								<b>TAGS: </b><span>C#, Visual Studio</span>
-						</div>
+                            <b>TAGS: </b><span>C#, Visual Studio</span>
+                        </div>
                         <div>
                             <b>WHY: </b><span>For a few months, I worked at a high-volume helpdesk where we were
                                 required to keep extensive records of
@@ -224,8 +283,10 @@
                     </div>
                     <div class="ex-tilegallery">
                         <div class="ex-thumbs" id="se-thumbs">
-                            <img src="media/screens/scriptease1.jpg" class="ex-thumb" id="se-thumb1" onclick="seImage(this);" alt="ScriptEase">
-                            <img src="media/screens/scriptease2.jpg" class="ex-thumb" id="se-thumb2" onclick="seImage(this);" alt="ScriptEase">
+                            <img src="media/screens/scriptease1.jpg" class="ex-thumb" id="se-thumb1"
+                                onclick="seImage(this);" alt="ScriptEase">
+                            <img src="media/screens/scriptease2.jpg" class="ex-thumb" id="se-thumb2"
+                                onclick="seImage(this);" alt="ScriptEase">
                         </div>
                         <span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
                         <div class="ex-imagedisplay">
@@ -265,14 +326,22 @@
                     </div>
                     <div class="ex-tilegallery">
                         <div class="ex-thumbs" id="rt-thumbs">
-                            <img src="media/screens/rsetool1.jpg" class="ex-thumb" id="rt-thumb1" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool2.jpg" class="ex-thumb" id="rt-thumb2" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool3.jpg" class="ex-thumb" id="rt-thumb3" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool4.jpg" class="ex-thumb" id="rt-thumb4" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool5.jpg" class="ex-thumb" id="rt-thumb5" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool6.jpg" class="ex-thumb" id="rt-thumb6" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool7.jpg" class="ex-thumb" id="rt-thumb7" onclick="rtImage(this);" alt="Trace RSE Tool">
-                            <img src="media/screens/rsetool8.jpg" class="ex-thumb" id="rt-thumb8" onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool1.jpg" class="ex-thumb" id="rt-thumb1"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool2.jpg" class="ex-thumb" id="rt-thumb2"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool3.jpg" class="ex-thumb" id="rt-thumb3"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool4.jpg" class="ex-thumb" id="rt-thumb4"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool5.jpg" class="ex-thumb" id="rt-thumb5"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool6.jpg" class="ex-thumb" id="rt-thumb6"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool7.jpg" class="ex-thumb" id="rt-thumb7"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
+                            <img src="media/screens/rsetool8.jpg" class="ex-thumb" id="rt-thumb8"
+                                onclick="rtImage(this);" alt="Trace RSE Tool">
                         </div>
                         <span class="close" value="" id="dc-close" onclick="closeImages()">Close</span>
                         <div class="ex-imagedisplay">
