@@ -93,15 +93,16 @@ img {
     height: 750px;
     overflow: show;
     margin: auto;
-    background:url("../media/nubicon_v3.png") no-repeat;
+    background: url("../media/nubicon_v3.png") no-repeat;
 }
+
 .lego:hover {
     padding: 0;
     width: 600px;
     height: 750px;
     overflow: show;
     margin: auto;
-    background:url("../media/chris_logo.gif") no-repeat;
+    background: url("../media/nubiconmattelg.gif") no-repeat;
 }
 
 .hline1 {
@@ -131,129 +132,141 @@ img {
 
 
 
+
+
+
+
 /*
 ############################
 ##	  X.2		-		ABOUT			##
 ############################
 */
-.about-content {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    width: 100%;
+.about {
+    display: block;
     margin: auto;
 }
-.about-head {
 
-}
 .about h1 {
     padding: 20px 0;
 }
 
-.about-left {
-    border: solid black 1px;
-    width: 35%;
-}
-.about-box {
-    display: block;
-    width: 100%;
+.ab-content {
+    position: relative;
+    text-align: center;
     margin: auto;
-}
-
-#about-img {
-    display: block;
-    position: relative;
-    /* overflow: show; */
-    width: 400px;
-    height: 400px;
-    /* max-width: 100%; */
-    margin: 2.5em auto auto auto;
-    /* width: 65%; */
-    /* animation-name: picswitch;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out; */
-}
-#aboutfader {
-    display: block;
-    position: relative;
-    margin: auto;
-}
-#aboutfader img {
-    max-width: 350px;
-    max-height: 350px;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
-  
-/* #aboutfader img.transparent {
-  opacity:0;
-} */
-/* .about-img1 {
-    position: absolute;
-    right: 1em;
-} */
-/* .about-img2 {
-    
-} */
-@keyframes aboutfade {
-    0% {
-    opacity:1;
-  }
-  45% {
-  opacity:1;
-  }
-  55% {
-  opacity:0;
-  }
-  100% {
-  opacity:0;
-  }
-  }
-  
-  /* #aboutfader img.about1 {
-    position: absolute;
-    right: 1em;
-    animation-name: aboutfade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-direction: alternate;
-  } */
-  #aboutfader img.about2 {
-    position: absolute;
-    right: 1em;
-    animation-name: aboutfade;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-    animation-direction: alternate;
-  }
-
-/* @keyframes picswitch {
-    0%   {background: url("../media/gobhead.png")}
-    50%  {background: url("../media/chrishendl_head.jpg")}
-    100% {background: url("../media/chris-nub-to-sky.png")}
-  } */
-
-.about-right {
-    border: solid red 1px;
-    width: 65%;
-}
-
-.about-info {
-    position: relative;
-    text-align: left;
-    width: 75%;
-    margin-top: 2.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: auto;
+    width: 40%;
     font-size: 1.2em;
 }
+/*
+############################
+##	  X.2		-		BLOG			##
+############################
+*/
+.bline1 {
+    position: relative;
+    /* width: calc(85% - 100px); */
+    width: 95%;
+    height: 10px;
+    background-image: linear-gradient(to right, #aca3b1,  #3C1053, #aca3b1);
+    margin: 10px auto;
+}
+.bline2 {
+    position: relative;
+    width: calc(85% - 100px);
+    /* width: 100%; */
+    height: 2px;
+    background-image: linear-gradient(to right, #3C1053, #ab7ac7, #e4dfe7);
+    margin: 5px auto;
+}
+.blog-section {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #eeeeee;
+    /* width: 100%; */
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.blog-section-head {
+    display: block;
+    position: relative;
+    width: auto;
+    margin: 0px;
+    font-size: 1.2em;
+}
+.blog-section-headline {
+    color: #D29F13;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px #3C1053;
+    font-style: normal;
+    font-size: 3.5em;
+    letter-spacing: 2.5px;
+    line-height: 1em;
+}
+.blog-item {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    /* display: block;
+    margin: auto; */
+}
+.blog-item-headline {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    /* justify-content: space-around; */
+    align-items: center;
+    /* padding: 2em 0; */
+    /* align-self: center; */
+}
+.blog-item-icon {
+    /* margin: 0em 0em 0em 1em; */
+    /* align-self: center; */
+    width: 95px;
+    height: 95px;
+    margin-right: 10px;
+}
+.blog-item-title {
+    display: block;
+}
+.blog-item-title-text {
+    color: #D29F13;
+    font-size: 2.5em;
+    font-family: 'Anton', sans-serif;
+    /* justify-self: flex-start; */
+    /* padding: 0em 0em 0em .5em; */
+}
+.blog-item-text {
+    display: block;
 
+}
+.blog-item-subtitle-text {
+    color: #3C1053;
+    font-size: .85em;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: 2px 2px 3px #D29F13;
+    font-weight: bold;
+    /* justify-self: flex-end; */
+
+    /* margin: 0 0 0 13%; */
+}
+.blog-text-p {
+    display: block;
+    font-family: 'IBMPlexSansCondensed', sans-serif;
+    /* font-weight: bold; */
+    text-align: justify;
+    padding: 0 10%;
+    font-size: 1em;
+}
+ul.blog-text-p {
+    list-style-type: none;
+}
+.blog-text-span {
+    text-indent: 25px;
+}
 
 
 
@@ -274,6 +287,10 @@ img {
     margin: 2em auto;
 }
 
+#mobile-ex-gallery {
+    display: none;
+}
+
 .ex-nav {
     display: block;
     margin: auto;
@@ -287,7 +304,7 @@ img {
     flex-flow: row nowrap;
     align-content: center;
     justify-content: center;
-    margin: 0em 3em;
+    margin: 0em 4em;
 }
 
 .ex-links {
@@ -370,6 +387,11 @@ img {
     display: none;
 }
 
+#mm-clips {
+    width: 100%;
+    margin: auto;
+}
+
 .ex-content {
     display: block;
     position: relative;
@@ -384,13 +406,14 @@ img {
     display: block;
     width: 95%;
     margin: auto;
-} 
+}
 
 .ex-tiledesc {
     display: block;
     width: 70%;
     margin: auto;
 }
+
 .ex-tilegallery {
     display: block;
     width: 70%;
@@ -423,6 +446,7 @@ img {
     display: block;
     margin-top: 1em;
 }
+
 #pb-image,
 #mm-image,
 #dc-image,
@@ -481,18 +505,21 @@ img {
         max-width: 100%;
         height: 150px;
     }
+
     .lego {
         width: 300px;
         height: 400px;
         /* margin: auto; */
-        background:url("../media/nubicon_sm3.png") no-repeat;
+        background: url("../media/nubicon_sm3.png") no-repeat;
     }
+
     .lego:hover {
         width: 300px;
         height: 400px;
         /* margin: auto; */
-        background:url("../media/nubiconanim3_sm.gif") no-repeat;
+        background: url("../media/nubiconmattesm.gif") no-repeat;
     }
+
     .hline1 {
         width: 95%
     }
@@ -504,17 +531,9 @@ img {
     .hline3 {
         width: 75%
     }
-    .about-left {
 
-    }
-
-    .about-right {
+    .ab-content {
         width: 75%;
-
-    }
-
-    .about-info {
-        
     }
 
     #ex-leftline {
@@ -524,17 +543,22 @@ img {
     #ex-rightline {
         display: none;
     }
+
     .ex-tilegallery {
-        width: 97%
+        width: 100%
     }
 
-    .ex-links {
-        font-size: 1em;
+    .ex-thumb {
+        margin: 1em;
+        max-width: 75px;
+        height: 50px;
+        transition: all 0.5s ease;
     }
 
     .close {
         width: auto;
     }
+
     #pb-close,
     #mm-close,
     #ex-close,
@@ -546,10 +570,12 @@ img {
     }
 
     .ex-thumbs {
-        flex-flow: column wrap;
+        flex-flow: row wrap;
     }
+
     #pb-image,
     #mm-image,
+    #ex-image,
     #dc-image,
     #se-image,
     #rt-image {
