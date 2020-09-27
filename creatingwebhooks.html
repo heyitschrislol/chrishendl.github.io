@@ -45,9 +45,11 @@
                     Webhook system for repositories. The process for receiving notifications from GitHub
                     is actually quite simple:</p>
 
-                <a class="blog-thumb-url" href="media/blog1img1.png" target="_blank">
-                    <img id="blog1-thumb-1" src="media/blog1img1.png" class="blog-thumb blog thumb-sm">
-                </a>
+                    <div class="link-container">
+                        <a class="blog-thumb-url" href="media/blog1img1.png" target="_blank">
+                            <img id="blog1-thumb-1" src="media/blog1img1.png" class="blog-thumb blog thumb-sm">
+                        </a>
+                    </div>
                 <p class="blog-text-p blog-text-p-sm">When you create a Webhook for a repository, GitHub will begin
                     listening for specific events, which - when triggered - will send a payload to a specified server URL.
                     In my case, I had never made use of a Webhook before, so the first goal was to simply test the functionality 
@@ -63,25 +65,31 @@
                     activating the Webhook, select the content type you prefer (otherwise, the default setting is <samp
                     class="professional">application/json</samp>).
                 </p>
-                <a class="blog-thumb-url" href="media/blog1img3.png" target="_blank">
-                    <img id="blog1-thumb-2" src="media/blog1img3.png" class="blog-thumb blog thumb-sm"></span>
-                </a>
+                <div class="link-container">
+                    <a class="blog-thumb-url" href="media/blog1img3.png" target="_blank">
+                        <img id="blog1-thumb-2" src="media/blog1img3.png" class="blog-thumb blog thumb-sm">
+                    </a>
+                </div>
                 <p class="blog-text-p blog-text-p-sm">Another important option to consider is
                     which events you want to trigger. The default setting is "Just the push event", which was 
                     exactly what I was looking for. But out of curiousity, I decided to look at which other events were available,
                     and the list is... big.
                 </p>
-                <a class="blog-thumb-url" href="media/blog1img2.png" target="_blank">
-                    <img id="blog1-thumb-3" src="media/blog1img2.png" class="blog-thumb blog thumb-sm">
-                </a>
+                <div class="link-container">
+                    <a class="blog-thumb-url" href="media/blog1img2.png" target="_blank">
+                        <img id="blog1-thumb-3" src="media/blog1img2.png" class="blog-thumb blog thumb-sm">
+                    </a>
+                </div>
                 <p class="blog-text-p blog-text-p-sm">Maybe (<samp class="professional">likely</samp>) it was just my own inexperience using
                     GitHub features outside of "Push" and "Pull", but I was genuinely surprised at the number of events that could be
                     listened for. While I couldn't fit them in a single screenshot, I counted <b>37</b> events total. Thankfully, I held back the urge to 
                     "click shiny things", and changed the setting back to "Just the push event" before finalizing my choices and activating my WebHook. 
                 </p>
-                <a class="blog-thumb-url" href="media/blog1img6.png" target="_blank">
-                    <img id="blog1-thumb-4" src="media/blog1img6.png" class="blog-thumb blog thumb-sm">
-                </a>
+                <div class="link-container">
+                    <a class="blog-thumb-url" href="media/blog1img6.png" target="_blank">
+                        <img id="blog1-thumb-4" src="media/blog1img6.png" class="blog-thumb blog thumb-sm">
+                    </a>
+                </div>
                 <p class="blog-text-p blog-text-p-sm">With the Webhook created, active, and ready to send payloads, I'm almost ready to test the feature out. But first, I will
                     need to set up things on the receiving end. In my next post, I'll be writing a Java application to run the local host server, receive the JSON payloads, 
                     and print the data out to the console. </p>
