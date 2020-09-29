@@ -1,0 +1,47 @@
+[
+    {
+        "posttags": {
+            "postname": "creatingwebhooks",
+            "postname-class": "post-item post-item-sm",
+            "postid": "post1",
+            "postheadline": "Creating a Webhook to Receive GitHub Repository Notifications",
+            "postheadline-class": "post-item-headline post-item-headline-sm",
+            "posticon": "media/handmedallion1.png",
+            "date": "09/25/2020"
+        },
+        "posthead": [
+            "<article class=\"post-item post-item-sm\" id=\"post1\">",
+            "<div class=\"post-item-headline post-item-headline-sm\">",
+            "<img id=\"post1-icon\" class=\"post-item-icon post-item-icon-sm\" src=\"media/handmedallion1.png\">",
+            "<div class=\"post-item-title post-item-title-sm\">",
+            "<span id=\"post1-title\" class=\"post-item-title-text post-item-title-text-sm\">Creating a Webhook to Receive GitHub Repository Notifications</span><br />",
+            "<span id=\"post1-subtitle\" class=\"post-item-subtitle-text post-item-subtitle-text-sm\">Created: 25 September 2020</span></div></div><div class=\"bline2\"></div>",
+            "<div id=\"post1-item\" class=\"post-item-text post-item-text-sm\">"
+        ],
+        "preview": [
+            "<p class=\"post-text-p post-text-p-sm\">A few days ago, my brother approached me with a \"project\" that he wanted my help with. He is currently developing his own professional-grade graphics engine which is -- suffice to say -- a rather ambitious endeavor (especially alone). He explained that he could really use a web site to act as a designated download/information hub for each new build of his engine. More specifically: he wanted something that would listen for each new push to his GitHub repository, retrieve the new build, and automatically upload it to his own website.</p>",
+            "<p class=\"post-text-p post-text-p-sm\">Admittedly, I started this endeavor with near-zero knowledge of how to <i>any</i> of this. However, I took this as an excellent opportunity to learn new, useful things. And one of the first useful things I learned was how to use GitHub's built-in Webhook system for repositories. The process for receiving notifications from GitHub is actually quite simple:</p>",
+            "<div class=\"link-container\"><a class=\"post-thumb-url\" target=\"_blank\" href=\"media/post1img1.png\"><img class=\"post-thumb post thumb-sm\" src=\"media/post1img1.png\"></a></div>",
+            "<br><div class=\"readmore-container\"><a class=\"post-article-link\" href=\"creatingwebhooks.html\">Read More</a></div>"
+        ],
+        "content": [
+            "<p class=\"post-text-p post-text-p-sm\">A few days ago, my brother approached me with a \"project\" that he wanted my help with. He is currently developing his own professional-grade graphics engine which is -- suffice to say -- a rather ambitious endeavor (especially alone). He explained that he could really use a web site to act as a designated download/information hub for each new build of his engine. More specifically: he wanted something that would listen for each new push to his GitHub repository, retrieve the new build, and automatically upload it to his own website.</p>",
+            "<p class=\"post-text-p post-text-p-sm\">Admittedly, I started this endeavor with near-zero knowledge of how to <i>any</i> of this. However, I took this as an excellent opportunity to learn new, useful things. And one of the first useful things I learned was how to use GitHub's built-in Webhook system for repositories. The process for receiving notifications from GitHub is actually quite simple:</p>",
+            "<div class=\"link-container\"><a class=\"post-thumb-url\" target=\"_blank\" href=\"media/post1img1.png\"><img class=\"post-thumb post thumb-sm\" src=\"media/post1img1.png\"></a></div>",
+            "<br><div class=\"readmore-container\"><a class=\"post-article-link\" href=\"creatingwebhooks.html\">Read More</a></div>",
+            "<p class=\"post-text-p post-text-p-sm\">When you create a Webhook for a repository, GitHub will begin listening for specific events, which - when triggered - will send a payload to a specified server URL. In my case, I had never made use of a Webhook before, so the first goal was to simply test the functionality and visualize the output. To that end, I followed <a href=\"https://docs.github.com/en/free-pro-team@latest/developers/webhooks-and-events/configuring-your-server-to-receive-payloads#using-ngrok\">GitHub's own tutorial</a> and downloaded <a href=\"https://ngrok.com/download\">ngrok</a>. This simple and easy program exposes your local host to the internet, and generates a URL that you can use to as a target for sending payloads. That payload contains all the details of the event, formatted as JSON script. According to the documentation, this JSON script can be sent as one of two content types: <samp class=\"professional\">application/json</samp> - which sends the payload directly to the body of the <samp class=\"professional\">POST</samp> request, or <samp class=\"professional\">application/x-www-form-urlencoded</samp> - which sends a form parameter (called a <samp class=\"professional\">payload</samp>) containing the JSON script. Before activating the Webhook, select the content type you prefer (otherwise, the default setting is <samp class=\"professional\">application/json</samp>).</p>",
+
+            "<div class=\"link-container\"><a class=\"post-thumb-url\" target=\"_blank\" href=\"media/post1img3.png\"><img class=\"post-thumb post thumb-sm\" src=\"media/post1img3.png\"></a></div>",
+
+            "<p class=\"post-text-p post-text-p-sm\">Another important option to consider is which events you want to trigger. The default setting is \"Just the push event\", which was  exactly what I was looking for. But out of curiousity, I decided to look at which other events were available, and the list is... big.</p>",
+
+            "<div class=\"link-container\"><a class=\"post-thumb-url\" target=\"_blank\" href=\"media/post1img2.png\"><img class=\"post-thumb post thumb-sm\" src=\"media/post1img2.png\"></a></div>",
+
+            "<p class=\"post-text-p post-text-p-sm\">Maybe (<samp class=\"professional\">likely</samp>) it was just my own inexperience using GitHub features outside of \"Push\" and \"Pull\", but I was genuinely surprised at the number of events that could be listened for. While I couldn't fit them in a single screenshot, I counted <b>37</b> events total. Thankfully, I held back the urge to \"click shiny things\", and changed the setting back to \"Just the push event\" before finalizing my choices and activating my WebHook. </p>",
+
+            "<div class=\"link-container\"><a class=\"post-thumb-url\" target=\"_blank\" href=\"media/post1img6.png\"><img class=\"post-thumb post thumb-sm\" src=\"media/post1img6.png\"></a></div>",
+
+            "<p class=\"post-text-p post-text-p-sm\">With the Webhook created, active, and ready to send payloads, I'm almost ready to test the feature out. But first, I will need to set up things on the receiving end. In my next post, I'll be writing a Java application to run the local host server, receive the JSON payloads, and print the data out to the console.</p>"
+        ]
+    }
+]

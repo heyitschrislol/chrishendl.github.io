@@ -1,40 +1,76 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Chris Hendl</title>
     <link rel="icon" href="favicon.ico">
-    <link href="css/t-styles.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
     <link href="css/fontfaces.css" rel="stylesheet" />
-    <script src="js/ch_updates.js"></script>
     <script src="js/ch_gallery.js"></script>
-    <script src="js/post.json"></script>
-    
+    <script src="ch/ch_updates.js"></script>
 </head>
 
-<!-- <body onload="makeActive();whatsNew();"> -->
-<body onload="whatsNew();">
+<body>
     <div class="header">
         <h2 class="smallhead">THE PERSONAL SITE OF</h2>
-        <h1 class="largehead" id="readtest">CHRIS HENDL</h1>
+        <h1 class="largehead">CHRIS HENDL</h1>
         <div class="header-image">
             <div class="logo">
                 <div class="lego"></div>
             </div>
+            <!-- <a href="#ab-bkm" title="Chris Hendl - About"></a></a> -->
+
         </div>
-        <div id="peep"></div>
-        <div id="poop"></div>
         <div class="hline1" id="ab-bkm"></div>
         <div class="hline2"></div>
         <div class="hline3"></div>
     </div>
-    <section class="post-section post-section-sm" id="section-post">
-        <div class="post-section-head">
-            <div class="post-section-headline">WHAT'S NEW</div>
+    <section class="blog-section blog-section-sm">
+        <div class="blog-section-head">
+            <div class="blog-section-headline">WHAT'S NEW</div>
         </div>
-        <div class="bline1" id="articleline1"></div>
-        <div id="articleline2"></div>
+        <div class="bline1"></div>
+        <article class="blog-item blog-item-sm" id="blog1">
+            <div class="blog-item-headline blog-item-headline-sm">
+                <img id="blog1-icon" class="blog-item-icon blog-item-icon-sm" src="media/handmedallion1.png">
+                <div class="blog-item-title blog-item-title-sm">
+                    <span id="blog1-title" class="blog-item-title-text blog-item-title-text-sm">Creating a Webhook to
+                        Receive GitHub Repository Notifications</span><br />
+                    <span id="blog1-subtitle" class="blog-item-subtitle-text blog-item-subtitle-text-sm">Created: 25
+                        September 2020</span>
+                </div>
+            </div>
+            <div class="bline2"></div>
+            <div id="blog1-item" class="blog-item-text blog-item-text-sm">
+                <p class="blog-text-p blog-text-p-sm">
+                    A few days ago, my brother approached me with a "project" that he wanted my help with. He is
+                    currently developing his own professional-grade graphics engine which is -- suffice to say --
+                    a rather ambitious endeavor (especially alone). He explained that he could really use a web site to
+                    act as a designated download/information hub for each new build of his engine. More specifically:
+                    he wanted something that would listen for each new push to his GitHub repository, retrieve the new
+                    build, and automatically upload it to his own website. </p>
+
+                <p class="blog-text-p blog-text-p-sm">Admittedly, I started this endeavor with near-zero knowledge of
+                    how to do <i>any</i> of this. However, I took this as an excellent opportunity to learn
+                    new, useful things. And one of the first useful things I learned was how to use GitHub's built-in
+                    Webhook system for repositories. The process for receiving notifications from GitHub
+                    is actually quite simple:</p>
+
+                <div class="link-container">
+                    <a class="blog-thumb-url" href="media/blog1img1.png" target="_blank">
+                        <img id="blog1-thumb-1" src="media/blog1img1.png" class="blog-thumb blog thumb-sm">
+                    </a>
+                </div>
+                <br>
+                <div class="readmore-container">
+                    <a href="creatingwebhooks.html" class="blog-article-link">Read More</a>
+                </div>
+
+            </div>
+        </article>
+        <div class="bline1"></div>
     </section>
     <div class="examples">
 
