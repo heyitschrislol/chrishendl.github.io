@@ -4,11 +4,8 @@ function whatsNew() {
 	xmlhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
 			posts = JSON.parse(this.responseText);
-			// document.getElementById("peep").innerHTML = posts[0].posttags.postname;
-			createShell();
-			// for (index = 0; index < posts.length; index++) {
-			// 	newPages(index);
-			// }
+			document.getElementById("peep").innerHTML = posts[0].posttags.postname;
+			createPreview();
 		}
 	};
 	xmlhttp.open("GET", "js/posts.json", true);
@@ -92,6 +89,33 @@ function createShell() {
 		document.getElementById("articleline2").insertAdjacentElement("beforebegin", newarticle);
 		document.getElementById(newarticle.id).insertAdjacentElement("afterend", bline1);
 
+	}
+}
+function createPreview() {
+	let sectionhead = "<div class=\"post-section-head\"><div class=\"post-section-headline\">WHAT'S NEW</div></div><div class=\"bline1\" id=\"articleline1\"></div>"
+	var postarray;
+	let newhead = "";
+	let newpreview = "";
+	let newarticle = "";
+	let newend = "";
+	for (let i = 0; i < posts.length; i++) {
+		
+		for (let q = 0; q < posts[i].posthead.length; q++) {
+			newhead += posts[i].posthead[q];
+		}
+		for (let z = 0; z < posts[i].preview.length; z++) {
+			newpreview += posts[i].preview[z];
+		}
+		newarticle = newhead + newpreview;
+		newend = "</div>";
+
+		postarray[i] = newarticle + newend;
+		// document.getElementById("articleline2").insertAdjacentElement("beforebegin", newarticle);
+		// document.getElementById("articleline2").insertAdjacentElement("afterend", newend);
+	}
+	document.getElementById("section-post").innerHTML = sectionhead;
+	for (let g = 0; g < postarray.length; g++) {
+		document.getElementById("section-post").innerHTML += postarray[g];
 	}
 }
 /* 	*****************************************

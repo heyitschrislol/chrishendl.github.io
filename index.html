@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,11 +10,10 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/ch_updates.js"></script>
     <script src="js/ch_gallery.js"></script>
-    <script src="js/post.json"></script>
-    
+    <script src="js/posts.json"></script>
+
 </head>
 
-<!-- <body onload="makeActive();whatsNew();"> -->
 <body onload="whatsNew();">
     <div class="header">
         <h2 class="smallhead">THE PERSONAL SITE OF</h2>
@@ -34,7 +34,43 @@
             <div class="post-section-headline">WHAT'S NEW</div>
         </div>
         <div class="bline1" id="articleline1"></div>
-        <div id="articleline2"></div>
+        <article class="post-item post-item-sm" id="post1">
+            <div class="post-item-headline post-item-headline-sm">
+                <img id="post1-icon" class="post-item-icon post-item-icon-sm" src="media/handmedallion1.png">
+                <div class="post-item-title post-item-title-sm">
+                    <span id="post1-title" class="post-item-title-text post-item-title-text-sm">Creating a Webhook to
+                        Receive GitHub Repository Notifications</span><br />
+                    <span id="post1-subtitle" class="post-item-subtitle-text post-item-subtitle-text-sm">Created: 25
+                        September 2020</span>
+                </div>
+            </div>
+            <div class="bline2"></div>
+            <div id="post1-item" class="post-item-text post-item-text-sm">
+                <p class="post-text-p post-text-p-sm">
+                    A few days ago, my brother approached me with a "project" that he wanted my help with. He is
+                    currently developing his own professional-grade graphics engine which is -- suffice to say --
+                    a rather ambitious endeavor (especially alone). He explained that he could really use a web site to
+                    act as a designated download/information hub for each new build of his engine. More specifically:
+                    he wanted something that would listen for each new push to his GitHub repository, retrieve the new
+                    build, and automatically upload it to his own website. </p>
+
+                <p class="post-text-p post-text-p-sm">Admittedly, I started this endeavor with near-zero knowledge of
+                    how to <i>any</i> of this. However, I took this as an excellent opportunity to learn
+                    new, useful things. And one of the first useful things I learned was how to use GitHub's built-in
+                    Webhook system for repositories. The process for receiving notifications from GitHub
+                    is actually quite simple:</p>
+
+                <div class="link-container">
+                    <a class="post-thumb-url" href="media/post1img1.png" target="_blank">
+                        <img id="post1-thumb-1" src="media/post1img1.png" class="post-thumb post thumb-sm">
+                    </a>
+                </div>
+                <br>
+                <div class="readmore-container"><a class="post-article-link" href="creatingwebhooks.html">Read More</a>
+                </div>
+                <div class="bline1"></div>
+                <div id="articleline2"></div>
+            </div>
     </section>
     <div class="examples">
 
