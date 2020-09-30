@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+#peep {
+    width:20%;
+    height: 100px;
+    margin:auto; 
+    font-size:3em; 
+    background-color: gray;
+}
+
 .side {
   -webkit-flex: 10%;
   flex: 10%;

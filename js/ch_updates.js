@@ -12,22 +12,23 @@ function whatsNew() {
 	xmlhttp.send();
 }
 
-// function newPages(g) {
-// 	let fs = require('fs');
-// 	fs.writeFile(posts[index].posttags.postname + ".html", createPage(g), function (err) {
-// 		if (err) throw err;
-// 		console.log('Saved!');
-// 	});
-// }
+
+function newPages(g) {
+	let fs = require('fs');
+	fs.writeFile(posts[index].posttags.postname + ".html", createPage(g), function (err) {
+		if (err) throw err;
+		console.log('Saved!');
+	});
+}
 
 
-/* 	*************************************************************
- *	****	CREATES THE EMPTY DOM ELEMENTS OF A NEW POST	***** 
- *	****													*****
+/* 	************************************************************
+ *	****	CREATES THE EMPTY DOM ELEMENTS OF A NEW POST	**** 
+ *	****							****
  *	************************************************************/
 function createShell() {
 	for (let j = 0; j < posts.length; j++) {
-		let id = posts[j].posttags.postid;
+		var id = posts[j].posttags.postid;
 		var bline1div = document.createElement("div");
 		bline1div.className = "bline1";
 		var newarticle = document.createElement("article");
@@ -64,9 +65,6 @@ function createShell() {
 		var posttextdiv = document.createElement("div");
 		posttextdiv.className = "post-item-text post-item-text-sm";
 		posttextdiv.id = id + "-content";
-
-		// titlespan.appendChild(titletext);
-		// subtitlespan.appendChild(subtitletext);
 
 		titlediv.appendChild(titlespan);
 		titlediv.appendChild(breakline);
@@ -125,21 +123,21 @@ function createPreview() {
  *	****								*****
  *	*****************************************/
 
-// function createPage(j) {
-// 	var html;
-// 	var header = "<meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><title>Chris Hendl</title><link rel=\"icon\" href=\"favicon.ico\"><link href=\"css/t-styles.css\" rel=\"stylesheet\" /><link href=\"css/fontfaces.css\" rel=\"stylesheet\" /><script src=\"js/ch_updates.js\"></script><script src=\"js/ch_gallery.js\"></script><script src=\"js/post.json\"></script>";
-// 	var body = "<section class=\"post-section post-section-sm\" id=\"section-post\"><div class=\"bline1\"></div>";
-// 	var articletext;
-// 	for (y in posts[j].posthead) {
-// 		articlehead += y;
-// 	}
-// 	for (let x = 0; x < posts[j].preview.length; x++) {
-// 		articletext += posts[j].content[x];
-// 	}
-// 	articletext += "</div></article><div class=\"bline1\"></div></section>";
-// 	// document.getElementById("poop").innerHTML = articletext;
+function createPage(j) {
+	var html;
+	var header = "<meta charset=\"utf-8\" /><meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" /><title>Chris Hendl</title><link rel=\"icon\" href=\"favicon.ico\"><link href=\"css/t-styles.css\" rel=\"stylesheet\" /><link href=\"css/fontfaces.css\" rel=\"stylesheet\" /><script src=\"js/ch_updates.js\"></script><script src=\"js/ch_gallery.js\"></script><script src=\"js/post.json\"></script>";
+	var body = "<section class=\"post-section post-section-sm\" id=\"section-post\"><div class=\"bline1\"></div>";
+	var articletext;
+	for (y in posts[j].posthead) {
+		articlehead += y;
+	}
+	for (let x = 0; x < posts[j].preview.length; x++) {
+		articletext += posts[j].content[x];
+	}
+	articletext += "</div></article><div class=\"bline1\"></div></section>";
+	// document.getElementById("poop").innerHTML = articletext;
 
-// 	html = '<!DOCTYPE html>' +
-// 		'<html><head>' + header + '</head><body>' + body + articlehead + articletext + '</body></html>';
-// 	return html;
-// }
+	html = '<!DOCTYPE html>' +
+		'<html><head>' + header + '</head><body>' + body + articlehead + articletext + '</body></html>';
+	return html;
+}
