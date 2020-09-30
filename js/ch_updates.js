@@ -4,11 +4,11 @@ function whatsNew() {
 	xmlhttp.onreadystatechange = function () {
 		if (this.readyState == 4 && this.status == 200) {
 			posts = JSON.parse(this.responseText);
-			document.getElementById("peep").innerHTML = posts[0].posttags.postname;
-			createPreview();
+			document.getElementById("peep").innerHTML += posts[0].posttags.postname;
+			createShell();
 		}
 	};
-	xmlhttp.open("GET", "js/posts.json", true);
+	xmlhttp.open("GET", "posts.json", true);
 	xmlhttp.send();
 }
 
@@ -79,7 +79,11 @@ function createShell() {
 		newarticle.appendChild(bline2div);
 		newarticle.appendChild(posttextdiv);
 
-		var posttext = "";
+		combine(j);
+	}
+}
+function combine(j) {
+	var posttext = "";
 		for (let x = 0; x < posts[j].preview.length; x++) {
 			posttext += posts[j].preview[x];
 		}
@@ -88,8 +92,6 @@ function createShell() {
 		newarticle.lastElementChild.innerHTML = posttext;
 		document.getElementById("articleline2").insertAdjacentElement("beforebegin", newarticle);
 		document.getElementById(newarticle.id).insertAdjacentElement("afterend", bline1);
-
-	}
 }
 function createPreview() {
 	let sectionhead = "<div class=\"post-section-head\"><div class=\"post-section-headline\">WHAT'S NEW</div></div><div class=\"bline1\" id=\"articleline1\"></div>"
