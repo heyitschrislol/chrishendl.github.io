@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hendl Family Cinema</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/fontfaces.css" rel="stylesheet" />
+    <script src="js/cinema.js"></script>
+    <script src="js/movielist.json"></script>
+
+    <!-- <script src="js/ch_updates.js"></script>
+	<script src="js/ch_tabs.js"></script>
+	<script src="js/ch_gallery.js"></script>
+	<script src="js/posts.json"></script> -->
+
+</head>
+<body onload="getVideoList();">
+<!-- <body> -->
+    <div class="cinema-header">
+        <h1>Hendl Family Cinema</h1>
+    </div>
+    <div class="cinema">
+        <div class="cinema-sidebar">
+            <h2 class="nowplaying">NOW PLAYING:</h2>
+            <ul class="movieitems">
+                <li class="movieitem">
+                    <button class="itembutton" id="genderreveal" onclick="setVideo(0);">Gender Reveal Party</button>
+                    <!-- <input type="button" class="itembutton" id="genderreveal" onclick="setVideo(0);" value="Gender Reveal Party"> -->
+                </li>
+                <li class="movieitem">
+                    <button class="itembutton" id="cjswimming" onclick="setVideo(1);">Chris and Jen Swimming</button>
+                    <!-- <input type="button" class="itembutton" id="cjswimming" onclick="setVideo(1);" value="Chris and Jen Swimming"> -->
+
+                </li>
+                <!-- <li class="movieitem">
+                    <button class="itembutton" id="jenwedding" onclick="setVideo(1);">Aaron and Jennifer Wedding</button>
+                </li> -->
+                <li class="movieitem">
+                    <input type="button" class="itembutton" id="tester" onclick="poopee();" value="TEST">
+
+                </li>
+            </ul>
+        </div>
+        <div class="cinema-content">
+            <div class="theater" id="maintheater">
+                <div class="theater-header">
+                    <h2 id="movietitle"></h2>
+                </div>
+                <div class="theater-content">
+                    <iframe class="vid" id="currentvid" width="448" height="336" src="https://www.youtube.com/embed/zTd71mMaaGQ">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="cinema-sidebar">
+        </div>
+    </div>
+</body>
+
+</html>
