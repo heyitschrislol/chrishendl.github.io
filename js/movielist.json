@@ -1,11 +1,24 @@
 [   
     {   
         "title": "Baby Gender Reveal",
-        "url": "https://www.youtube.com/embed/JN2iGKOGQFM"
-        
+        "url": "https://www.youtube.com/embed/JN2iGKOGQFM",
+        "description" : "Short clip of Jennifer and Aaron's Baby Gender Reveal Party showing the reveal itself and the reactions of the family."
     },
     {
         "title" : "Chris and Jennifer Swimming",
-        "url" : "https://www.youtube.com/embed/zTd71mMaaGQ"
+        "url" : "https://www.youtube.com/embed/zTd71mMaaGQ",
+        "description" : "Ryan breaks scientific barriers with groundbreaking experiments, Chris and Jennifer pretend to be mentally challenged as a joke for - like - 30 minutes without stopping in a tiny inflatable pool. As a joke. "
+    },
+    {
+        "title" :"Xmas Baby Jordan and Hope",
+        "url" : "https://www.youtube.com/embed/vCRi9De2iKc",
+        "description" : "Christmas 2001 - Jennifer learns how to dougie, Ryan creates beanie fashion trend, Chris plays piano as well as you'd expect with one arm, Jordan is dying on Christmas and it's adorable, Baby Hope arrives"
+    },
+    {
+        "title" :"Xmas 1991 + Ryan Flutophone Recital ",
+        "url" : "https://www.youtube.com/embed/vCRi9De2iKc",
+        "description" : "Christmas 1991 - Ryan describes a gift as 'chocolatey', Chris dons the armor of his ancestors, Jennifer establishes dominance over everyone, grandkids receive rubberband guns from Poppy."
     }
 ]
+
+

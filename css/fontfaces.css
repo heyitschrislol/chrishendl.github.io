@@ -46,6 +46,22 @@
     font-style: normal;
 }
 
+/***********/
+/* BANGERS */
+/***********/
+@font-face {
+    font-family: 'Bangers';
+    src: url('../fonts/Bangers/Bangers-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Bangers/Bangers-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Bangers/Bangers-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Bangers/Bangers-Regular.svg#bangersregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /************/
 /* OPEN SANS CONDENSED */
 /************/

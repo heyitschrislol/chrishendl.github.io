@@ -1,8 +1,10 @@
-const list = '[{"title":"Baby Gender Reveal","url":"https://www.youtube.com/embed/JN2iGKOGQFM"},{"title":"Chris and Jennifer Swimming","url":"https://www.youtube.com/embed/zTd71mMaaGQ"}]';
+const list = '[{"title":"Baby Gender Reveal","url":"https://www.youtube.com/embed/JN2iGKOGQFM"},{"title":"Chris and Jennifer Swimming","url":"https://www.youtube.com/embed/zTd71mMaaGQ"},{"title":"Xmas Baby Jordan and Hope","url":"https://www.youtube.com/embed/vCRi9De2iKc"}]';
 // let movies = JSON.parse(list);
+let requestURL = 'https://github.com/heyitschrislol/chrishendl.github.io/blob/master/js/movielist.json';
+let request = new XMLHttpRequest();
 
 function setVideo(index) {
-    const list = '[{"title":"Baby Gender Reveal","url":"https://www.youtube.com/embed/JN2iGKOGQFM"},{"title":"Chris and Jennifer Swimming","url":"https://www.youtube.com/embed/zTd71mMaaGQ"}]';
+    const list = '[{"title":"Baby Gender Reveal","url":"https://www.youtube.com/embed/JN2iGKOGQFM"},{"title":"Chris and Jennifer Swimming","url":"https://www.youtube.com/embed/zTd71mMaaGQ"},{"title":"Xmas Baby Jordan and Hope","url":"https://www.youtube.com/embed/vCRi9De2iKc"}]';
     var movies = JSON.parse(list);
     // var video = document.getElementById("currentvid");
     // var movietitle = document.getElementById("movietitle");
@@ -15,21 +17,15 @@ function setVideo(index) {
     document.getElementById("movietitle").innerText = movies[index].title;
 }
 function getVideoList() {
-    // const list = ['[{"title": "Baby Gender Reveal","url": "https://www.youtube.com/embed/JN2iGKOGQFM" },',
-    // '{"title": "Aaron and Jennifers Wedding", "url": "media/Jennifer and Aaron-Hoffman Haus-5.2.2020.mp4"},',
-    // '{ "title" : "Chris and Jennifer Swimming", "url" : "https://www.youtube.com/embed/zTd71mMaaGQ" }]'];
-    
-
-        // var xmlhttp = new XMLHttpRequest();
-        // xmlhttp.onreadystatechange = function () {
-        //     if (this.readyState == 4 && this.status == 200) {
-        //         movies = JSON.parse(this.responseText);
-        //         // document.getElementById("tester").innerText += movies[0].title;
-                
-        //     }
-        // };
-        // xmlhttp.open("GET", "movielist.json", true);
-        // xmlhttp.send();
+    let requestURL = 'https://github.com/heyitschrislol/chrishendl.github.io/blob/master/js/movielist.json';
+    let request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+        const movielist = request.response;
+        
+    }
 
 }
 // function testList() {
