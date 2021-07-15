@@ -1,7 +1,9 @@
-// const list = '[{"title":"Baby Gender Reveal","url":"https://www.youtube.com/embed/JN2iGKOGQFM"},{"title":"Chris and Jennifer Swimming","url":"https://www.youtube.com/embed/zTd71mMaaGQ"},{"title":"Xmas Baby Jordan and Hope","url":"https://www.youtube.com/embed/vCRi9De2iKc"}]';
-// let movies = JSON.parse(list);
-
 function setVideo(index) {
+    // IN ORDER TO MAKE THIS WORK WITHOUT TRYING TO PULL FROM A LOCAL JSON FILE:
+    // 1. Upload the json to a github repository
+    // 2. On said GitHub repository, navigate to the json file url
+    // 3. Click on 'Raw'
+    // 4. Copy the url at the top
     let requestURL = 'https://raw.githubusercontent.com/heyitschrislol/chrishendl.github.io/master/js/movielist.json';
     let request = new XMLHttpRequest();
     request.open('GET', requestURL);
@@ -13,6 +15,8 @@ function setVideo(index) {
         document.getElementById("movietitle").innerText = movielist[index].title;
         document.getElementById("currentvid").setAttribute("title", movielist[index].title);
         document.getElementById("descriptiontext").innerText = movielist[index].description;
+        document.getElementById("descriptiondate").innerText += movielist[index].date;
+        document.getElementById("descriptionlength").innerText += movielist[index].length;
         document.getElementById("currentvid").load();
         
     }
