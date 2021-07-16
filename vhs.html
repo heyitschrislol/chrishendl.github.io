@@ -18,12 +18,58 @@
 
 </head>
 <!-- <body onload="getVideoList();"> -->
-<body>
+<body class="cinema-body">
     <div class="cinema-header">
         <div class="cinema-logo" id="cinemalogo" ></div>
         <!-- <img src="media/curtains.png" class="cinema-curtains" id="cinemacurtains" > -->
     </div>
     <div class="cinema">
+        <div class="mobile-hamburger" id="mobilehamburger">
+            <button class="burgerbutton" id="burgerbutt" onclick="burgerTime();">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </button>
+            
+        </div>
+        <div class="mobile-menu" id="mobilemenu">
+            <!-- <span class="material-icons-two-tone">emoji_objects</span> -->
+            <div class="nowplaying">
+                <h2>NOW PLAYING:</h2>
+            </div>
+            <ul class="movieitems movieitems-mob">
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="genderreveal" onclick="setVideo(0, 'genderreveal');">Gender Reveal Party</button>
+                    </span>
+                </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="cjswimming" onclick="setVideo(1, 'cjswimming');">Chris and Jen Swimming</button>
+                    </span>
+                </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="babyjordan" onclick="setVideo(2, 'babyjordan');">Xmas 2001 - Young Jordan and Hope</button>
+                    </span>
+                </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="xmas1992" onclick="setVideo(3, 'xmas1992');">Xmas 1991 + Ryan Flutophone Recital</button>
+                    </span>
+                </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="goapoat" onclick="setVideo(4, 'goapoat');">Basketball, Birthdays, and Easter 1998</button>
+                    </span>
+                </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="hateyourself" onclick="setVideo(5, 'hateyourself');">Chris's Cringiest Day of Celebration</button>
+                    </span>
+                </li>
+            </ul>
+        </div>
         <div class="cinema-sidebar">
             <!-- <span class="material-icons-two-tone">emoji_objects</span> -->
             <div class="nowplaying">

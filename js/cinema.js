@@ -42,6 +42,17 @@ function changeVisibility() {
         document.getElementById("theaterheader").style.visibility = 'visible';
     }
 }
+function burgerTime() {
+    if (document.getElementById("mobilemenu").style.display == "none") {
+        document.getElementById("mobilemenu").style.display = "flex";
+        document.getElementsByClassName("hamburger").style.width = "8px";
+        document.getElementsByClassName("hamburger").style.height = "30px";
+    } else {
+        document.getElementById("mobilemenu").style.display = "none"
+        document.getElementsByClassName("hamburger").style.width = "40px";
+        document.getElementsByClassName("hamburger").style.height = "8px";
+    }
+}
 // function getMovieList() {
 //     let requestURL = 'https://github.com/heyitschrislol/chrishendl.github.io/blob/master/js/movielist.json';
 //     let request = new XMLHttpRequest();
