@@ -10,37 +10,78 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/cinema.js"></script>
     <script src="https://raw.githubusercontent.com/heyitschrislol/chrishendl.github.io/master/js/movielist.json"></script>
-
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
     <!-- <script src="js/ch_updates.js"></script>
 	<script src="js/ch_tabs.js"></script>
 	<script src="js/ch_gallery.js"></script>
 	<script src="js/posts.json"></script> -->
 
 </head>
-<body onload="getVideoList();">
-<!-- <body> -->
+<!-- <body onload="getVideoList();"> -->
+<body>
     <div class="cinema-header">
         <div class="cinema-logo" id="cinemalogo" ></div>
         <!-- <img src="media/curtains.png" class="cinema-curtains" id="cinemacurtains" > -->
     </div>
     <div class="cinema">
         <div class="cinema-sidebar">
-            <h2 class="nowplaying">NOW PLAYING:</h2>
+            <!-- <span class="material-icons-two-tone">emoji_objects</span> -->
+            <div class="nowplaying">
+                <h2>NOW PLAYING:</h2>
+            </div>
             <ul class="movieitems">
                 <li class="movieitem">
-                    <button class="itembutton" id="genderreveal" onclick="setVideo(0);">Gender Reveal Party</button>
+                    <span class="upitems">
+                        <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
+                        <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
+                        <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
+                        <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
+                        <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
+                        <!-- <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png"> -->
+                        <!-- <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png"> -->
+                    </span>
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton" id="genderreveal" onclick="setVideo(0, 'genderreveal');">Gender Reveal Party</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
                 </li>
                 <li class="movieitem">
-                    <button class="itembutton" id="cjswimming" onclick="setVideo(1);">Chris and Jen Swimming</button>
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton" id="cjswimming" onclick="setVideo(1, 'cjswimming');">Chris and Jen Swimming</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
                 </li>
                 <li class="movieitem">
-                    <button class="itembutton" id="babyjordan" onclick="setVideo(2);">Xmas 2001 - Young Jordan and Hope</button>
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton" id="babyjordan" onclick="setVideo(2, 'babyjordan');">Xmas 2001 - Young Jordan and Hope</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
                 </li>
                 <li class="movieitem">
-                    <button class="itembutton" id="xmas1992" onclick="setVideo(3);">Xmas 1991 + Ryan Flutophone Recital</button>
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton" id="xmas1992" onclick="setVideo(3, 'xmas1992');">Xmas 1991 + Ryan Flutophone Recital</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
                 </li>
                 <li class="movieitem">
-                    <button class="itembutton" id="goapoat" onclick="setVideo(4);">Basketball, Birthdays, and Easter 1998</button>
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton" id="goapoat" onclick="setVideo(4, 'goapoat');">Basketball, Birthdays, and Easter 1998</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
+                    <span class="downitems">
+                        <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
+                        <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
+                        <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
+                        <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
+                        <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
+                        <!-- <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png"> -->
+                        <!-- <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png"> -->
+                    </span>
                 </li>
                 <!-- <li class="movieitem">
                     <input type="button" class="itembutton" id="tester" onclick="poopee();" value="TEST">

@@ -1,4 +1,5 @@
-function setVideo(index) {
+let oldID = new String;
+function setVideo(index, id) {
     // IN ORDER TO MAKE THIS WORK WITHOUT TRYING TO PULL FROM A LOCAL JSON FILE:
     // 1. Upload the json to a github repository
     // 2. On said GitHub repository, navigate to the json file url
@@ -11,6 +12,11 @@ function setVideo(index) {
     request.send();
     request.onload = function() {
         const movielist = request.response;
+        document.getElementById(id).style.backgroundColor = "#cab781";
+        if (document.getElementById(oldID) != null) {
+            document.getElementById(oldID).style.backgroundColor = "#fff";
+        }
+        oldID = id;
         document.getElementById("currentvid").setAttribute("src", movielist[index].url);
         document.getElementById("movietitle").innerText = movielist[index].title;
         document.getElementById("currentvid").setAttribute("title", movielist[index].title);
