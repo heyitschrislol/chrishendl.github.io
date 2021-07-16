@@ -733,6 +733,9 @@ div.post-thumbs img {
     /* padding: 0 0 0 5em; */
     /* background-image: linear-gradient(to right, #707070, #C0C1C1, #707070);     */
 }
+#theaterheader {
+    visibility: hidden;
+}
 .theater-header h2 {
     font-family: 'Staatliches', sans-serif;
     font-size: 2.5em;
@@ -770,14 +773,12 @@ div.post-thumbs img {
 .cinema-sidebar-sp {
     /* display: none; */
 }
-.description-bar {
+#descriptionbar {
+    visibility: hidden;
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
-    /* padding: 0 0 0 5em; */
-    /* background-color: #bd8c05; */
-    /* width: 85%; */
 }
 .description-header {
     /* border: 2px solid #000; */

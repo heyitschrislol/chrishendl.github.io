@@ -17,17 +17,31 @@ function setVideo(index, id) {
             document.getElementById(oldID).style.backgroundColor = "#fff";
         }
         oldID = id;
+        if (document.getElementById("descriptionbar").style.visibility != "visible") {
+            document.getElementById("descriptionbar").style.visibility = "visible";
+        }
+        if (document.getElementById("theaterheader").style.visibility != "visible") {
+            document.getElementById("theaterheader").style.visibility = 'visible';
+        }
+        // changeVisibility();
         document.getElementById("currentvid").setAttribute("src", movielist[index].url);
         document.getElementById("movietitle").innerText = movielist[index].title;
         document.getElementById("currentvid").setAttribute("title", movielist[index].title);
         document.getElementById("descriptiontext").innerText = movielist[index].description;
         document.getElementById("descriptiondate").innerHTML = "<b>Date:</b> " + movielist[index].date;
         document.getElementById("descriptionlength").innerHTML = "<b>Length:</b> " + movielist[index].length;
-        document.getElementById("currentvid").load();
+        document.getElementById("currentvid").load;
         
     }
 }
-
+function changeVisibility() {
+    if (document.getElementById("descriptionbar").style.visibility === "hidden") {
+        document.getElementById("descriptionbar").style.visibility = "visible";
+    }
+    if (document.getElementById("theaterheader").style.visibility != "visible") {
+        document.getElementById("theaterheader").style.visibility = 'visible';
+    }
+}
 // function getMovieList() {
 //     let requestURL = 'https://github.com/heyitschrislol/chrishendl.github.io/blob/master/js/movielist.json';
 //     let request = new XMLHttpRequest();

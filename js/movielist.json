@@ -4,34 +4,48 @@
         "url": "https://www.youtube.com/embed/JN2iGKOGQFM",
         "description" : "Short clip of Jennifer and Aaron's Baby Gender Reveal Party showing the reveal itself and the reactions of the family.",
         "date" : "2021",
-        "length" : "00:01:35"
+        "length" : "00:01:35",
+        "tags" : [ "Aaron", "Jennifer", "Hendl", "Stannard" ]
     },
     {
         "title" : "Chris and Jennifer Swimming",
         "url" : "https://www.youtube.com/embed/zTd71mMaaGQ",
         "description" : "Ryan breaks scientific barriers with groundbreaking experiments, Chris and Jennifer distastefully pretend to be mentally challenged as a joke for - like - 30 minutes... without stopping... in a tiny inflatable pool. As a joke. ",
         "date" : "1990",
-        "length" : "00:15:27"
+        "length" : "00:15:27",
+        "tags" : [ "Christopher", "Jennifer", "Hendl" ]
     },
     {
         "title" :"Xmas 2001 - Young Jordan and Hope",
         "url" : "https://www.youtube.com/embed/vCRi9De2iKc",
         "description" : "Christmas 2001 - Jennifer and Jordan remorselessly celebrate grandma being trampled by reindeer, Ryan generates fashion buzz by adding a beanie to his ensemble, Chris plays piano and it sounds as good as you'd expect Richard Marx to sound played with one arm",
         "date" : "2001",
-        "length" : "05:16:39"
+        "length" : "05:16:39",
+        "tags" : [ "Ryan", "Christopher", "Jennifer", "Jordan", "Hope", "Hendl" ]
+
     },
     {
         "title" :"Xmas 1992 and Ryan Flutophone Recital",
         "url" : "https://www.youtube.com/embed/l5KLzfNC_EQ",
         "description" : "Christmas 1992 - Ryan describes a gift as 'chocolatey', Chris dons the armor of his ancestors, Jennifer establishes dominance over everyone, grandkids receive rubberband guns from Poppy.",
         "date" : "1991",
-        "length" : "01:58:56"
+        "length" : "01:58:56",
+        "tags" : [ "Ryan", "Christopher", "Jennifer", "Xmas", "Hendl" ]
     },
     {
         "title" :"Chris Basketball Debut, Jordan Bday, Jennifer's Play, and Easter",
         "url" : "https://www.youtube.com/embed/4UOq0HC9XFA",
         "description" : "Chris - in his first year at BBA - sends shockwaves through East Baton Rouge parish as he definitely takes the crown as the league's MVOAP (Most Valuable One-Armed Player). *this video also contains scenes from Jordan's birthday and a play where Jennifer has a perm.",
         "date" : "1995",
-        "length" : "02:19:47"   
+        "length" : "02:19:47",
+        "tags" : [ "Christopher", "Jennifer", "Jordan", "Easter", "Hendl" ]
+    },
+    {
+        "title" :"Chris's Cringiest Day and 10th Birthday ",
+        "url" : "https://www.youtube.com/embed/p0rGkrlR6lc",
+        "description" : "For ~2 hours, Chris manages to thoroughly misunderstand his role as 'birthday boy' and abuses his moment of spotlight by forcing attendees to watch as he puts on an insufferable and impromptu improv performance. ",
+        "date" : "1995",
+        "length" : "01:40:27 (10:43:59 if you're Chris and you cringe)",
+        "tags" : [ "Ryan", "Christopher", "Jennifer", "Birthday", "Hendl" ]
     }
 ]
