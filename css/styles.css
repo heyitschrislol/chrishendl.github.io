@@ -555,40 +555,76 @@ div.post-thumbs img {
 ##	  X.7		-		CINEMA   	##
 ######################################
 */
+
+
 .cinema-header {
-    display: block;
-    width:auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
     position: relative;
+    padding: 3em 0;
     /* margin: 2em; */
-    background-image: linear-gradient(to bottom, #7E1616, #DC2026, #7E1616);
+    background-image: linear-gradient(to right, #8d1719, #9f1a1c, #8d1719);
+    /* background-color: #9f1a1c; */
     color: #fff;
     text-shadow:
    -1px -1px 0 #000,  
     1px -1px 0 #000,
     -1px 1px 0 #000,
      1px 1px 0 #000;
-
+}
+@keyframes logoanim {
+    0%   {background: url("../media/vhs-logo-med1.png") no-repeat; }
+    50% {background: url("../media/vhs-logo-med2.png") no-repeat;}
+    60% {background: url("../media/vhs-logo-med1.png") no-repeat;}
+    75% {background: url("../media/vhs-logo-med2.png") no-repeat;}
+    78% {background: url("../media/vhs-logo-med1.png") no-repeat;}
+    100% {background: url("../media/vhs-logo-med1.png") no-repeat;}
+  }
+.cinema-logo {
+    /* opacity: 0; */
+    background: url("../media/vhs-logo-med1.png") no-repeat;
+    width: 803px;
+    height: 156px;
+    overflow: show;
+    /* animation-name: logoanim; */
+    animation: 7s logoanim infinite step-end;
+    /* animation-duration: 4s;
+    
+    animation-delay: 5s;
+    animation-iteration-count: infinite; */
+}
+.cinema-curtains {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 197px;
+    z-index: 1;
+    /* top: 100px; */
 }
 .cinema {
     display: flex;
     flex-flow: row nowrap;
+    height: auto;
+    /* padding: 3em 0 0 0; */
 }
-.cinema-header h1 {
+/* .cinema-header h1 {
     font-size: 4em;
     font-family: 'Anton', sans-serif;
-}
+} */
 .cinema-sidebar {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background-image: linear-gradient(to bottom, #7E1616, #DC2026, #7E1616);
+    background-image: linear-gradient(to right, #8d1719, #9f1a1c, #8d1719);
     padding: 4em 0 0 0;
     /* border: 1px solid #3C1053; */
     width: 15%;
     
 }
 .itembutton {
-    font-family: 'Bangers', sans-serif;
+    font-family: 'Staatliches', sans-serif;
     font-size: 1.5em;
     /* text-transform: uppercase; */
     text-align: left;
@@ -599,7 +635,7 @@ div.post-thumbs img {
     transition: .4s;
 }
 .itembutton:hover {
-    font-family: 'Bangers', sans-serif;
+    font-family: 'Inconsolata', sans-serif;
     font-size: 1.5em;
     /* text-transform: uppercase; */
     text-align: left;
@@ -614,7 +650,6 @@ div.post-thumbs img {
     0%   {color: #D29F13 }
     50% {color: #f8dc8f}
     100% {color: #D29F13;}
-
   }
 .nowplaying {
     /* color: #D29F13; */
@@ -650,23 +685,36 @@ div.post-thumbs img {
     display: block;
     width: 85%;
     position: relative;
+    padding: 2em 0 0 0;
     /* margin: 2em; */
-    background-image: linear-gradient(to right, #bd8c05, #D29F13, #bd8c05);
+    /* background-image: linear-gradient(to right, #bd8c05, #D29F13, #bd8c05); */
+    background-image: linear-gradient(to right, #707070, #C0C1C1, #707070);
+
 
 }
 .theater {
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    margin: 2em 0 0 0;
+    /* margin: 2em 0 0 0; */
     /* background-color: #D29F13; */
-    background-image: linear-gradient(to right, #bd8c05, #D29F13, #bd8c05);
+    /* background-image: linear-gradient(to right, #bd8c05, #D29F13, #bd8c05); */
+    background-image: linear-gradient(to right, #707070, #C0C1C1, #707070);
+
     /* background-image: linear-gradient(to right, #3C1053, #ab7ac7, #3C1053); */
     
 }
 .theater-header h2 {
-    font-family: 'ShadowsIntoLight', sans-serif;
-    font-size: 2em;
+    font-family: 'Staatliches', sans-serif;
+    font-size: 2.5em;
+    /* letter-spacing: .1em; */
+    /* text-decoration: underline; */
+    color: #9f1a1c;
+    text-shadow:
+   -1px -1px 0 #fff,  
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+     1px 1px 0 #fff;
 }
 .theater-content {
     display: flex;
@@ -700,8 +748,12 @@ div.post-thumbs img {
     /* width: 85%; */
 }
 .description-header {
-    border: 2px solid #000;
-    display:flex;
+    /* border: 2px solid #000; */
+    display: flex;
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: bold;
+    letter-spacing: .2em;
+    /* font-weight: bold; */
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
@@ -725,6 +777,9 @@ div.post-thumbs img {
     justify-content: flex-start;
     align-items: center;
     width: 50%;
+    border: .5em solid black;
+    background-color:#cfcccc;
+    border-radius: 1em;
     /* margin: 0 5em; */
 }
 .description-details {
@@ -736,9 +791,9 @@ div.post-thumbs img {
     
 }
 .description-text {
-    font-family: 'Helvetica', sans-serif;
-    font-style: italic;
-    color: #707070;
+    font-family: 'Inconsolata', sans-serif;
+    /* font-style: italic; */
+    color: #000;
 }
 
 
@@ -913,4 +968,48 @@ div.post-thumbs img {
         margin: auto;
     }
 
+    .cinema-header {
+        flex-flow: column wrap;
+    }
+
+
+    .cinema-curtains {
+        max-width: 100%;
+        height: auto;
+        /* position: relative; */
+        z-index: 1;
+        /* top: 100px; */
+    }
+    .cinema {
+        flex-flow: row wrap;
+    }
+    .cinema-content {
+        width: 85%;
+    }
+    .cinema-sidebar {
+        flex-flow: column wrap;
+        width: 15%;
+    }
+    .cinema-sidebar-sp {
+        display: none;
+    }
+
+    .theater {
+        flex-flow: column wrap;
+    }
+    .theater-content {
+        flex-flow: row wrap;
+    }
+    .controls {
+        flex-flow: row wrap;
+    }
+    .description-bar {
+        flex-flow: column wrap;
+    }
+    .description-header {
+        flex-flow: column wrap;
+    }
+    .description {
+        flex-flow: column wrap;
+    }
 }

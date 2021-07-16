@@ -62,6 +62,133 @@
     font-style: normal;
 }
 
+/*************/
+/* FJALLA ONE */
+/*************/
+@font-face {
+    font-family: 'FJallaOne';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/FJallaOne/FJallaOne-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/************/
+/* HELVETICA */
+/************/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('../fonts/Helvetica.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Helvetica.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Helvetica.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Helvetica.svg#helvetica') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/***************************/
+/* IBM PLEX SANS CONDENSED */
+/***************************/
+@font-face {
+    font-family: 'IBMPlexSansCondensed';
+    src: url('../fonts/IBMPlexSansCondensed-Medium.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/IBMPlexSansCond-Medium.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/IBMPlexSansCond-Medium.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/IBMPlexSansCond-Medium.svg#ibmplexsansmed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansCondensed';
+    src: url('../fonts/IBMPlexSansCondensed-MediumItalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/IBMPlexSansCond-MediumItalic.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/IBMPlexSansCond-MediumItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/IBMPlexSansCond-MediumItalic.svg#ibmplexsansmeditalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'IBMPlexSansCondensed';
+    src: url('../fonts/IBMPlexSansCondensed-Light.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/IBMPlexSansCond-Light.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/IBMPlexSansCond-Light.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/IBMPlexSansCond-Light.svg#ibmplexsanslight') format('svg');
+    font-weight: lighter;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansCondensed';
+    src: url('../fonts/IBMPlexSansCondensed-LightItalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/IBMPlexSansCond-LightItalic.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/IBMPlexSansCond-LightItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/IBMPlexSansCond-LightItalic.svg#ibmplexsanslightitalic') format('svg');
+    font-weight: lighter;
+    font-style: italic;
+}
+
+/***************/
+/* INCONSOLATA */
+/***************/
+@font-face {
+    font-family: 'Inconsolata';
+    src: /* Pretty Modern Browsers */
+        url('../fonts/Inconsolata/Inconsolata-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Inconsolata';
+    src: /* Pretty Modern Browsers */
+        url('../fonts/Inconsolata/Inconsolata-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/********/
+/* LATO */
+/********/
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Light.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Lato-Light.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Lato-Light.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Lato-Light.svg#latolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-LightItalic.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Lato-LightItalic.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Lato-LightItalic.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Lato-LightItalic.svg#latolightitalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
 /************/
 /* OPEN SANS CONDENSED */
 /************/
@@ -134,6 +261,22 @@
 }
 
 /********************/
+/* PACIFICO-REGULAR */
+/********************/
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
+        /* Super Modern Browsers */
+        url('../fonts/Pacifico-Regular.woff') format('woff'),
+        /* Pretty Modern Browsers */
+        url('../fonts/Pacifico-Regular.ttf') format('truetype'),
+        /* Safari, Android, iOS */
+        url('../fonts/Pacifico-Regular.svg#pacificoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/********************/
 /* SHADOWS INTO LIGHT */
 /********************/
 @font-face {
@@ -149,115 +292,104 @@
     font-style: normal;
 }
 
-/************/
-/* HELVETICA */
-/************/
+/*************/
+/* STAATLICHES */
+/*************/
 @font-face {
-    font-family: 'Helvetica';
-    src: url('../fonts/Helvetica.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/Helvetica.woff') format('woff'),
+    font-family: 'Staatliches';
+    src: 
         /* Pretty Modern Browsers */
-        url('../fonts/Helvetica.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Helvetica.svg#helvetica') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
+        url('../fonts/Staatliches/Staatliches-Regular.ttf') format('truetype');
 
-
-
-/********************/
-/* PACIFICO-REGULAR */
-/********************/
-@font-face {
-    font-family: 'Pacifico';
-    src: url('../fonts/Pacifico-Regular.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/Pacifico-Regular.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/Pacifico-Regular.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Pacifico-Regular.svg#pacificoregular') format('svg');
     font-weight: normal;
     font-style: normal;
-}
-/***************************/
-/* IBM PLEX SANS CONDENSED */
-/***************************/
-@font-face {
-    font-family: 'IBMPlexSansCondensed';
-    src: url('../fonts/IBMPlexSansCondensed-Medium.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/IBMPlexSansCond-Medium.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/IBMPlexSansCond-Medium.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/IBMPlexSansCond-Medium.svg#ibmplexsansmed') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'IBMPlexSansCondensed';
-    src: url('../fonts/IBMPlexSansCondensed-MediumItalic.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/IBMPlexSansCond-MediumItalic.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/IBMPlexSansCond-MediumItalic.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/IBMPlexSansCond-MediumItalic.svg#ibmplexsansmeditalic') format('svg');
-    font-weight: normal;
-    font-style: italic;
-}
-@font-face {
-    font-family: 'IBMPlexSansCondensed';
-    src: url('../fonts/IBMPlexSansCondensed-Light.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/IBMPlexSansCond-Light.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/IBMPlexSansCond-Light.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/IBMPlexSansCond-Light.svg#ibmplexsanslight') format('svg');
-    font-weight: lighter;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'IBMPlexSansCondensed';
-    src: url('../fonts/IBMPlexSansCondensed-LightItalic.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/IBMPlexSansCond-LightItalic.woff') format('woff'),
-        /* Pretty Modern Browsers */
-        url('../fonts/IBMPlexSansCond-LightItalic.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/IBMPlexSansCond-LightItalic.svg#ibmplexsanslightitalic') format('svg');
-    font-weight: lighter;
-    font-style: italic;
 }
 
 /********/
-/* LATO */
+/* TEKO */
 /********/
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-Light.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/Lato-Light.woff') format('woff'),
+    font-family: 'Teko';
+    src: 
         /* Pretty Modern Browsers */
-        url('../fonts/Lato-Light.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Lato-Light.svg#latolight') format('svg');
+        url('../fonts/Teko/Teko-Regular.ttf') format('truetype');
+
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Lato';
-    src: url('../fonts/Lato-LightItalic.woff2') format('woff2'),
-        /* Super Modern Browsers */
-        url('../fonts/Lato-LightItalic.woff') format('woff'),
+    font-family: 'Teko';
+    src: 
         /* Pretty Modern Browsers */
-        url('../fonts/Lato-LightItalic.ttf') format('truetype'),
-        /* Safari, Android, iOS */
-        url('../fonts/Lato-LightItalic.svg#latolightitalic') format('svg');
+        url('../fonts/Teko/Teko-Bold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*************/
+/* TULPINONE */
+/*************/
+@font-face {
+    font-family: 'TulpinOne';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/TulpinOne/TulpinOne-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*************/
+/* YANONEKAFFEESATZ */
+/*************/
+@font-face {
+    font-family: 'Yanonekaffeesatz';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/Yanonekaffeesatz/Yanonekaffeesatz-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Yanonekaffeesatz';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/Yanonekaffeesatz/Yanonekaffeesatz-Bold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+/*************/
+/* ZENLOOP */
+/*************/
+@font-face {
+    font-family: 'ZenLoop';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/ZenLoop/ZenLoop-Regular.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ZenLoop';
+    src: 
+        /* Pretty Modern Browsers */
+        url('../fonts/ZenLoop/ZenLoop-Italic.ttf') format('truetype');
+
     font-weight: normal;
     font-style: italic;
 }
+
+
+
+
+
+
+
+
+
+

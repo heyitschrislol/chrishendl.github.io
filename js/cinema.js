@@ -15,8 +15,8 @@ function setVideo(index) {
         document.getElementById("movietitle").innerText = movielist[index].title;
         document.getElementById("currentvid").setAttribute("title", movielist[index].title);
         document.getElementById("descriptiontext").innerText = movielist[index].description;
-        document.getElementById("descriptiondate").innerText += movielist[index].date;
-        document.getElementById("descriptionlength").innerText += movielist[index].length;
+        document.getElementById("descriptiondate").innerHTML = "<b>Date:</b> " + movielist[index].date;
+        document.getElementById("descriptionlength").innerHTML = "<b>Length:</b> " + movielist[index].length;
         document.getElementById("currentvid").load();
         
     }
