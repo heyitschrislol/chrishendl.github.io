@@ -10,18 +10,11 @@
     <link href="css/fontfaces.css" rel="stylesheet" />
     <script src="js/cinema.js"></script>
     <script src="https://raw.githubusercontent.com/heyitschrislol/chrishendl.github.io/master/js/movielist.json"></script>
-    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
-    <!-- <script src="js/ch_updates.js"></script>
-	<script src="js/ch_tabs.js"></script>
-	<script src="js/ch_gallery.js"></script>
-	<script src="js/posts.json"></script> -->
 
 </head>
-<!-- <body onload="getVideoList();"> -->
 <body class="cinema-body">
     <div class="cinema-header">
         <div class="cinema-logo" id="cinemalogo" ></div>
-        <!-- <img src="media/curtains.png" class="cinema-curtains" id="cinemacurtains" > -->
     </div>
     <div class="cinema">
         <div class="mobile-hamburger" id="mobilehamburger">
@@ -33,7 +26,6 @@
             
         </div>
         <div class="mobile-menu" id="mobilemenu">
-            <!-- <span class="material-icons-two-tone">emoji_objects</span> -->
             <div class="nowplaying">
                 <h2>NOW PLAYING:</h2>
             </div>
@@ -68,10 +60,14 @@
                         <button class="itembutton itembutton-mob" id="hateyourself" onclick="setVideo(5, 'hateyourself');">Chris's Cringiest Day of Celebration</button>
                     </span>
                 </li>
+                <li class="movieitem movieitem-mob">
+                    <span class="leftrightitems leftrightitems-mob">
+                        <button class="itembutton itembutton-mob" id="morethanhuman" onclick="setVideo(6, 'morethanhuman');">Chris Becomes More Than Human</button>
+                    </span>
+                </li>
             </ul>
         </div>
         <div class="cinema-sidebar">
-            <!-- <span class="material-icons-two-tone">emoji_objects</span> -->
             <div class="nowplaying">
                 <h2>NOW PLAYING:</h2>
             </div>
@@ -83,8 +79,6 @@
                         <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
                         <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
                         <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png">
-                        <!-- <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png"> -->
-                        <!-- <img class="moviebulbs moviebulbs-up" src="media/icons/lightbulb-up.png"> -->
                     </span>
                     <span class="leftrightitems">
                         <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
@@ -126,19 +120,21 @@
                         <button class="itembutton" id="hateyourself" onclick="setVideo(5, 'hateyourself');">Chris's Cringiest Day of Celebration</button>
                         <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
                     </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">
+                        <img class="moviebulbs moviebulbs-left" src="media/icons/lightbulb-left.png">
+                        <button class="itembutton itembutton-mob" id="morethanhuman" onclick="setVideo(6, 'morethanhuman');">Chris Becomes More Than Human</button>
+                        <img class="moviebulbs moviebulbs-right" src="media/icons/lightbulb-right.png">
+                    </span>
                     <span class="downitems">
                         <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
                         <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
                         <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
                         <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
                         <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png">
-                        <!-- <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png"> -->
-                        <!-- <img class="moviebulbs moviebulbs-down" src="media/icons/lightbulb-down.png"> -->
                     </span>
                 </li>
-                <!-- <li class="movieitem">
-                    <input type="button" class="itembutton" id="tester" onclick="poopee();" value="TEST">
-                </li> -->
             </ul>
         </div>
         <div class="cinema-content">
@@ -147,9 +143,7 @@
                     <h2 id="movietitle">PH</h2>
                 </div>
                 <div class="theater-content">
-                    <!-- <iframe class="vid" id="currentvid" title="ph" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen src="https://www.youtube.com/embed/zTd71mMaaGQ"></iframe> -->
                     <iframe class="vid" id="currentvid" width="448" height="336" title="ph" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-                    <!-- <iframe class="vid" id="currentvid" src="https://www.youtube.com/embed/zTd71mMaaGQ" width="448" height="336" title="ph" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen onplay='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'></iframe> -->
                 </div>
             </div>
             <div class="description-bar" id="descriptionbar">
@@ -166,8 +160,6 @@
             </div>
         </div>
         <div class="cinema-sidebar cinema-sidebar-sp"></div>
-    </div>
-    
+    </div>    
 </body>
-
 </html>
