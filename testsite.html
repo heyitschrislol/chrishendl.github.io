@@ -6,27 +6,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>money</title>
     <link rel="icon" href="favicon.ico">
-    <link href="css/t-buttons.css" rel="stylesheet" />
-    <script src="js/new.js"></script>
-    <script src="js/posts.json"></script>
-    <script>
-        var http = require('http');
-        var fs = require('fs');
-        http.createServer(function (req, res) {
-            fs.readFile('/js/posts.json', function (err, data) {
-                res.writeHead(200, {
-                    'Content-Type': 'text/html'
-                });
-                let posts = JSON.parse(data);
-                res.write(posts[0].postid);
-                return res.end();
-            });
-        }).listen(8080);
-    </script>
+    <link href="css/t-styles.css" rel="stylesheet" />
+    <link href="css/fontfaces.css" rel="stylesheet" />
+    <script src="js/cinema.js"></script>
+    <script src="https://raw.githubusercontent.com/heyitschrislol/chrishendl.github.io/master/js/movielist.json"></script>
 </head>
 
-<body onload="money();">
-    <div id="peep"></div>
+<body>
+    <div class="cinema-header" id="cinemaheader">
+        <div class="cinema-logo" id="cinemalogo"></div>
+        <div class="cinema-titles" id="cinematitles">
+            <div class="nowplaying">
+                <span class="marquee-horizontal"><img class="bulbhorizontal"><img class="bulbhorizontal"></span>
+                <span class="marquee-vertical"><img class="bulbvertical"><h2>NOW PLAYING:</h2><img class="bulbvertical"></span>
+                <span class="marquee-horizontal"><img class="bulbhorizontal"><img class="bulbhorizontal"></span>
+            </div>
+            <ul class="movieitems">
+                <li class="movieitem">
+                    <span class="leftrightitems">                       
+                        <button class="itembutton" id="genderreveal" onclick="setVideo(0, 'genderreveal');"><div class="btext">Gender Reveal Party</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                    
+                        <button class="itembutton" id="cjswimming" onclick="setVideo(1, 'cjswimming');"><div class="btext">Chris and Jen Swimming</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                  
+                        <button class="itembutton" id="babyjordan" onclick="setVideo(2, 'babyjordan');"><div class="btext">Xmas 2001 - Young Jordan and Hope</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                   
+                        <button class="itembutton" id="xmas1992" onclick="setVideo(3, 'xmas1992');"><div class="btext">Xmas 1991 + Ryan Flutophone Recital</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                   
+                        <button class="itembutton" id="goapoat" onclick="setVideo(4, 'goapoat');"><div class="btext">Basketball, Birthdays, and Easter 1998</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                       
+                        <button class="itembutton" id="hateyourself" onclick="setVideo(5, 'hateyourself');"><div class="btext">Chris's Cringiest Day of Celebration</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">
+                        <button class="itembutton itembutton-mob" id="morethanhuman" onclick="setVideo(6, 'morethanhuman');"><div class="btext">Chris Becomes More Than Human</div></button>
+                    </span>
+                </li>
+                <li class="movieitem">
+                    <span class="leftrightitems">                   
+                        <button class="itembutton itembutton-mob" id="peprally" onclick="setVideo(7, 'peprally');"><div class="btext">Pep Rally and Jordan is Spiderman</div></button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cinema-content">
+        <div class="theater" id="maintheater">
+            <div id="theaterheader" class="theater-header">
+                <h2 id="movietitle">PH</h2>
+            </div>
+            <div class="theater-content">
+                <iframe class="vid" id="currentvid" width="448" height="336" title="ph" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+            </div>
+        </div>
+        <div class="description-bar" id="descriptionbar">
+            <div class="description-header">
+                <h3>Description: </h3>
+                <ul class="description-details">
+                    <li class="description-detail" id="descriptiondate">Date: </li>
+                    <li class="description-detail" id="descriptionlength">Length: </li>
+                </ul>
+            </div>
+            <div class="description">
+                <blockquote class="description-text" id="descriptiontext"></blockquote>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
