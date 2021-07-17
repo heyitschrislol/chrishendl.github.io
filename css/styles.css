@@ -617,7 +617,7 @@ div.post-thumbs img {
     flex-flow: column nowrap;
     align-items: center;
     background-image: linear-gradient(to right, #8d1719, #9f1a1c, #8d1719);
-    border-top: .5em double #000;
+    border-top: .5em double #61fc78;
     border-width: 2em;
     /* padding: 4em 0 0 0; */
     /* border: 1px solid #3C1053; */
