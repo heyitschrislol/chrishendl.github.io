@@ -580,18 +580,18 @@ div.post-thumbs img {
      1px 1px 0 #000;
 }
 @keyframes logoanim {
-    0%   {background: url("../media/vhs-logo-med1.png") no-repeat; }
-    50% {background: url("../media/vhs-logo-med2.png") no-repeat;}
-    60% {background: url("../media/vhs-logo-med1.png") no-repeat;}
-    75% {background: url("../media/vhs-logo-med2.png") no-repeat;}
-    78% {background: url("../media/vhs-logo-med1.png") no-repeat;}
-    100% {background: url("../media/vhs-logo-med1.png") no-repeat;}
+    0%  {background: url("../media/vhslogoV3-full1.png") no-repeat; }
+    50% {background: url("../media/vhslogoV3-full2.png") no-repeat;}
+    60% {background: url("../media/vhslogoV3-full1.png") no-repeat;}
+    75% {background: url("../media/vhslogoV3-full2.png") no-repeat;}
+    78% {background: url("../media/vhslogoV3-full1.png") no-repeat;}
+    100% {background: url("../media/vhslogoV3-full1.png") no-repeat;}
   }
 .cinema-logo {
     /* opacity: 0; */
-    background: url("../media/vhs-logo-med1.png") no-repeat;
-    width: 803px;
-    height: 156px;
+    background: url("../media/vhslogoV3-full1.png") no-repeat;
+    width: 600px;
+    height: 176px;
     overflow: show;
     /* animation-name: logoanim; */
     animation: 7s logoanim infinite step-end;
@@ -1020,17 +1020,17 @@ div.post-thumbs img {
         padding: 0;
     }
     @keyframes mobilelogo {
-        0%  {background: url("../media/vhs-logo1-mob.png") no-repeat; }
-        50% {background: url("../media/vhs-logo2-mob.png") no-repeat;}
-        60% {background: url("../media/vhs-logo1-mob.png") no-repeat;}
-        75% {background: url("../media/vhs-logo2-mob.png") no-repeat;}
-        78% {background: url("../media/vhs-logo1-mob.png") no-repeat;}
-        100% {background: url("../media/vhs-logo1-mob.png") no-repeat;}
+        0%  {background: url("../media/vhslogoV3-460px1.png") no-repeat; }
+        50% {background: url("../media/vhslogoV3-460px2.png") no-repeat;}
+        60% {background: url("../media/vhslogoV3-460px1.png") no-repeat;}
+        75% {background: url("../media/vhslogoV3-460px2.png") no-repeat;}
+        78% {background: url("../media/vhslogoV3-460px1.png") no-repeat;}
+        100% {background: url("../media/vhslogoV3-460px1.png") no-repeat;}
       }
     .cinema-logo {
-        background: url("../media/vhs-logo1-mob.png") no-repeat;
+        background: url("../media/vhslogoV3-460px1.png") no-repeat;
         width: 100%;
-        height: 98px;
+        height: 135px;
         overflow: show;
         margin: 0;
         padding: 0;
@@ -1074,7 +1074,7 @@ div.post-thumbs img {
         transition: all .1s;
     }
     .burgerbutton:focus {
-        
+
     }
     .hamburger {
         width: 40px;
@@ -1086,12 +1086,9 @@ div.post-thumbs img {
         display: none;
         flex-flow: column wrap;
         align-items: center;
-        /* background-image: linear-gradient(to right, #8d1719, #9f1a1c, #8d1719); */
         width: 100%;
         padding: 1em 1em;
         height: auto;
-        /* border-top: .5em double #000; */
-        /* border-width: 2em; */
     }
     .cinema-sidebar {
         display: none;
@@ -1125,4 +1122,125 @@ div.post-thumbs img {
         flex-flow: column wrap;
         width: 100%;
     }
+}
+@media screen and (max-width: 380px) {
+    .cinema-body {
+        margin: 0;
+        padding: 0;
+        background-image: linear-gradient(to right, #8d1719, #9f1a1c, #8d1719);
+
+    }
+    .cinema-header {
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    @keyframes mobilelogo {
+        0%  {background: url("../media/vhslogoV3-328px1.png") no-repeat; }
+        50% {background: url("../media/vhslogoV3-328px2.png") no-repeat;}
+        60% {background: url("../media/vhslogoV3-328px1.png") no-repeat;}
+        75% {background: url("../media/vhslogoV3-328px2.png") no-repeat;}
+        78% {background: url("../media/vhslogoV3-328px1.png") no-repeat;}
+        100% {background: url("../media/vhslogoV3-328px1.png") no-repeat;}
+      }
+    .cinema-logo {
+        background: url("../media/vhslogoV3-328px1.png") no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 266px;
+        overflow: show;
+        margin: 0;
+        padding: 0;
+        /* animation-name: logoanim; */
+        animation: 7s mobilelogo infinite step-end;
+        /* margin: auto;
+        width: auto; */
+    }
+
+    .cinema-curtains {
+        max-width: 100%;
+        height: auto;
+        /* position: relative; */
+        z-index: 1;
+        /* top: 100px; */
+    }
+    .cinema {
+        flex-flow: column wrap;
+    }
+    .cinema-content {
+        width: 100%;
+        margin: auto;
+    }
+    .mobile-hamburger {
+        display: block;
+        position: relative;
+        left: 0;
+        width: 40px;
+        height: 30px;
+        background-color: inherit;
+        margin: 5px 0;
+    }
+    .burgerbutton {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: inherit;
+        border: 0;
+        box-shadow: 0;
+        transition: all .1s;
+    }
+    .burgerbutton:focus {
+
+    }
+    .hamburger {
+        width: 40px;
+        background-color: #D29F13;
+        height: 8px;
+        margin: 1px;
+    }
+    .mobile-menu {
+        display: none;
+        flex-flow: column wrap;
+        align-items: center;
+        width: 100%;
+        padding: 1em 1em;
+        height: auto;
+    }
+    .cinema-sidebar {
+        display: none;
+    }
+    .cinema-sidebar-sp {
+        display: none;
+    }
+
+    .theater {
+        flex-flow: column wrap;
+    }
+    .theater-content {
+        flex-flow: row wrap;
+    }
+    .controls {
+        flex-flow: row wrap;
+    }
+    .description-bar {
+        flex-flow: column wrap;
+        width: 90%;
+    }
+    .description-header {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+    .description-details {
+        /* flex-flow: column wrap; */
+        width: 100%;
+    }
+    .description {
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
 }
