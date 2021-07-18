@@ -14,12 +14,16 @@
 
 <body>
     <div class="cinema-header" id="cinemaheader">
-        <div class="cinema-logo" id="cinemalogo"></div>
+        <div class="container">
+            <div class="cinema-logo" id="cinemalogo">
+            <!-- <img id="logo" src="media/vhslogo1200x695.png"> -->
+            </div>
+        </div>
+        
         <div class="cinema-titles" id="cinematitles">
             <div class="nowplaying">
-                <span class="marquee-horizontal"><img class="bulbhorizontal"><img class="bulbhorizontal"></span>
-                <span class="marquee-vertical"><img class="bulbvertical"><h2>NOW PLAYING:</h2><img class="bulbvertical"></span>
-                <span class="marquee-horizontal"><img class="bulbhorizontal"><img class="bulbhorizontal"></span>
+                <h2>NOW PLAYING:</h2>
+                <span class="marquee-horizontal"><img class="bulbhorizontal" src="media/bulbworksH.png"><img class="bulbhorizontal" src="media/bulbworksH.png"></span>
             </div>
             <ul class="movieitems">
                 <li class="movieitem">
@@ -64,28 +68,7 @@
             </ul>
         </div>
     </div>
-    <div class="cinema-content">
-        <div class="theater" id="maintheater">
-            <div id="theaterheader" class="theater-header">
-                <h2 id="movietitle">PH</h2>
-            </div>
-            <div class="theater-content">
-                <iframe class="vid" id="currentvid" width="448" height="336" title="ph" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-            </div>
-        </div>
-        <div class="description-bar" id="descriptionbar">
-            <div class="description-header">
-                <h3>Description: </h3>
-                <ul class="description-details">
-                    <li class="description-detail" id="descriptiondate">Date: </li>
-                    <li class="description-detail" id="descriptionlength">Length: </li>
-                </ul>
-            </div>
-            <div class="description">
-                <blockquote class="description-text" id="descriptiontext"></blockquote>
-            </div>
-        </div>
-    </div>
+    
 </body>
 
 </html>

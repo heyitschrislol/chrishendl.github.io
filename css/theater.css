@@ -13,28 +13,44 @@
 }
 .cinema-header {
     display: block;
+    /* display: flex; */
+    flex-flow: row nowrap; 
+    justify-content: center;
+    align-items: center;
     width: 100%;
     margin: auto;
     padding: 1em 0;
-    background-color:  #4f4f4f;}
+    background-color:  #4f4f4f;
+}
+.logocontainer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
 .cinema-logo {
-   margin: auto;
-   position: relative;
-   background: url("../media/vhslogo800x234.png") no-repeat;
-   background-size: contain;
-   width: 45%;
-   height: 234px;
-   animation: 7s logoanim infinite step-end;
-   padding: 1em 0;
-   /* box-shadow: -.07em -.07em .8em #9cfd9a, .07em .07em .8em  #9cfd9a; */
+    flex: 100%;
+    margin: auto;
+    position: relative;
+    background: url("../media/vhslogo1200x347.png") no-repeat;
+    object-fit: contain;
+    background-size: contain;
+    /* width: 45%; */
+    /* height: 347px; */
+    animation: 7s logoanim infinite step-end;
+    padding: 1em 0;
+    /* box-shadow: -.07em -.07em .8em #9cfd9a, .07em .07em .8em  #9cfd9a; */
+}
+.lol {
+    opacity: 0;
 }
 @keyframes logoanim {
-   0%  {background: url("../media/vhslogo800x234.png") no-repeat; }
-   50% {background: url("../media/vhslogoOFF800x234.png") no-repeat;}
-   60% {background: url("../media/vhslogo800x234.png") no-repeat;}
-   75% {background: url("../media/vhslogoOFF800x234.png") no-repeat;}
-   78% {background: url("../media/vhslogo800x234.png") no-repeat;}
-   100% {background: url("../media/vhslogo800x234.png") no-repeat;}
+   0%  {background: url("../media/vhslogo1200x347.png") no-repeat; }
+   50% {background: url("../media/vhslogoOFF1200x347.png") no-repeat;}
+   60% {background: url("../media/vhslogo1200x347.png") no-repeat;}
+   75% {background: url("../media/vhslogoOFF1200x347.png") no-repeat;}
+   78% {background: url("../media/vhslogo1200x347.png") no-repeat;}
+   100% {background: url("../media/vhslogo1200x347.png") no-repeat;}
  }
 
 .cinema-titles {
@@ -273,7 +289,7 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
 	##################################################
 	*/
 
-    @media screen and (max-width: 900px) {
+    @media only screen and (max-width: 1200px) {
         .cinema-logo {
             display: block;
             margin: auto;
@@ -292,6 +308,10 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
             78% {background: url("../media/vhslogo650x190.png") no-repeat;}
             100% {background: url("../media/vhslogo650x190.png") no-repeat;}
           }
+        .lol {
+            width: 650px;
+            height: 190px;
+        }
           .itembutton {
             font-size: 1em;
         }
@@ -333,7 +353,7 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
             padding: .5em;
         }
     }
-    @media screen and (max-width: 750px) {
+    @media only screen and (max-width: 750px) {
         .cinema-logo {
             display: block;
             margin: auto;
@@ -352,8 +372,12 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
             78% {background: url("../media/vhslogo650x190.png") no-repeat;}
             100% {background: url("../media/vhslogo650x190.png") no-repeat;}
           }
+          .lol {
+            width: 650px;
+            height: 190px;
+        }
     }
-    @media screen and (max-width: 500px) {
+    @media only screen and (max-width: 500px) {
     .cinema-body {
         margin: 0;
         padding: 0;
@@ -383,6 +407,10 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
        78% {background: url("../media/vhslogo356x275.png") no-repeat;}
        100% {background: url("../media/vhslogo356x275.png") no-repeat;}
      }
+     .lol {
+        width: 356px;
+        height: 275px;
+    }
     .cinema-curtains {
         max-width: 100%;
         height: auto;
@@ -464,7 +492,7 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
         width: 100%;
     }
 }
-@media screen and (max-width: 393px) {
+@media only screen and (max-width: 393px) {
     .cinema-body {
         margin: 0;
         padding: 0;
@@ -494,6 +522,10 @@ background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
        78% {background: url("../media/vhslogo328x253.png") no-repeat;}
        100% {background: url("../media/vhslogo328x253.png") no-repeat;}
      }
+     .lol {
+        width: 328px;
+        height: 253px;
+    }
 
     .cinema-curtains {
         max-width: 100%;
