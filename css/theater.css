@@ -16,8 +16,7 @@
     width: 100%;
     margin: auto;
     padding: 1em 0;
-    background-image: linear-gradient(to right, #333333, #4f4f4f, #333333);
-}
+    background-color:  #4f4f4f;}
 .cinema-logo {
    margin: auto;
    position: relative;
@@ -27,6 +26,7 @@
    height: 234px;
    animation: 7s logoanim infinite step-end;
    padding: 1em 0;
+   /* box-shadow: -.07em -.07em .8em #9cfd9a, .07em .07em .8em  #9cfd9a; */
 }
 @keyframes logoanim {
    0%  {background: url("../media/vhslogo800x234.png") no-repeat; }
@@ -42,8 +42,7 @@
     flex-flow: column nowrap;
     align-items: center;
     /* background-image: linear-gradient(to right, #1dc7fa, #f5d556, #1dc7fa); */
-    background-image: linear-gradient(to right, #333333, #4f4f4f, #333333);
-    padding: 0 0 2.5em 0;
+background-color:  #4f4f4f;    padding: 0 0 2.5em 0;
 }
 .marquee {
     display: flex;
@@ -285,7 +284,7 @@
         .cinema-logo {
             display: block;
             margin: auto;
-            background: url("../media/vhslogo800x234.png") no-repeat;
+            background: url("../media/vhslogo650x190.png") no-repeat;
             background-size: cover;
             width: 800px;
             height: 234px;
@@ -293,12 +292,12 @@
             animation: 7s logoanim infinite step-end;
          }
          @keyframes logoanim {
-            0%  {background: url("../media/vhslogo800x234.png") no-repeat; }
-            50% {background: url("../media/vhslogoOFF800x234.png") no-repeat;}
-            60% {background: url("../media/vhslogo800x234.png") no-repeat;}
-            75% {background: url("../media/vhslogoOFF800x234.png") no-repeat;}
-            78% {background: url("../media/vhslogo800x234.png") no-repeat;}
-            100% {background: url("../media/vhslogo800x234.png") no-repeat;}
+            0%  {background: url("../media/vhslogo650x190.png") no-repeat; }
+            50% {background: url("../media/vhslogoOFF650x190.png") no-repeat;}
+            60% {background: url("../media/vhslogo650x190.png") no-repeat;}
+            75% {background: url("../media/vhslogoOFF650x190.png") no-repeat;}
+            78% {background: url("../media/vhslogo650x190.png") no-repeat;}
+            100% {background: url("../media/vhslogo650x190.png") no-repeat;}
           }
           .itembutton {
             font-size: 1em;
@@ -311,8 +310,7 @@
             flex-flow: column nowrap;
             align-items: center;
             /* background-image: linear-gradient(to right, #1dc7fa, #f5d556, #1dc7fa); */
-            background-image: linear-gradient(to right, #333333, #4f4f4f, #333333);
-            /* padding: 0 0 2.5em 0; */
+        background-color:  #4f4f4f;            /* padding: 0 0 2.5em 0; */
         }
         
         .nowplaying {
@@ -373,12 +371,11 @@
         display: block;
         width: 100%;
         margin: auto;
-        background-image: linear-gradient(to right, #333333, #4f4f4f, #333333);
-    }
+    background-color:  #4f4f4f;    }
     .cinema-logo {
        display: block;
        margin: auto;
-       background: url("../media/vhslogo-V2-356x275.png") no-repeat;
+       background: url("../media/vhslogo356x275.png") no-repeat;
        background-size: cover;
        width: 356px;
        height: 275px;
@@ -386,12 +383,12 @@
        animation: 7s mobilelogo infinite step-end;
     }
     @keyframes mobilelogo {
-       0%  {background: url("../media/vhslogo-V2-356x275.png") no-repeat; }
-       50% {background: url("../media/vhslogoOFF-V2-356x275.png") no-repeat;}
-       60% {background: url("../media/vhslogo-V2-356x275.png") no-repeat;}
-       75% {background: url("../media/vhslogoOFF-V2-356x275.png") no-repeat;}
-       78% {background: url("../media/vhslogo-V2-356x275.png") no-repeat;}
-       100% {background: url("../media/vhslogo-V2-356x275.png") no-repeat;}
+       0%  {background: url("../media/vhslogo356x275.png") no-repeat; }
+       50% {background: url("../media/vhslogoOFF356x275.png") no-repeat;}
+       60% {background: url("../media/vhslogo356x275.png") no-repeat;}
+       75% {background: url("../media/vhslogoOFF356x275.png") no-repeat;}
+       78% {background: url("../media/vhslogo356x275.png") no-repeat;}
+       100% {background: url("../media/vhslogo356x275.png") no-repeat;}
      }
     .cinema-curtains {
         max-width: 100%;
@@ -487,12 +484,11 @@
         display: block;
         width: 100%;
         margin: auto;
-        background-image: linear-gradient(to right, #333333, #4f4f4f, #333333);
-    }
+    background-color:  #4f4f4f;    }
     .cinema-logo {
        display: block;
        margin: auto;
-       background: url("../media/vhslogo-V2-328x256.png") no-repeat;
+       background: url("../media/vhslogo328x253.png") no-repeat;
        background-size: cover;
        width: 328px;
        height: 256px;
@@ -500,12 +496,12 @@
        animation: 7s logoanim infinite step-end;
     }
     @keyframes logoanim {
-       0%  {background: url("../media/vhslogo-V2-328x256.png") no-repeat; }
-       50% {background: url("../media/vhslogoOFF-V2-328x256.png") no-repeat;}
-       60% {background: url("../media/vhslogo-V2-328x256.png") no-repeat;}
-       75% {background: url("../media/vhslogoOFF-V2-328x256.png") no-repeat;}
-       78% {background: url("../media/vhslogo-V2-328x256.png") no-repeat;}
-       100% {background: url("../media/vhslogo-V2-328x256.png") no-repeat;}
+       0%  {background: url("../media/vhslogo328x253.png") no-repeat; }
+       50% {background: url("../media/vhslogoOFF328x253.png") no-repeat;}
+       60% {background: url("../media/vhslogo328x253.png") no-repeat;}
+       75% {background: url("../media/vhslogoOFF328x253.png") no-repeat;}
+       78% {background: url("../media/vhslogo328x253.png") no-repeat;}
+       100% {background: url("../media/vhslogo328x253.png") no-repeat;}
      }
 
     .cinema-curtains {
