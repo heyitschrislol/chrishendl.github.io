@@ -1,4 +1,4 @@
-name: Update Sharing Page
+name: update-sharing-page
 
 on:
   push:
