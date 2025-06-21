@@ -14,12 +14,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Generate filelist.txt
+      - name: Generate filenames.txt
         run: |
           pwd
           ls -la
-          chmod +x generate_filelist.sh
-          ./generate_filelist.sh
+          chmod +x generate_filenames.sh
+          ./generate_filenames.sh
 
       - name: Create album ZIP files
         run: |
