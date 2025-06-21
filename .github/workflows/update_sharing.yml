@@ -17,6 +17,7 @@ jobs:
       - name: Generate filelist.txt
         run: |
           pwd
+          ls -la
           chmod +x generate_filelist.sh
           ./generate_filelist.sh
 
