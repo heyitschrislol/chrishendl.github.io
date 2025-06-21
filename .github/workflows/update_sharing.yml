@@ -1,0 +1,35 @@
+name: Update Sharing Page
+
+on:
+  push:
+    branches:
+      - main  # change if you use 'master'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate filelist.txt
+        run: |
+          chmod +x generate_filelist.sh
+          ./generate_filelist.sh
+
+      - name: Create album ZIP files
+        run: |
+          for album_dir in media/sharing/*/; do
+            album_name=$(basename "$album_dir")
+            zip -r "media/sharing/${album_name}.zip" "$album_dir"
+          done
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add media/sharing/filelist.txt media/sharing/*.zip
+          git commit -m "Auto-update sharing filelist and album zips" || echo "No changes to commit"
+          git push
