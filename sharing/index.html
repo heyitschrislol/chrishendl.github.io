@@ -5,72 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Sharing Albums</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 1000px;
-      margin: auto;
-      padding: 1em;
-      background: #f8f8f8;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #333;
-    }
-    .album-list a {
-      display: block;
-      margin: 0.5em 0;
-      font-size: 1.2em;
-      text-decoration: none;
-      color: #3366cc;
-    }
-    .album-list a:hover {
-      text-decoration: underline;
-    }
-    .media-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 12px;
-      margin-top: 20px;
-    }
-    .media-grid img, .media-grid video {
-      width: 100%;
-      height: auto;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .back-link {
-      display: block;
-      margin: 1em 0;
-      font-size: 1em;
-    }
-    .download-link {
-      display: block;
-      margin: 0.5em 0;
-      font-weight: bold;
-      color: green;
-    }
-    /* Lightbox styles */
-    .lightbox {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0,0,0,0.8);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-    .lightbox img {
-      max-width: 90%;
-      max-height: 90%;
-      border-radius: 8px;
-    }
-    .lightbox.show {
-      visibility: visible;
-      opacity: 1;
-    }
+    body { font-family: Arial, sans-serif; max-width: 1000px; margin: auto; padding: 1em; background: #f8f8f8; }
+    h1, h2 { text-align: center; color: #333; }
+    .album-list a { display: block; margin: 0.5em 0; font-size: 1.2em; text-decoration: none; color: #3366cc; }
+    .album-list a:hover { text-decoration: underline; }
+    .media-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 12px; margin-top: 20px; }
+    .media-grid img, .media-grid video { width: 100%; height: auto; border-radius: 6px; cursor: pointer; }
+    .back-link { display: block; margin: 1em 0; font-size: 1em; }
+    .lightbox { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); display: flex; justify-content: center; align-items: center; visibility: hidden; opacity: 0; transition: opacity 0.3s ease; }
+    .lightbox img { max-width: 90%; max-height: 90%; border-radius: 8px; }
+    .lightbox.show { visibility: visible; opacity: 1; }
   </style>
 </head>
 <body>
@@ -83,65 +27,53 @@
   <div id="media-view" style="display: none;">
     <a href="#" class="back-link" onclick="goBack(); return false;">← Back to albums</a>
     <h2 id="album-title"></h2>
-    <a id="zip-link" class="download-link" href="#" style="display: none;" download>Download Album ZIP</a>
     <div id="media-grid" class="media-grid"></div>
   </div>
 </div>
 
-<!-- Lightbox -->
 <div id="lightbox" class="lightbox" onclick="hideLightbox()">
   <img id="lightbox-img" src="" alt="" />
 </div>
 
 <script>
-// Hardcoded list of albums (folder names)
-const albums = [
-  { name: 'bellavista_062025', zip: '/media/sharing/bellavista_062025.zip', files: [
-    'image1.jpg',
-    'image2.jpg',
-    'video1.mp4'
-  ]}
-];
+let albums = {};
+
+fetch('/media/sharing/filelist.txt')
+  .then(response => response.text())
+  .then(text => {
+    text.split('\n').forEach(line => {
+      if (line.trim() === '') return;
+      const [albumName, filename] = line.split('/');
+      if (!albums[albumName]) albums[albumName] = [];
+      albums[albumName].push(filename);
+    });
+    showAlbumList();
+  });
 
 function showAlbumList() {
   const albumListDiv = document.getElementById('album-list');
   albumListDiv.innerHTML = '';
-  albums.forEach(album => {
+  Object.keys(albums).forEach(album => {
     const link = document.createElement('a');
     link.href = '#';
-    link.textContent = album.name;
-    link.onclick = () => {
-      showAlbum(album);
-      return false;
-    };
+    link.textContent = album;
+    link.onclick = () => { showAlbum(album); return false; };
     albumListDiv.appendChild(link);
   });
   document.getElementById('album-list').style.display = 'block';
   document.getElementById('media-view').style.display = 'none';
 }
 
-function showAlbum(album) {
+function showAlbum(albumName) {
   const mediaGrid = document.getElementById('media-grid');
   const albumTitle = document.getElementById('album-title');
-  const zipLink = document.getElementById('zip-link');
-
-  albumTitle.textContent = album.name;
+  albumTitle.textContent = albumName;
   mediaGrid.innerHTML = '';
 
-  // Show zip link if defined
-  if (album.zip) {
-    zipLink.href = album.zip;
-    zipLink.style.display = 'block';
-  } else {
-    zipLink.style.display = 'none';
-  }
-
-  const supportedExtensions = ['jpg', 'jpeg', 'png', 'gif', 'mp4'];
-
-  album.files.forEach(file => {
+  albums[albumName].forEach(file => {
     const ext = file.split('.').pop().toLowerCase();
-    const url = `/media/sharing/${album.name}/${file}`;
-    if (['jpg', 'jpeg', 'png', 'gif'].includes(ext)) {
+    const url = `/media/sharing/${albumName}/${file}`;
+    if (['jpg','jpeg','png','gif'].includes(ext)) {
       const img = document.createElement('img');
       img.src = url;
       img.onclick = () => showLightbox(url);
@@ -158,23 +90,16 @@ function showAlbum(album) {
   document.getElementById('media-view').style.display = 'block';
 }
 
-function goBack() {
-  showAlbumList();
-}
+function goBack() { showAlbumList(); }
 
-// Lightbox functions
 function showLightbox(src) {
   document.getElementById('lightbox-img').src = src;
   document.getElementById('lightbox').classList.add('show');
 }
-
 function hideLightbox() {
   document.getElementById('lightbox-img').src = '';
   document.getElementById('lightbox').classList.remove('show');
 }
-
-// Initialize
-showAlbumList();
 </script>
 
 </body>
