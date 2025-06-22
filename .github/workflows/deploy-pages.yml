@@ -1,8 +1,8 @@
 name: deploy-pages
 on:
-  push:
-    branches:
-      - main  # change if you use 'master'
+  # push:
+  #   branches:
+  #     - main  # change if you use 'master'
   workflow_dispatch:
 jobs:
   build:
