@@ -1,0 +1,30 @@
+name: deploy-pages
+on:
+  push:
+    branches:
+      - main  # change if you use 'master'
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@v3.0.1
+      # - name: Checkout repository
+      #   uses: actions/checkout@v4
+
+      # - name: Generate filenames.txt
+      #   run: |
+      #     pwd
+      #     ls -la
+      #     chmod +x generate_filenames.sh
+      #     ./generate_filenames.sh
+
+      # - name: Create album ZIP files
+      #   run: |
+      #     for album_dir in media/sharing/*/; do
+      #       album_name=$(basename "$album_dir")
+      #       zip -r "media/sharing/${album_name}.zip" "$album_dir"
+      #     done
+# - name: Upload GitHub Pages artifact
+#   uses: actions/upload-pages-artifact@v3.0.1
